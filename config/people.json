@@ -1,0 +1,14 @@
+{
+  "sender": {
+    "name": "Alex Lin",
+    "title": "Senior NPI Engineer",
+    "email": "alex.lin@lumora-photonics.com.tw",
+    "company": "Lumora Photonics Co., Ltd.",
+    "address": "No. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinchu City 300, Taiwan",
+    "phone": "+886-3-578-6600 ext. 3216"
+  },
+  "scm": {
+    "name": "Nina Ho",
+    "email": "nina.ho@lumora-photonics.com.tw"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "ref": "CH1",
+      "title": "Legs 36 x LC/APC simplex -> 18 x LC/APC uniboot duplex",
+      "feasibility": "Feasible",
+      "assessment": "New fan-out box for duplex legs and uniboot duplex connector kits.",
+      "cost": "待工程師填寫",
+      "sources": [
+        "MM-002 PP-FOB-18D",
+        "MM-002 PP-LC-APC-DU"
+      ]
+    },
+    {
+      "ref": "CH2",
+      "title": "Leg length 500 -> 1,000 mm",
+      "feasibility": "Feasible",
+      "assessment": "Leg length change only; tolerance unchanged.",
+      "cost": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "ref": "CH3",
+      "title": "Trunk 3.0 -> 10.0 m with pulling grip (300 N)",
+      "feasibility": "Feasible",
+      "assessment": "Pulling grip rated 300 N over the MPOs.",
+      "cost": "待工程師填寫",
+      "sources": [
+        "MM-002 PP-PULL-M12x3"
+      ]
+    },
+    {
+      "ref": "CH4",
+      "title": "Quantity +2,000 pcs",
+      "feasibility": "Feasible",
+      "assessment": "PO total 3,000 -> 5,000 pcs.",
+      "cost": "待工程師填寫",
+      "sources": []
+    }
+  ],
+  "notes": [
+    {
+      "text": "Proposed effectivity: 待工程師填寫",
+      "sources": []
+    }
+  ],
+  "po_change": "Change order for quantity 5,000 pcs expected per CH4.",
+  "revision_kind": {
+    "value": "major",
+    "sources": [
+      "ECR affected"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+# ruff：只開抓 bug 的規則（pyflakes、語法錯誤、bugbear），不開排版、import 排序這類。理由見 PLANS「我自己定的」S1。
+target-version = "py311"
+
+[lint]
+select = ["F", "E9", "B"]
+# B905（zip 沒寫 strict）：加上會讓長度不一時從默默截斷變成報錯，是行為改變，記在 progress「之後再做」。
+ignore = ["B905"]

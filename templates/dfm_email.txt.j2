@@ -1,0 +1,24 @@
+Subject: RE: {{ facts.meta.rfq }} - DFM feedback on {{ facts.meta.spec_no }} Rev {{ facts.meta.rev }} {{ facts.meta.description }} (LPC {{ npi_no }})
+Dear {{ to.name }},
+
+Thank you for {{ facts.meta.rfq }} and {{ facts.meta.spec_no }} Rev {{ facts.meta.rev }}. Our DFM review against LPC-QM-021 and LPC-LL-003 is complete; {{ j['items']|length }} {{ "item needs" if j['items']|length == 1 else "items need" }} your decision:
+
+{% for i in j['items'] %}
+{{ "%2d"|format(loop.index) }}. [{{ i.ref }}] {{ i.get('title', '') }} (risk: {{ i.get('risk', '待工程師填寫') }})
+    Your requirement: {{ i.requirement }}
+    LPC capability  : {{ i.capability }} ({{ i.capability_sources|join('; ') }})
+    LPC proposal    : {{ i.proposal }}
+    Impact          : {{ i.impact }}
+
+{% endfor %}
+{% for n in j.get('notes', []) %}
+{{ n.text }}
+{% endfor %}
+
+Best regards,
+--
+{{ sender.name }}
+{{ sender.title }}
+{{ sender.company }}
+{{ sender.address }}
+Tel {{ sender.phone }} | {{ sender.email }}

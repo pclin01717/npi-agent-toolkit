@@ -1,0 +1,204 @@
+From: Alex Lin <alex.lin@lumora-photonics.com.tw>
+To: Samira Haddad <samira.haddad@corvane-networks.com>
+Cc: Owen Mercer <owen.mercer@corvane-networks.com>,
+ Grant Fowler <grant.fowler@corvane-networks.com>,
+ Lena Park <lena.park@corvane-networks.com>,
+ Jessica Liao <jessica.liao@lumora-photonics.com.tw>,
+ Ryan Wu <ryan.wu@lumora-photonics.com.tw>,
+ Kevin Hsieh <kevin.hsieh@lumora-photonics.com.tw>,
+ Ben Kuo <ben.kuo@lumora-photonics.com.tw>
+Subject: RE: CVN-ECR-3612-01 - LPC change impact assessment, CVN-FO-3612 Rev A
+ -> Rev B (LPC NPI-26-104)
+Date: Thu, 27 Aug 2026 18:05:00 +0800
+Message-ID: <179299090051.99289.14239674895491505752.202608271805@lumora-photonics.com.tw>
+In-Reply-To: <CVN-ECR-3612-01@corvane-networks.com>
+References: <CVN-ECR-3612-01@corvane-networks.com>
+X-Mailer: Microsoft Outlook 16.0
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============0496343057625022911=="
+
+--===============0496343057625022911==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Samira,
+
+Thank you for ECR CVN-ECR-3612-01. All 4 changes are feasible.
+IMPORTANT (CH1, not in the ECR): the 36-port fan-out box (=C3=98 2.0 mm ports=
+, 20 x 10 mm cross-section) cannot take 18 duplex legs of =C3=98 3.0 mm; a ne=
+w box 80 x 26 x 12 mm (new mould, 4 weeks) is needed, which exceeds the R-11 =
+envelope 65 x 22 x 12 mm. The Rev A0 boxes bought for Lots 2 / 3 become obsol=
+ete. Please confirm the panel slot.
+IMPORTANT (CH3, not in the ECR): trunks longer than 5 m are shipped on a 300 =
+mm reel (=C2=A711.10), 8 reels per carton instead of 10 coils.
+Proposed effectivity: Samples and Lot 1 (PO lines 1.1 / 1.2, 1,000 pcs, mater=
+ial issued) delivered to Rev A0 / customer Rev A; Rev B0 / customer Rev B fro=
+m Lot 2 (PO line 1.3) onwards.
+
+CH1 Legs 36 x LC/APC simplex -> 18 x LC/APC uniboot duplex: Feasible - stocke=
+d uniboot kits (PP-LC-APC-DU) and 3.0 mm duplex leg cable. Not requested but =
+required: the 36-port fan-out box (=C3=98 2.0 mm ports, 20 x 10 mm cross-sect=
+ion) cannot take 18 duplex legs of =C3=98 3.0 mm; a new box 80 x 26 x 12 mm (=
+new mould, 4 weeks) is needed, which exceeds the R-11 envelope 65 x 22 x 12 m=
+m - Corvane to confirm the panel slot. The Rev A0 boxes bought for Lots 2 / 3=
+ become obsolete. Cost: Approx. + USD 12 per pc full cost (uniboot kits, new =
+fan-out box, duplex leg cable)
+CH2 Leg length 500 -> 1,000 mm: Feasible - cutting length only (leg cable and=
+ fibre). Cost: Approx. + USD 2.5 per pc full cost (leg cable, fibre)
+CH3 Trunk 3.0 -> 10.0 m with pulling grip (300 N): Feasible - pulling grip PP=
+-PULL-M12x3 rated 300 N (LPC-QM-021 =C2=A74.6). Not requested but required: t=
+runks longer than 5 m are shipped on a 300 mm reel (=C2=A711.10), 8 reels per=
+ carton instead of 10 coils. Cost: Approx. + USD 16 per pc full cost (ribbon,=
+ jacket, pulling grip, reel, + 8 min cutting / grip / winding)
+CH4 Quantity +2,000 pcs: Capacity available. A0 Lots 2 / 3 (2,000 pcs) are re=
+placed by B0 Lots 2-4 (4,000 pcs). Cost: At Rev B0 unit price
+
+Unit price USD 179.50 -> 224.00; ECR NRE USD 9,055.00.
+Rev B lots: Lot 2 1,500 pcs 2026-10-20; Lot 3 1,500 pcs 2026-11-03; Lot 4 1,0=
+00 pcs 2026-11-17.
+Please approve by 2026-08-31.
+
+Best regards,
+--
+Alex Lin
+Senior NPI Engineer
+Lumora Photonics Co., Ltd.
+No. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinchu City 300, T=
+aiwan
+Tel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photonics.com.tw
+
+--===============0496343057625022911==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><head><style>
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#1f1f1f;}
+table{border-collapse:collapse;margin:6px 0 12px 0;}
+th{background:#005F73;color:#fff;font-weight:600;text-align:left;padding:5px =
+7px;border:1px solid #9aa5b8;font-size:9.5pt;}
+td{padding:5px 7px;border:1px solid #c3c9d4;vertical-align:top;font-size:9.5p=
+t;}
+tr:nth-child(even) td{background:#f4f6fa;}
+.hi{color:#b00020;font-weight:600;}
+.ok{color:#1b7f3b;font-weight:600;}
+.amb{color:#b26a00;font-weight:600;}
+.sig{color:#555;font-size:9.5pt;margin-top:18px;border-top:1px solid #ddd;pad=
+ding-top:8px;}
+h3{color:#005F73;font-size:11.5pt;margin:16px 0 4px 0;}
+</style></head><body>
+<p>Dear Samira,</p>
+<p>Thank you for engineering change request <b>CVN-ECR-3612-01</b> dated 2026=
+-08-24 (received 2026-08-25). We have assessed all 4 changes
+against the released Rev A0 documents (LPC-PS-26104, LPC-DWG-26104, LPC-BOM-2=
+6104), our process capability document LPC-QM-021 Rev C
+and the current production status.</p>
+<p><b>Summary:</b> all 4 changes are feasible.
+ Our assessment found 2 consequences that are not in your ECR (see below).
+ The effectivity is driven by the lead times: CH1: new fan-out box 4 weeks - =
+B0 from Lot 2; risk buy at ECR approval.
+ Samples / Lot 1 (1,000 pcs) stay Rev A (LPC A0), so we propose <span class=
+=3D"hi">Rev B (LPC B0) from Lot 2 (PO line 1.3)</span>.</p>
+<p class=3D"hi">Important - not in your ECR but required by the change:</p><u=
+l><li><span class=3D"hi">CH1 (Legs 36 x LC/APC simplex -> 18 x LC/APC uniboot=
+ duplex):</span> the 36-port fan-out box (=C3=98 2.0 mm ports, 20 x 10 mm cro=
+ss-section) cannot take 18 duplex legs of =C3=98 3.0 mm; a new box 80 x 26 x =
+12 mm (new mould, 4 weeks) is needed, which exceeds the R-11 envelope 65 x 22=
+ x 12 mm. The Rev A0 boxes bought for Lots 2 / 3 become obsolete. <b>Please c=
+onfirm the panel slot before you approve the ECR.</b></li><li><span class=3D"=
+hi">CH3 (Trunk 3.0 -> 10.0 m with pulling grip (300 N)):</span> trunks longer=
+ than 5 m are shipped on a 300 mm reel (=C2=A711.10), 8 reels per carton inst=
+ead of 10 coils.</li></ul>
+<p>Project-specific Rev A0 material already bought for the replaced lots beco=
+mes obsolete; it is listed at cost as a separate line of the ECR NRE in secti=
+on 3.</p>
+
+<h3>1. Assessment per change</h3>
+<table><tr><th>#</th><th>Change</th><th>LPC feasibility assessment</th><th>Co=
+st impact</th><th>Schedule</th></tr>
+<tr><td>CH1</td><td>Legs 36 x LC/APC simplex -> 18 x LC/APC uniboot duplex</t=
+d><td>Feasible - stocked uniboot kits (PP-LC-APC-DU) and 3.0 mm duplex leg ca=
+ble. <b>Not requested but required:</b> the 36-port fan-out box (=C3=98 2.0 m=
+m ports, 20 x 10 mm cross-section) cannot take 18 duplex legs of =C3=98 3.0 m=
+m; a new box 80 x 26 x 12 mm (new mould, 4 weeks) is needed, which exceeds th=
+e R-11 envelope 65 x 22 x 12 mm - Corvane to confirm the panel slot. The Rev =
+A0 boxes bought for Lots 2 / 3 become obsolete.</td><td>Approx. + USD 12 per =
+pc full cost (uniboot kits, new fan-out box, duplex leg cable)</td><td>New fa=
+n-out box 4 weeks - B0 from Lot 2; risk buy at ECR approval</td></tr>
+<tr><td>CH2</td><td>Leg length 500 -> 1,000 mm</td><td>Feasible - cutting len=
+gth only (leg cable and fibre).</td><td>Approx. + USD 2.5 per pc full cost (l=
+eg cable, fibre)</td><td>None</td></tr>
+<tr><td>CH3</td><td>Trunk 3.0 -> 10.0 m with pulling grip (300 N)</td><td>Fea=
+sible - pulling grip PP-PULL-M12x3 rated 300 N (LPC-QM-021 =C2=A74.6). <b>Not=
+ requested but required:</b> trunks longer than 5 m are shipped on a 300 mm r=
+eel (=C2=A711.10), 8 reels per carton instead of 10 coils.</td><td>Approx. + =
+USD 16 per pc full cost (ribbon, jacket, pulling grip, reel, + 8 min cutting =
+/ grip / winding)</td><td>None</td></tr>
+<tr><td>CH4</td><td>Quantity +2,000 pcs</td><td>Capacity available. A0 Lots 2=
+ / 3 (2,000 pcs) are replaced by B0 Lots 2-4 (4,000 pcs).</td><td>At Rev B0 u=
+nit price</td><td>B0 Lots: 1,500 pcs 2026-10-20, 1,500 pcs 2026-11-03, 1,000 =
+pcs 2026-11-17</td></tr>
+</table>
+
+<h3>2. Effectivity and revised delivery plan</h3>
+<table><tr><th></th><th>Detail</th></tr>
+<tr><td>Corvane request</td><td>All assemblies not yet shipped.</td></tr>
+<tr><td>LPC proposal</td><td><b>Samples and Lot 1 (PO lines 1.1 / 1.2, 1,000 =
+pcs, material issued) delivered to Rev A0 / customer Rev A; Rev B0 / customer=
+ Rev B from Lot 2 (PO line 1.3) onwards.</b></td></tr></table>
+<table><tr><th>Lot</th><th>PO line</th><th>Qty</th><th>Configuration</th><th>=
+At Corvane</th><th>Previous plan</th></tr><tr><td>Samples</td><td>1.1</td><td=
+>50</td><td>Rev A (LPC A0)</td><td>2026-09-18</td><td>unchanged</td></tr><tr>=
+<td>Lot 1</td><td>1.2</td><td>950</td><td>Rev A (LPC A0)</td><td>2026-09-29</=
+td><td>unchanged</td></tr><tr><td>Lot 2</td><td>1.3</td><td>1,500</td><td>Rev=
+ B (LPC B0)</td><td>2026-10-20</td><td>1,000 pcs Rev A / 2026-10-13</td></tr>=
+<tr><td>Lot 3</td><td>1.4</td><td>1,500</td><td>Rev B (LPC B0)</td><td>2026-1=
+1-03</td><td>1,000 pcs Rev A / 2026-10-27</td></tr><tr><td>Lot 4</td><td>1.5<=
+/td><td>1,000</td><td>Rev B (LPC B0)</td><td>2026-11-17</td><td>NEW</td></tr>=
+</table>
+<p>To hold the Lot 2 date (2026-10-20) we would order the long-lead parts (fa=
+n-out box, round duplex leg cable 3.0 mm, pulling grip, LC/APC uniboot duplex=
+ connector kit and shipping reel 300 mm flange) on 2026-09-01, the day after =
+your approval (risk buy). Previously planned Lot 2 / Lot 3 (2,000 pcs, due 20=
+26-10-13 / 2026-10-27) are replaced by the Rev B lots above.</p>
+
+<h3>3. Commercial impact (estimate - revised quotation to follow)</h3>
+<table><tr><th>Item</th><th>Rev A (LPC A0)</th><th>Rev B (LPC B0)</th><th>Del=
+ta</th></tr>
+<tr><td>Unit price per assembly, FCA Taoyuan Intl. Airport</td><td>USD 179.50=
+</td><td>USD 224.00</td><td>+44.50 (+24.8%)</td></tr>
+<tr><td>Quantity (PO total)</td><td>3,000 pcs</td><td>5,000 pcs</td><td>+2,00=
+0 pcs</td></tr></table>
+<p>The price change follows the cost impacts in section 1 (increase: CH1, CH2=
+, CH3); the unit price also covers yield loss and overheads on the added cost=
+. Samples / Lot 1 stay at USD 179.50 (Rev A).</p>
+<table><tr><th>ECR NRE item</th><th>USD</th></tr>
+<tr><td>ECR-01: fan-out jigs for 18 duplex legs (threading fixture, potting f=
+ixture)</td><td>1,800.00</td></tr>
+<tr><td>ECR-01: 10 m length board, reel winding fixture, pulling-grip assembl=
+y tool</td><td>1,400.00</td></tr>
+<tr><td>ECR-01: delta type test - tensile 300 N with grip, retention of duple=
+x legs (FAI)</td><td>1,200.00</td></tr>
+<tr><td>ECR-01: obsolete Rev A0 project-specific material, at cost (2,450 fan=
+-out boxes 36F bought for A0 Lots 2 / 3) - <i>customer liability</i></td><td>=
+4,655.00</td></tr>
+<tr><td><b>Total additional NRE incl. material liability</b></td><td><b>9,055=
+.00</b></td></tr>
+</table>
+<h3>4. Next steps</h3>
+<ol><li>Please approve the ECR with the proposed effectivity by <b>2026-08-31=
+</b>.</li><li>CH1: please confirm the panel slot.</li><li>LPC releases specif=
+ication, drawing and BOM Rev B0 by 2026-09-03; Ryan Wu will issue the revised=
+ quotation.</li><li>Please issue a PO change order for the revised lots, quan=
+tity and the ECR NRE.</li></ol>
+<p>Best regards,</p>
+<div class=3D"sig"><b>Alex Lin</b><br>Senior NPI Engineer<br>Lumora Photonics=
+ Co., Ltd.<br>No. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinc=
+hu City 300, Taiwan<br>Tel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photon=
+ics.com.tw<br><span style=3D"font-size:8pt;color:#888">This e-mail and any at=
+tachments are confidential and intended solely for the addressee. ISO 9001 / =
+TL 9000 / ISO 14001 certified.</span></div>
+</body></html>
+
+--===============0496343057625022911==--

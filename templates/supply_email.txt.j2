@@ -1,0 +1,50 @@
+{% if facts.kind == "preparation" %}
+Subject: [{{ npi_no }}] Material preparation request - {{ facts.po.po_no }} Rev {{ facts.po.rev }}
+{% else %}
+Subject: [{{ npi_no }}] Material change notice - {{ facts.ecr_no or facts.rev }} / {{ facts.po.po_no }} Rev {{ facts.po.rev }}
+{% endif %}
+Hi {{ to.name.split()[0] }},
+
+{% if facts.kind == "preparation" %}
+PO {{ facts.po.po_no }} Rev {{ facts.po.rev }} received for {{ "{:,}".format(facts.po.total_qty) }} x {{ facts.lpc_pn }}. Please prepare material per the released BOM ({{ facts.rev }}) and confirm ETAs.
+{% else %}
+{{ facts.ecr_no or "ECR" }}: BOM released as {{ facts.rev }} for {{ facts.lpc_pn }}. Quantities based on PO {{ facts.po.po_no }} Rev {{ facts.po.rev }} ({{ "{:,}".format(facts.po.total_qty) }} pcs){% if facts.po_from_rev != facts.rev %}, carried over from {{ facts.po_from_rev }} (no new PO for {{ facts.rev }}){% endif %}.
+
+Added:
+{% for p in facts.changes.added %}
+- {{ p }}
+{% else %}
+- none
+{% endfor %}
+Removed:
+{% for p in facts.changes.removed %}
+- {{ p }}
+{% else %}
+- none
+{% endfor %}
+Changed qty per FAU:
+{% for c in facts.changes.changed %}
+- {{ c.part_no }}: {{ c["from"] }} -> {{ c.to }}
+{% else %}
+- none
+{% endfor %}
+{% if facts.changes.get("pending_pn") %}
+Part number pending (not compared):
+{% for d in facts.changes.get("pending_pn") %}
+- {{ d }}
+{% endfor %}
+{% endif %}
+{% endif %}
+
+Gross requirement (qty per FAU x {{ "{:,}".format(facts.po.total_qty) }} pcs), without scrap allowance; stock not deducted:
+{% for r in facts.requirements %}
+- {{ "%-18s"|format(r.part_no) }} {{ r.qty_per if r.qty_per is not none else "待工程師填寫" }} {{ r.uom }}/FAU -> {{ "{:,}".format(r.gross_qty) if r.gross_qty is not none else "待工程師填寫" }} {{ r.uom }}; lead time {{ r.lead_time_days if r.lead_time_days is not none else "待工程師填寫" }} days{% if not r.in_mm002 %} (NOT IN LPC-MM-002){% endif %}
+
+{% endfor %}
+{% for n in j.get('notes', []) %}
+{{ n.text }}
+{% endfor %}
+
+Thanks,
+{{ sender.name }}
+{{ sender.title }}

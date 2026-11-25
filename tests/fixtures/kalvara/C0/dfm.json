@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "ref": "CH1",
+      "title": "End face 8° APC -> 0° flat, AR coated",
+      "feasibility": "Feasible",
+      "assessment": "Anti-reflection coating is subcontracted (2 weeks).",
+      "cost": "待工程師填寫",
+      "sources": [
+        "QM-021 §10"
+      ]
+    },
+    {
+      "ref": "CH2",
+      "title": "Absolute core position ± 0.5 µm",
+      "feasibility": "Feasible",
+      "assessment": "Best capability ± 0.5 µm needs high core-concentricity fibre.",
+      "cost": "待工程師填寫",
+      "sources": [
+        "QM-021 §4.1"
+      ]
+    },
+    {
+      "ref": "CH3",
+      "title": "Pigtail 800 -> 500 mm",
+      "feasibility": "Feasible",
+      "assessment": "Cutting length only.",
+      "cost": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "ref": "CH4",
+      "title": "Quantity +1,000 pcs",
+      "feasibility": "Feasible",
+      "assessment": "PO total 5,000 -> 6,000 pcs.",
+      "cost": "待工程師填寫",
+      "sources": []
+    }
+  ],
+  "notes": [],
+  "po_change": "Change order for quantity 6,000 pcs expected per CH4.",
+  "revision_kind": {
+    "value": "major",
+    "sources": [
+      "ECR affected"
+    ]
+  }
+}

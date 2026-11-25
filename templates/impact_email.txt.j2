@@ -1,0 +1,23 @@
+Subject: RE: {{ facts.meta.ecr_no }} - LPC change impact assessment, {{ facts.meta.part_no }} Rev {{ facts.meta.current_cust_rev }} -> Rev {{ facts.meta.proposed_cust_rev }} (LPC {{ npi_no }})
+Dear {{ to.name }},
+
+Thank you for ECR {{ facts.meta.ecr_no }}. Our assessment of the {{ j['items']|length }} {{ "change" if j['items']|length == 1 else "changes" }}:
+
+{% for i in j['items'] %}
+{{ i.ref }} {{ i.get('title', '') }}: {{ i.get('feasibility', '待工程師填寫') }} - {{ i.assessment }} Cost: {{ i.cost }}
+{% endfor %}
+
+{% if j.get('po_change') %}
+PO: {{ j.po_change }}
+{% endif %}
+{% for n in j.get('notes', []) %}
+{{ n.text }}
+{% endfor %}
+
+Best regards,
+--
+{{ sender.name }}
+{{ sender.title }}
+{{ sender.company }}
+{{ sender.address }}
+Tel {{ sender.phone }} | {{ sender.email }}

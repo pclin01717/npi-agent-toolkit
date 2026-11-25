@@ -1,0 +1,55 @@
+{
+  "costing_qty": {
+    "value": 2000,
+    "sources": [
+      "R-14"
+    ]
+  },
+  "notes": [
+    {
+      "text": "Costing quantity = first PO 2,000 pcs.",
+      "sources": [
+        "R-14"
+      ]
+    }
+  ],
+  "lot_size": {
+    "value": 1000,
+    "sources": [
+      "RULES §3 成本批量 一般"
+    ]
+  },
+  "target_price": {
+    "value": 105.0,
+    "sources": [
+      "R-14"
+    ]
+  },
+  "nre": [
+    {
+      "kind": "fixture",
+      "name": "Fixtures (V-groove assembly, polishing)",
+      "amount": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "kind": "test_setup",
+      "name": "Optical test set-up and software",
+      "amount": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "kind": "fai",
+      "name": "First article inspection",
+      "amount": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "kind": "design_qualification",
+      "name": "One-time design qualification (customer reliability requirement)",
+      "amount": "待工程師填寫",
+      "sources": []
+    }
+  ],
+  "services": []
+}

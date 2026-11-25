@@ -1,0 +1,55 @@
+{
+  "items": [
+    {
+      "ref": "CH1",
+      "title": "Channel count 24 -> 32",
+      "feasibility": "Feasible",
+      "assessment": "New 32-groove substrate design (5 weeks).",
+      "cost": "待工程師填寫",
+      "sources": [
+        "QM-021 §10"
+      ]
+    },
+    {
+      "ref": "CH2",
+      "title": "4 PM fibres (ch 1, 16, 17, 32)",
+      "feasibility": "Feasible",
+      "assessment": "PM fibre (PANDA) 6 weeks; slow axis ± 1.5°.",
+      "cost": "待工程師填寫",
+      "sources": [
+        "QM-021 §10"
+      ]
+    },
+    {
+      "ref": "CH3",
+      "title": "2 x MPO-16 APC male, elite grade",
+      "feasibility": "Feasible",
+      "assessment": "MPO-16 connector kits 4 weeks.",
+      "cost": "待工程師填寫",
+      "sources": [
+        "QM-021 §10"
+      ]
+    },
+    {
+      "ref": "CH4",
+      "title": "Quantity +3,000 pcs",
+      "feasibility": "Feasible",
+      "assessment": "PO total 2,000 -> 5,000 pcs.",
+      "cost": "待工程師填寫",
+      "sources": []
+    }
+  ],
+  "notes": [
+    {
+      "text": "Proposed effectivity: 待工程師填寫",
+      "sources": []
+    }
+  ],
+  "po_change": "Change order for quantity 5,000 pcs expected per CH4.",
+  "revision_kind": {
+    "value": "major",
+    "sources": [
+      "ECR affected"
+    ]
+  }
+}

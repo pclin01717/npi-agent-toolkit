@@ -1,0 +1,32 @@
+# PO 核對結果：{{ facts.po.po_no }} Rev {{ facts.po.rev }}
+
+- 案子：{{ npi_no }}，我方版次 {{ facts.rev }}，核對日期 {{ facts.date }}
+- PO 日期：{{ facts.po.date }}；第 1 行成品總數 {{ "{:,}".format(facts.po.total_qty) }} EA
+{% if facts.current_pn %}
+- 對照的正式 spec：{{ facts.ours[facts.current_pn].spec }}（LPC P/N {{ facts.current_pn }}，客戶版次 {{ facts.ours[facts.current_pn].cust_rev or "未知" }}）
+{% else %}
+- 對照的正式 spec：這個版次沒有已審的工程發行
+{% endif %}
+- 單位成本（{{ facts.rev }}）：{% if facts.cost.complete %}USD {{ "%.2f"|format(facts.cost.total) }}{% else %}不完整，無法比較{% endif %}
+
+
+## 交貨行
+| 行 | 客戶版次 | LPC P/N | 數量 | 單價 (USD) | 金額 (USD) | 交期 |
+| --- | --- | --- | --- | --- | --- | --- |
+{% for s in facts.po.schedule %}
+| {{ s.line }} | {{ s.cust_rev }} | {{ s.lpc_pn }} | {{ "{:,}".format(s.qty) }} | {{ "%.2f"|format(s.unit_price) }} | {{ "{:,.2f}".format(s.extended) }} | {{ s.need_date }} |
+{% endfor %}
+
+## 發現
+{% for f in facts.findings %}
+- {{ f }}
+{% else %}
+- 沒有不一致
+{% endfor %}
+{% if j.get('notes') %}
+
+## 備註
+{% for n in j['notes'] %}
+- {{ n.text }}
+{% endfor %}
+{% endif %}

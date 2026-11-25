@@ -1,0 +1,31 @@
+{
+  "items": [
+    {"ref": "R-03", "title": "Core pitch ± 0.3 µm on 24 channels", "risk": "Medium",
+     "requirement": "127.0 ± 0.3 µm adjacent pitch, 24 ch",
+     "capability": "Standard substrates ± 0.5 µm; ± 0.3 µm needs grade A substrates.",
+     "capability_sources": ["QM-021 §4.1", "QM-021 §11.1"],
+     "proposal": "127.0 ± 0.5 µm with a new 24-groove grade STD substrate.",
+     "impact": "待工程師填寫", "sources": []},
+    {"ref": "R-04", "title": "Cumulative pitch ≤ 0.6 µm over 24 ch", "risk": "Medium",
+     "requirement": "Cumulative error ≤ 0.6 µm; absolute ± 0.8 µm",
+     "capability": "Cumulative pitch ≤ 1.0 µm standard, ≤ 0.8 µm best. Absolute core position ± 0.8 µm standard.",
+     "capability_sources": ["QM-021 §4.1"],
+     "proposal": "Cumulative ≤ 0.8 µm with incoming groove measurement of each substrate lot; absolute ± 0.8 µm.",
+     "impact": "待工程師填寫", "sources": []},
+    {"ref": "R-02", "title": "Borosilicate lid on fused-silica substrate", "risk": "Medium",
+     "requirement": "Borosilicate lid (lowest cost)",
+     "capability": "Lid and substrate of different glass fail extended thermal cycling (CTE mismatch); R-09 asks for 1000 cycles.",
+     "capability_sources": ["LL-003 LL-01", "LL-003 DR-01"],
+     "proposal": "Fused-silica lid (same glass as the substrate).",
+     "impact": "待工程師填寫", "sources": ["R-09"]},
+    {"ref": "R-15", "title": "Samples in 4 weeks / 2,000 pcs by 2026-10-16", "risk": "High",
+     "requirement": "100 samples in 4 weeks; 2,000 pcs by 2026-10-16",
+     "capability": "New substrate design 5 weeks; first samples 3-4 weeks.",
+     "capability_sources": ["QM-021 §10"],
+     "proposal": "待工程師填寫",
+     "impact": "待工程師填寫", "sources": []}
+  ],
+  "notes": [
+    {"text": "Target price USD 105.00 per pc noted; NRE quoted separately.", "sources": ["R-14"]}
+  ]
+}

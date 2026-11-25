@@ -1,0 +1,1617 @@
+{
+  "revision": "A0",
+  "effectivity": "All quantities ordered against RFQ KVP-RFQ-26-0311 (first purchase order)",
+  "project": {
+    "npi_no": "NPI-26-097",
+    "name": "FA24 Fibre Array Unit, 127 µm, 8° APC, 2 x MPO-12",
+    "lpc_pn": "LPC-FA24-127-8A",
+    "cust_pn": "KVP-FAU-2408",
+    "cust_desc": "Fiber Array Unit 24ch 127um 8deg, 2x MPO-12 APC pigtail",
+    "rfq_no": "KVP-RFQ-26-0311",
+    "cust_rev": "A",
+    "annual_volume": 24000,
+    "costing_lot": 500,
+    "unit": "pcs",
+    "block_pn": "LPC-FA24-110"
+  },
+  "customer": "Kalvara Photonics Inc.",
+  "timeline": {
+    "draft_spec_issued": "2026-06-29",
+    "draft_spec_received": "2026-06-30",
+    "dfm_feedback": "2026-07-03",
+    "customer_agreement": "2026-07-09",
+    "formal_spec_release": "2026-07-16",
+    "spec_acceptance": "2026-07-17",
+    "unit_cost_to_finance": "2026-07-20",
+    "finance_confirmed": "2026-07-21",
+    "quotation": "2026-07-23",
+    "po_date": "2026-07-28",
+    "po_received": "2026-07-28",
+    "scm_notice": "2026-07-29"
+  },
+  "documents": {
+    "capability": {
+      "no": "LPC-QM-021",
+      "rev": "C",
+      "date": "2026-05-12"
+    },
+    "material_master": {
+      "no": "LPC-MM-002",
+      "rev": "2026.07",
+      "date": "2026-07-24"
+    },
+    "price_list": {
+      "no": "LPC-PL-2026H2",
+      "rev": "1",
+      "date": "2026-07-01"
+    },
+    "draft_spec": {
+      "no": "KVP-SPC-2408",
+      "rev": "X1",
+      "date": "2026-06-29"
+    },
+    "formal_spec": {
+      "no": "LPC-PS-26097",
+      "rev": "A0",
+      "date": "2026-07-16"
+    },
+    "drawing": {
+      "no": "LPC-DWG-26097",
+      "rev": "A0",
+      "date": "2026-07-16"
+    },
+    "bom": {
+      "no": "LPC-BOM-26097",
+      "rev": "A0",
+      "date": "2026-07-16"
+    },
+    "unit_cost": {
+      "no": "LPC-UC-26097",
+      "rev": "A0",
+      "date": "2026-07-20"
+    },
+    "quotation": {
+      "no": "LPC-Q-26-0391",
+      "date": "2026-07-23"
+    },
+    "po": {
+      "no": "KVP-PO-7700-2614",
+      "date": "2026-07-28",
+      "rev": 0
+    }
+  },
+  "revision_history": [
+    {
+      "rev": "A0",
+      "date": "2026-07-16",
+      "zone": "-",
+      "by": "Alex Lin",
+      "approved": "Jessica Liao",
+      "desc": "Initial release per DFM agreement 2026-07-09"
+    }
+  ],
+  "dfm_items": [
+    {
+      "no": 1,
+      "ref": "R-03",
+      "topic": "Core pitch ± 0.3 µm on 24 channels",
+      "risk": "Medium",
+      "decision": "Accepted ± 0.5 µm - edge-coupler tolerance ± 1.2 µm per Kalvara."
+    },
+    {
+      "no": 2,
+      "ref": "R-04",
+      "topic": "Cumulative pitch ≤ 0.6 µm over 24 ch",
+      "risk": "Medium",
+      "decision": "Accepted."
+    },
+    {
+      "no": 3,
+      "ref": "R-05",
+      "topic": "Flatness ≤ 0.3 µm over 5 mm width",
+      "risk": "Low",
+      "decision": "Accepted."
+    },
+    {
+      "no": 4,
+      "ref": "R-06",
+      "topic": "MPO-12 elite ≤ 0.25 dB",
+      "risk": "High",
+      "decision": "Accepted - Kalvara link budget KV-LB-051 updated."
+    },
+    {
+      "no": 5,
+      "ref": "R-07",
+      "topic": "RL ≥ 65 dB at both ends",
+      "risk": "Low",
+      "decision": "Accepted."
+    },
+    {
+      "no": 6,
+      "ref": "R-02",
+      "topic": "Borosilicate lid on fused-silica substrate",
+      "risk": "Medium",
+      "decision": "Accepted - fused-silica lid."
+    },
+    {
+      "no": 7,
+      "ref": "R-08",
+      "topic": "Underfill cure 150 °C / 2 h after attach",
+      "risk": "High",
+      "decision": "Accepted - Kalvara cure profile 125 °C / 3 h (KV-PF-051 Rev B)."
+    },
+    {
+      "no": 8,
+      "ref": "R-09",
+      "topic": "1000 thermal cycles on every lot",
+      "risk": "Medium",
+      "decision": "Accepted."
+    },
+    {
+      "no": 9,
+      "ref": "R-10",
+      "topic": "Ink marking on the substrate",
+      "risk": "Medium",
+      "decision": "Accepted."
+    },
+    {
+      "no": 10,
+      "ref": "R-15",
+      "topic": "Samples in 4 weeks / 2,000 pcs by 2026-10-16",
+      "risk": "High",
+      "decision": "Accepted - PO schedule per LPC proposal."
+    }
+  ],
+  "ecr": null,
+  "changes": [],
+  "key_characteristics": [
+    {
+      "id": "1",
+      "char": "Core pitch, adjacent channels",
+      "nominal": "127.0 µm",
+      "tol": "± 0.5 µm",
+      "method": "Core imaging system",
+      "freq": "100 %",
+      "class": "K"
+    },
+    {
+      "id": "2",
+      "char": "Absolute core position to datums A / B",
+      "nominal": "per channel map",
+      "tol": "± 0.8 µm",
+      "method": "Core imaging system",
+      "freq": "100 %",
+      "class": "K"
+    },
+    {
+      "id": "3",
+      "char": "Cumulative pitch error over the array",
+      "nominal": "-",
+      "tol": "≤ 0.8 µm",
+      "method": "Core imaging system",
+      "freq": "100 %",
+      "class": ""
+    },
+    {
+      "id": "4",
+      "char": "End-face polish angle",
+      "nominal": "8.0°",
+      "tol": "± 0.2°",
+      "method": "3D interferometer",
+      "freq": "100 %",
+      "class": "K"
+    },
+    {
+      "id": "5",
+      "char": "Fibre recess / protrusion to glass",
+      "nominal": "0 µm",
+      "tol": "± 0.5 µm",
+      "method": "3D interferometer",
+      "freq": "100 %",
+      "class": ""
+    },
+    {
+      "id": "6",
+      "char": "Array end-face flatness",
+      "nominal": "-",
+      "tol": "≤ 0.5 µm",
+      "method": "3D interferometer",
+      "freq": "100 %",
+      "class": ""
+    },
+    {
+      "id": "7",
+      "char": "Insertion loss per channel, fibre array to reference, 1310 nm",
+      "nominal": "-",
+      "tol": "≤ 0.30 dB",
+      "method": "IL test bench",
+      "freq": "100 %",
+      "class": "K"
+    },
+    {
+      "id": "8",
+      "char": "Insertion loss per channel, MPO-12 random mate, 1310 nm",
+      "nominal": "-",
+      "tol": "≤ 0.35 dB",
+      "method": "IL test bench",
+      "freq": "100 %",
+      "class": "K"
+    },
+    {
+      "id": "9",
+      "char": "Return loss, both ends",
+      "nominal": "-",
+      "tol": "≥ 60 dB",
+      "method": "RL test bench",
+      "freq": "100 %",
+      "class": "K"
+    },
+    {
+      "id": "10",
+      "char": "Pigtail length (end face to MPO end faces)",
+      "nominal": "800 mm",
+      "tol": "± 20 mm",
+      "method": "Tape on fixture",
+      "freq": "1 / lot + first-off",
+      "class": ""
+    },
+    {
+      "id": "11",
+      "char": "Fibre array block width x length x height",
+      "nominal": "5.00 x 8.00 x 1.78 mm",
+      "tol": "± 0.02 / ± 0.05 / ± 0.03",
+      "method": "Micrometer",
+      "freq": "5 / lot",
+      "class": ""
+    },
+    {
+      "id": "12",
+      "char": "End face: no epoxy, chips or scratches in the core zones",
+      "nominal": "-",
+      "tol": "IEC 61300-3-35",
+      "method": "Video microscope",
+      "freq": "100 %",
+      "class": "K"
+    },
+    {
+      "id": "13",
+      "char": "Lot qualification damp heat 1000 h / TC 500 cycles",
+      "nominal": "-",
+      "tol": "ΔIL ≤ 0.2 dB",
+      "method": "Reliability lab",
+      "freq": "11 + 11 pcs / lot",
+      "class": ""
+    }
+  ],
+  "geometry": {
+    "n_ch": 24,
+    "n_grooves": 24,
+    "pitch": 0.127,
+    "fibre_d": 0.125,
+    "coat_d": 0.25,
+    "sub_w": 5.0,
+    "sub_l": 8.0,
+    "sub_t": 1.0,
+    "groove_len": 5.0,
+    "groove_angle": 70.0,
+    "step_depth": 0.7,
+    "lid_w": 5.0,
+    "lid_l": 5.0,
+    "lid_t": 0.7,
+    "lid_material": "Fused silica",
+    "polish_angle": 8.0,
+    "end_face": "index-matched",
+    "ar_coating": null,
+    "boot_l": 14.0,
+    "boot_w": 8.0,
+    "boot_h": 4.0,
+    "boot_box_l": 0.0,
+    "boot_pn": "PP-BOOT-FA24",
+    "n_ribbons": 2,
+    "ribbon_fibres": 12,
+    "ribbon_w": 3.1,
+    "ribbon_t": 0.32,
+    "ribbon_source": "purchased",
+    "breakout_len": 120.0,
+    "pigtail_len": 800.0,
+    "pigtail_tol": 20.0,
+    "fibre_allowance_m": 0.35,
+    "mpo": {
+      "type": "MPO-12 APC female",
+      "w": 12.4,
+      "h": 7.6,
+      "l": 25.0,
+      "boot_l": 30.0,
+      "pn": "PP-MPO12-APC-F",
+      "cap": "PP-CAP-MPOF",
+      "ferrule_w": 6.4,
+      "pins": false,
+      "n": 2
+    },
+    "pm_channels": [],
+    "loopback": null,
+    "datums": {
+      "A": "substrate bottom face",
+      "B": "substrate side face at channel 1",
+      "C": "polished end face"
+    }
+  },
+  "channel_map": [
+    {
+      "ch": 1,
+      "mpo": "MPO-A",
+      "mpo_pos": 1,
+      "function": "Tx 1",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 2,
+      "mpo": "MPO-A",
+      "mpo_pos": 2,
+      "function": "Tx 2",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 3,
+      "mpo": "MPO-A",
+      "mpo_pos": 3,
+      "function": "Tx 3",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 4,
+      "mpo": "MPO-A",
+      "mpo_pos": 4,
+      "function": "Tx 4",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 5,
+      "mpo": "MPO-A",
+      "mpo_pos": 5,
+      "function": "Tx 5",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 6,
+      "mpo": "MPO-A",
+      "mpo_pos": 6,
+      "function": "Tx 6",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 7,
+      "mpo": "MPO-A",
+      "mpo_pos": 7,
+      "function": "Tx 7",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 8,
+      "mpo": "MPO-A",
+      "mpo_pos": 8,
+      "function": "Tx 8",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 9,
+      "mpo": "MPO-A",
+      "mpo_pos": 9,
+      "function": "Tx 9",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 10,
+      "mpo": "MPO-A",
+      "mpo_pos": 10,
+      "function": "Tx 10",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 11,
+      "mpo": "MPO-A",
+      "mpo_pos": 11,
+      "function": "Tx 11",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 12,
+      "mpo": "MPO-A",
+      "mpo_pos": 12,
+      "function": "Tx 12",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 13,
+      "mpo": "MPO-B",
+      "mpo_pos": 1,
+      "function": "Rx 1",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 14,
+      "mpo": "MPO-B",
+      "mpo_pos": 2,
+      "function": "Rx 2",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 15,
+      "mpo": "MPO-B",
+      "mpo_pos": 3,
+      "function": "Rx 3",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 16,
+      "mpo": "MPO-B",
+      "mpo_pos": 4,
+      "function": "Rx 4",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 17,
+      "mpo": "MPO-B",
+      "mpo_pos": 5,
+      "function": "Rx 5",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 18,
+      "mpo": "MPO-B",
+      "mpo_pos": 6,
+      "function": "Rx 6",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 19,
+      "mpo": "MPO-B",
+      "mpo_pos": 7,
+      "function": "Rx 7",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 20,
+      "mpo": "MPO-B",
+      "mpo_pos": 8,
+      "function": "Rx 8",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 21,
+      "mpo": "MPO-B",
+      "mpo_pos": 9,
+      "function": "Rx 9",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 22,
+      "mpo": "MPO-B",
+      "mpo_pos": 10,
+      "function": "Rx 10",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 23,
+      "mpo": "MPO-B",
+      "mpo_pos": 11,
+      "function": "Rx 11",
+      "fibre": "SMF G.657.A2"
+    },
+    {
+      "ch": 24,
+      "mpo": "MPO-B",
+      "mpo_pos": 12,
+      "function": "Rx 12",
+      "fibre": "SMF G.657.A2"
+    }
+  ],
+  "bom": [
+    {
+      "lvl": 0,
+      "item": "0",
+      "pn": "LPC-FA24-127-8A",
+      "desc": "Fibre array unit 24 ch, 127 µm, 8° APC, 800 mm pigtail, 2 x MPO-12 APC female (Cust. P/N KVP-FAU-2408)",
+      "type": "MFG",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": null,
+      "remark": ""
+    },
+    {
+      "lvl": 1,
+      "item": "10",
+      "pn": "LPC-FA24-110",
+      "desc": "Fibre array block, assembled & polished 8°",
+      "type": "MFG",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": null,
+      "remark": "Ops 30-70"
+    },
+    {
+      "lvl": 2,
+      "item": "10.10",
+      "pn": "RM-VG-Q24-127",
+      "desc": "Fused-silica V-groove substrate 24 ch, 127 µm pitch, 5.0 x 8.0 x 1.0 mm, step 3.0 mm, grade STD (± 0.5 µm)",
+      "type": "RM",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": "RM-VG-Q24-127",
+      "remark": "Grade STD"
+    },
+    {
+      "lvl": 2,
+      "item": "10.20",
+      "pn": "RM-LD-Q24",
+      "desc": "Fused-silica lid 5.0 x 5.0 x 0.7 mm, polished, chamfered",
+      "type": "RM",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": "RM-LD-Q24",
+      "remark": ""
+    },
+    {
+      "lvl": 2,
+      "item": "10.30",
+      "pn": "CM-EP-UV365",
+      "desc": "UV / thermal dual-cure optical epoxy, low shrinkage, Tg 125 °C",
+      "type": "RM",
+      "qty": 0.096,
+      "uom": "g",
+      "mat": "CM-EP-UV365",
+      "remark": "Groove fill + lid bond"
+    },
+    {
+      "lvl": 1,
+      "item": "20",
+      "pn": "LPC-FA24-120",
+      "desc": "24-fibre pigtail, 2 ribbons, 800 mm",
+      "type": "MFG",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": null,
+      "remark": "Op 10"
+    },
+    {
+      "lvl": 2,
+      "item": "20.10",
+      "pn": "RM-FB-RB12-657",
+      "desc": "12-fibre flat ribbon G.657.A2",
+      "type": "RM",
+      "qty": 0.0023,
+      "uom": "km",
+      "mat": "RM-FB-RB12-657",
+      "remark": "2 ribbons x (0.80 + 0.35) m"
+    },
+    {
+      "lvl": 1,
+      "item": "30",
+      "pn": "PP-MPO12-APC-F",
+      "desc": "MPO-12 APC female connector kit, standard grade",
+      "type": "BUY",
+      "qty": 2,
+      "uom": "pcs",
+      "mat": "PP-MPO12-APC-F",
+      "remark": "Op 90, MPO-A + MPO-B"
+    },
+    {
+      "lvl": 1,
+      "item": "35",
+      "pn": "CM-EP-TH150",
+      "desc": "Thermal-cure epoxy for MT ferrules, Tg 150 °C",
+      "type": "RM",
+      "qty": 0.06,
+      "uom": "g",
+      "mat": "CM-EP-TH150",
+      "remark": "MT ferrule epoxy"
+    },
+    {
+      "lvl": 1,
+      "item": "40",
+      "pn": "PP-BOOT-FA24",
+      "desc": "Silicone strain-relief boot for 24-ch fibre array, two stacked ribbons, 8.0 x 4.0 x 14 mm",
+      "type": "BUY",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": "PP-BOOT-FA24",
+      "remark": "Op 80"
+    },
+    {
+      "lvl": 1,
+      "item": "45",
+      "pn": "PP-LBL-FLAG",
+      "desc": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+      "type": "BUY",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": "PP-LBL-FLAG",
+      "remark": "Flag label on sleeve, 50 mm behind boot"
+    },
+    {
+      "lvl": 1,
+      "item": "50",
+      "pn": "LPC-FA24-CON",
+      "desc": "Process consumables per FAU",
+      "type": "CON",
+      "qty": 1,
+      "uom": "set",
+      "mat": null,
+      "remark": ""
+    },
+    {
+      "lvl": 2,
+      "item": "50.10",
+      "pn": "CM-POL-SET",
+      "desc": "Polishing film set (diamond 3 / 1 / 0.5 µm + silica final), one fixture cycle",
+      "type": "CON",
+      "qty": 0.1333,
+      "uom": "set",
+      "mat": "CM-POL-SET",
+      "remark": "Array (20 per fixture) + MPO polish (24 per fixture)"
+    },
+    {
+      "lvl": 2,
+      "item": "50.20",
+      "pn": "CM-IPA",
+      "desc": "Isopropyl alcohol 99.9 %, electronic grade",
+      "type": "CON",
+      "qty": 0.005,
+      "uom": "L",
+      "mat": "CM-IPA",
+      "remark": ""
+    },
+    {
+      "lvl": 2,
+      "item": "50.30",
+      "pn": "CM-WIPE",
+      "desc": "Lint-free clean-room wipes",
+      "type": "CON",
+      "qty": 8,
+      "uom": "pcs",
+      "mat": "CM-WIPE",
+      "remark": ""
+    },
+    {
+      "lvl": 1,
+      "item": "60",
+      "pn": "LPC-FA24-PKG",
+      "desc": "Packing per FAU",
+      "type": "PKG",
+      "qty": 1,
+      "uom": "set",
+      "mat": null,
+      "remark": ""
+    },
+    {
+      "lvl": 2,
+      "item": "60.10",
+      "pn": "PP-CAP-FA24",
+      "desc": "End-face protection cap for 24-ch fibre array block (5.0 mm)",
+      "type": "PKG",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": "PP-CAP-FA24",
+      "remark": "End-face cap"
+    },
+    {
+      "lvl": 2,
+      "item": "60.15",
+      "pn": "PP-CAP-MPOF",
+      "desc": "MPO dust cap, female (unpinned) connector",
+      "type": "PKG",
+      "qty": 2,
+      "uom": "pcs",
+      "mat": "PP-CAP-MPOF",
+      "remark": "MPO dust caps (2 per FAU)"
+    },
+    {
+      "lvl": 2,
+      "item": "60.20",
+      "pn": "PK-TRAY-FA",
+      "desc": "ESD clamshell with fibre coil holder, 1 fibre array + pigtail",
+      "type": "PKG",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": "PK-TRAY-FA",
+      "remark": ""
+    },
+    {
+      "lvl": 2,
+      "item": "60.30",
+      "pn": "PK-BAG-ESD",
+      "desc": "Static-shielding bag 200 x 150 mm",
+      "type": "PKG",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": "PK-BAG-ESD",
+      "remark": ""
+    },
+    {
+      "lvl": 2,
+      "item": "60.40",
+      "pn": "PK-BOX-50",
+      "desc": "Corrugated carton for 50 clamshells, with ESD liner",
+      "type": "PKG",
+      "qty": 0.02,
+      "uom": "pcs",
+      "mat": "PK-BOX-50",
+      "remark": "50 FAU per carton"
+    },
+    {
+      "lvl": 2,
+      "item": "60.50",
+      "pn": "PK-DES-5G",
+      "desc": "Silica gel desiccant 5 g",
+      "type": "PKG",
+      "qty": 0.02,
+      "uom": "pcs",
+      "mat": "PK-DES-5G",
+      "remark": "1 per carton"
+    }
+  ],
+  "unit_cost_usd": {
+    "material_total": 30.209,
+    "service_total": 1.65,
+    "conversion_total": 27.483,
+    "handling": 0.956,
+    "overhead": 6.046,
+    "scrap": 5.971,
+    "mfg_cost": 72.316,
+    "sga": 5.785,
+    "total": 78.101
+  },
+  "minutes_per_pc": 52.9,
+  "quote_price_usd": 112.0,
+  "nre_total_usd": 22100.0,
+  "nre_ecr_total_usd": 0,
+  "material_plan": {
+    "po_qty": 2000,
+    "build_qty": 2180,
+    "lots": [
+      {
+        "lot": "Samples",
+        "qty": 100,
+        "rev": "A0",
+        "po_line": "1.1",
+        "start": "2026-08-31",
+        "exw": "2026-09-14",
+        "due": "2026-09-18"
+      },
+      {
+        "lot": "Lot 1",
+        "qty": 400,
+        "rev": "A0",
+        "po_line": "1.2",
+        "start": "2026-09-14",
+        "exw": "2026-09-28",
+        "due": "2026-10-02"
+      },
+      {
+        "lot": "Lot 2",
+        "qty": 750,
+        "rev": "A0",
+        "po_line": "1.3",
+        "start": "2026-09-28",
+        "exw": "2026-10-12",
+        "due": "2026-10-16"
+      },
+      {
+        "lot": "Lot 3",
+        "qty": 750,
+        "rev": "A0",
+        "po_line": "1.4",
+        "start": "2026-10-12",
+        "exw": "2026-10-26",
+        "due": "2026-10-30"
+      }
+    ]
+  },
+  "material_requirements": [
+    {
+      "code": "RM-VG-Q24-127",
+      "desc": "Fused-silica V-groove substrate 24 ch, 127 µm pitch, 5.0 x 8.0 x 1.0 mm, step 3.0 mm, grade STD (± 0.5 µm)",
+      "uom": "pcs",
+      "gross": 2180,
+      "lot_need": [
+        109,
+        436,
+        818,
+        818
+      ],
+      "on_hand": 0,
+      "allocated": 0,
+      "available": 0,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 0,
+      "order_qty": 2200,
+      "moq": 100,
+      "lt_days": 35,
+      "supplier": "Precision Silica Grooves Co., Ltd.",
+      "unit_price": 12.9,
+      "order_value": 28380.0,
+      "need_date": "2026-08-31",
+      "eta": "2026-09-03",
+      "projected_after": 20,
+      "status": "Stock covers no lot; supply for Samples LATE by 3 days",
+      "action": "New PO 2200 pcs",
+      "storage": ""
+    },
+    {
+      "code": "RM-LD-Q24",
+      "desc": "Fused-silica lid 5.0 x 5.0 x 0.7 mm, polished, chamfered",
+      "uom": "pcs",
+      "gross": 2180,
+      "lot_need": [
+        109,
+        436,
+        818,
+        818
+      ],
+      "on_hand": 0,
+      "allocated": 0,
+      "available": 0,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 0,
+      "order_qty": 2200,
+      "moq": 200,
+      "lt_days": 28,
+      "supplier": "Precision Silica Grooves Co., Ltd.",
+      "unit_price": 2.85,
+      "order_value": 6270.0,
+      "need_date": "2026-08-31",
+      "eta": "2026-08-27",
+      "projected_after": 20,
+      "status": "Stock covers no lot; supply for Samples on time",
+      "action": "New PO 2200 pcs",
+      "storage": ""
+    },
+    {
+      "code": "CM-EP-UV365",
+      "desc": "UV / thermal dual-cure optical epoxy, low shrinkage, Tg 125 °C",
+      "uom": "g",
+      "gross": 209.28,
+      "lot_need": [
+        10.464,
+        41.856,
+        78.48,
+        78.48
+      ],
+      "on_hand": 420.0,
+      "allocated": 80.0,
+      "available": 340.0,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 100.0,
+      "order_qty": 0,
+      "moq": 100,
+      "lt_days": 28,
+      "supplier": "OptiBond Adhesives Inc.",
+      "unit_price": 6.4,
+      "order_value": 0.0,
+      "need_date": "2026-08-31",
+      "eta": "-",
+      "projected_after": 130.72,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": "refrigerated"
+    },
+    {
+      "code": "RM-FB-RB12-657",
+      "desc": "12-fibre flat ribbon G.657.A2",
+      "uom": "km",
+      "gross": 5.014,
+      "lot_need": [
+        0.251,
+        1.003,
+        1.88,
+        1.88
+      ],
+      "on_hand": 14.0,
+      "allocated": 6.0,
+      "available": 8.0,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 4.0,
+      "order_qty": 0,
+      "moq": 2.0,
+      "lt_days": 21,
+      "supplier": "Pacific Lightguide Fiber Corp.",
+      "unit_price": 210.0,
+      "order_value": 0.0,
+      "need_date": "2026-08-31",
+      "eta": "-",
+      "projected_after": 2.986,
+      "status": "From stock - below safety stock after issue, replenish",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "PP-MPO12-APC-F",
+      "desc": "MPO-12 APC female connector kit, standard grade",
+      "uom": "pcs",
+      "gross": 4360,
+      "lot_need": [
+        218,
+        872,
+        1635,
+        1635
+      ],
+      "on_hand": 2400,
+      "allocated": 1100,
+      "available": 1300,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 400,
+      "order_qty": 3500,
+      "moq": 500,
+      "lt_days": 21,
+      "supplier": "MT Interconnect Technologies Ltd.",
+      "unit_price": 5.2,
+      "order_value": 18200.0,
+      "need_date": "2026-09-28",
+      "eta": "2026-08-20",
+      "projected_after": 440,
+      "status": "Stock covers Samples, Lot 1; supply for Lot 2 on time",
+      "action": "New PO 3500 pcs",
+      "storage": ""
+    },
+    {
+      "code": "CM-EP-TH150",
+      "desc": "Thermal-cure epoxy for MT ferrules, Tg 150 °C",
+      "uom": "g",
+      "gross": 130.8,
+      "lot_need": [
+        6.54,
+        26.16,
+        49.05,
+        49.05
+      ],
+      "on_hand": 260.0,
+      "allocated": 50.0,
+      "available": 210.0,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 60.0,
+      "order_qty": 0,
+      "moq": 50,
+      "lt_days": 21,
+      "supplier": "OptiBond Adhesives Inc.",
+      "unit_price": 3.9,
+      "order_value": 0.0,
+      "need_date": "2026-08-31",
+      "eta": "-",
+      "projected_after": 79.2,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "PP-BOOT-FA24",
+      "desc": "Silicone strain-relief boot for 24-ch fibre array, two stacked ribbons, 8.0 x 4.0 x 14 mm",
+      "uom": "pcs",
+      "gross": 2180,
+      "lot_need": [
+        109,
+        436,
+        818,
+        818
+      ],
+      "on_hand": 0,
+      "allocated": 0,
+      "available": 0,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 0,
+      "order_qty": 3000,
+      "moq": 1000,
+      "lt_days": 28,
+      "supplier": "Silicone Precision Parts Co.",
+      "unit_price": 0.48,
+      "order_value": 1440.0,
+      "need_date": "2026-08-31",
+      "eta": "2026-08-27",
+      "projected_after": 820,
+      "status": "Stock covers no lot; supply for Samples on time",
+      "action": "New PO 3000 pcs",
+      "storage": ""
+    },
+    {
+      "code": "PP-LBL-FLAG",
+      "desc": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+      "uom": "pcs",
+      "gross": 2180,
+      "lot_need": [
+        109,
+        436,
+        818,
+        818
+      ],
+      "on_hand": 18000,
+      "allocated": 0,
+      "available": 18000,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 4000,
+      "order_qty": 0,
+      "moq": 2000,
+      "lt_days": 14,
+      "supplier": "LabelTek Hsinchu Co., Ltd.",
+      "unit_price": 0.05,
+      "order_value": 0.0,
+      "need_date": "2026-08-31",
+      "eta": "-",
+      "projected_after": 15820,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "CM-POL-SET",
+      "desc": "Polishing film set (diamond 3 / 1 / 0.5 µm + silica final), one fixture cycle",
+      "uom": "set",
+      "gross": 291,
+      "lot_need": [
+        15,
+        59,
+        109,
+        109
+      ],
+      "on_hand": 340,
+      "allocated": 0,
+      "available": 340,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 100,
+      "order_qty": 0,
+      "moq": 50,
+      "lt_days": 21,
+      "supplier": "FilmLap Abrasives Co., Ltd.",
+      "unit_price": 7.8,
+      "order_value": 0.0,
+      "need_date": "2026-08-31",
+      "eta": "-",
+      "projected_after": 49,
+      "status": "From stock - below safety stock after issue, replenish",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "CM-IPA",
+      "desc": "Isopropyl alcohol 99.9 %, electronic grade",
+      "uom": "L",
+      "gross": 10.9,
+      "lot_need": [
+        0.545,
+        2.18,
+        4.088,
+        4.088
+      ],
+      "on_hand": 120.0,
+      "allocated": 0.0,
+      "available": 120.0,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 40.0,
+      "order_qty": 0,
+      "moq": 16,
+      "lt_days": 7,
+      "supplier": "CleanChem Taiwan Co.",
+      "unit_price": 4.5,
+      "order_value": 0.0,
+      "need_date": "2026-08-31",
+      "eta": "-",
+      "projected_after": 109.1,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "CM-WIPE",
+      "desc": "Lint-free clean-room wipes",
+      "uom": "pcs",
+      "gross": 17440,
+      "lot_need": [
+        872,
+        3488,
+        6540,
+        6540
+      ],
+      "on_hand": 24000,
+      "allocated": 0,
+      "available": 24000,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 6000,
+      "order_qty": 0,
+      "moq": 3000,
+      "lt_days": 7,
+      "supplier": "CleanChem Taiwan Co.",
+      "unit_price": 0.03,
+      "order_value": 0.0,
+      "need_date": "2026-08-31",
+      "eta": "-",
+      "projected_after": 6560,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "PP-CAP-FA24",
+      "desc": "End-face protection cap for 24-ch fibre array block (5.0 mm)",
+      "uom": "pcs",
+      "gross": 2000,
+      "lot_need": [
+        100,
+        400,
+        750,
+        750
+      ],
+      "on_hand": 0,
+      "allocated": 0,
+      "available": 0,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 0,
+      "order_qty": 2000,
+      "moq": 2000,
+      "lt_days": 14,
+      "supplier": "Silicone Precision Parts Co.",
+      "unit_price": 0.14,
+      "order_value": 280.0,
+      "need_date": "2026-08-31",
+      "eta": "2026-08-13",
+      "projected_after": 0,
+      "status": "Stock covers no lot; supply for Samples on time",
+      "action": "New PO 2000 pcs",
+      "storage": ""
+    },
+    {
+      "code": "PP-CAP-MPOF",
+      "desc": "MPO dust cap, female (unpinned) connector",
+      "uom": "pcs",
+      "gross": 4000,
+      "lot_need": [
+        200,
+        800,
+        1500,
+        1500
+      ],
+      "on_hand": 5200,
+      "allocated": 800,
+      "available": 4400,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 1000,
+      "order_qty": 0,
+      "moq": 2000,
+      "lt_days": 14,
+      "supplier": "Silicone Precision Parts Co.",
+      "unit_price": 0.06,
+      "order_value": 0.0,
+      "need_date": "2026-08-31",
+      "eta": "-",
+      "projected_after": 400,
+      "status": "From stock - below safety stock after issue, replenish",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "PK-TRAY-FA",
+      "desc": "ESD clamshell with fibre coil holder, 1 fibre array + pigtail",
+      "uom": "pcs",
+      "gross": 2000,
+      "lot_need": [
+        100,
+        400,
+        750,
+        750
+      ],
+      "on_hand": 2600,
+      "allocated": 900,
+      "available": 1700,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 500,
+      "order_qty": 1000,
+      "moq": 1000,
+      "lt_days": 21,
+      "supplier": "StaticSafe Packaging Co.",
+      "unit_price": 0.62,
+      "order_value": 620.0,
+      "need_date": "2026-10-12",
+      "eta": "2026-08-20",
+      "projected_after": 700,
+      "status": "Stock covers Samples, Lot 1, Lot 2; supply for Lot 3 on time",
+      "action": "New PO 1000 pcs",
+      "storage": ""
+    },
+    {
+      "code": "PK-BAG-ESD",
+      "desc": "Static-shielding bag 200 x 150 mm",
+      "uom": "pcs",
+      "gross": 2000,
+      "lot_need": [
+        100,
+        400,
+        750,
+        750
+      ],
+      "on_hand": 9000,
+      "allocated": 0,
+      "available": 9000,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 2000,
+      "order_qty": 0,
+      "moq": 1000,
+      "lt_days": 14,
+      "supplier": "StaticSafe Packaging Co.",
+      "unit_price": 0.07,
+      "order_value": 0.0,
+      "need_date": "2026-08-31",
+      "eta": "-",
+      "projected_after": 7000,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "PK-BOX-50",
+      "desc": "Corrugated carton for 50 clamshells, with ESD liner",
+      "uom": "pcs",
+      "gross": 40,
+      "lot_need": [
+        2,
+        8,
+        15,
+        15
+      ],
+      "on_hand": 300,
+      "allocated": 60,
+      "available": 240,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 50,
+      "order_qty": 0,
+      "moq": 100,
+      "lt_days": 10,
+      "supplier": "Hsinchu Corrugated Box Co.",
+      "unit_price": 1.9,
+      "order_value": 0.0,
+      "need_date": "2026-08-31",
+      "eta": "-",
+      "projected_after": 200,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "PK-DES-5G",
+      "desc": "Silica gel desiccant 5 g",
+      "uom": "pcs",
+      "gross": 40,
+      "lot_need": [
+        2,
+        8,
+        15,
+        15
+      ],
+      "on_hand": 12000,
+      "allocated": 0,
+      "available": 12000,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 3000,
+      "order_qty": 0,
+      "moq": 2000,
+      "lt_days": 10,
+      "supplier": "StaticSafe Packaging Co.",
+      "unit_price": 0.04,
+      "order_value": 0.0,
+      "need_date": "2026-08-31",
+      "eta": "-",
+      "projected_after": 11960,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": ""
+    }
+  ],
+  "unit_cost_materials": [
+    {
+      "item": "10.10",
+      "code": "RM-VG-Q24-127",
+      "desc": "Fused-silica V-groove substrate 24 ch, 127 µm pitch, 5.0 x 8.0 x 1.0 mm, step 3.0 mm, grade STD (± 0.5 µm)",
+      "qty": 1,
+      "uom": "pcs",
+      "unit_price": 12.9,
+      "ext": 12.9,
+      "group": "Raw material"
+    },
+    {
+      "item": "10.20",
+      "code": "RM-LD-Q24",
+      "desc": "Fused-silica lid 5.0 x 5.0 x 0.7 mm, polished, chamfered",
+      "qty": 1,
+      "uom": "pcs",
+      "unit_price": 2.85,
+      "ext": 2.85,
+      "group": "Raw material"
+    },
+    {
+      "item": "10.30",
+      "code": "CM-EP-UV365",
+      "desc": "UV / thermal dual-cure optical epoxy, low shrinkage, Tg 125 °C",
+      "qty": 0.096,
+      "uom": "g",
+      "unit_price": 6.4,
+      "ext": 0.6144,
+      "group": "Raw material"
+    },
+    {
+      "item": "20.10",
+      "code": "RM-FB-RB12-657",
+      "desc": "12-fibre flat ribbon G.657.A2",
+      "qty": 0.0023,
+      "uom": "km",
+      "unit_price": 210.0,
+      "ext": 0.483,
+      "group": "Raw material"
+    },
+    {
+      "item": "30",
+      "code": "PP-MPO12-APC-F",
+      "desc": "MPO-12 APC female connector kit, standard grade",
+      "qty": 2,
+      "uom": "pcs",
+      "unit_price": 5.2,
+      "ext": 10.4,
+      "group": "Purchased parts"
+    },
+    {
+      "item": "35",
+      "code": "CM-EP-TH150",
+      "desc": "Thermal-cure epoxy for MT ferrules, Tg 150 °C",
+      "qty": 0.06,
+      "uom": "g",
+      "unit_price": 3.9,
+      "ext": 0.234,
+      "group": "Raw material"
+    },
+    {
+      "item": "40",
+      "code": "PP-BOOT-FA24",
+      "desc": "Silicone strain-relief boot for 24-ch fibre array, two stacked ribbons, 8.0 x 4.0 x 14 mm",
+      "qty": 1,
+      "uom": "pcs",
+      "unit_price": 0.48,
+      "ext": 0.48,
+      "group": "Purchased parts"
+    },
+    {
+      "item": "45",
+      "code": "PP-LBL-FLAG",
+      "desc": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+      "qty": 1,
+      "uom": "pcs",
+      "unit_price": 0.05,
+      "ext": 0.05,
+      "group": "Purchased parts"
+    },
+    {
+      "item": "50.10",
+      "code": "CM-POL-SET",
+      "desc": "Polishing film set (diamond 3 / 1 / 0.5 µm + silica final), one fixture cycle",
+      "qty": 0.1333,
+      "uom": "set",
+      "unit_price": 7.1,
+      "ext": 0.9464,
+      "group": "Process consumables"
+    },
+    {
+      "item": "50.20",
+      "code": "CM-IPA",
+      "desc": "Isopropyl alcohol 99.9 %, electronic grade",
+      "qty": 0.005,
+      "uom": "L",
+      "unit_price": 4.5,
+      "ext": 0.0225,
+      "group": "Process consumables"
+    },
+    {
+      "item": "50.30",
+      "code": "CM-WIPE",
+      "desc": "Lint-free clean-room wipes",
+      "qty": 8,
+      "uom": "pcs",
+      "unit_price": 0.03,
+      "ext": 0.24,
+      "group": "Process consumables"
+    },
+    {
+      "item": "60.10",
+      "code": "PP-CAP-FA24",
+      "desc": "End-face protection cap for 24-ch fibre array block (5.0 mm)",
+      "qty": 1,
+      "uom": "pcs",
+      "unit_price": 0.14,
+      "ext": 0.14,
+      "group": "Packaging"
+    },
+    {
+      "item": "60.15",
+      "code": "PP-CAP-MPOF",
+      "desc": "MPO dust cap, female (unpinned) connector",
+      "qty": 2,
+      "uom": "pcs",
+      "unit_price": 0.06,
+      "ext": 0.12,
+      "group": "Packaging"
+    },
+    {
+      "item": "60.20",
+      "code": "PK-TRAY-FA",
+      "desc": "ESD clamshell with fibre coil holder, 1 fibre array + pigtail",
+      "qty": 1,
+      "uom": "pcs",
+      "unit_price": 0.62,
+      "ext": 0.62,
+      "group": "Packaging"
+    },
+    {
+      "item": "60.30",
+      "code": "PK-BAG-ESD",
+      "desc": "Static-shielding bag 200 x 150 mm",
+      "qty": 1,
+      "uom": "pcs",
+      "unit_price": 0.07,
+      "ext": 0.07,
+      "group": "Packaging"
+    },
+    {
+      "item": "60.40",
+      "code": "PK-BOX-50",
+      "desc": "Corrugated carton for 50 clamshells, with ESD liner",
+      "qty": 0.02,
+      "uom": "pcs",
+      "unit_price": 1.9,
+      "ext": 0.038,
+      "group": "Packaging"
+    },
+    {
+      "item": "60.50",
+      "code": "PK-DES-5G",
+      "desc": "Silica gel desiccant 5 g",
+      "qty": 0.02,
+      "uom": "pcs",
+      "unit_price": 0.04,
+      "ext": 0.0008,
+      "group": "Packaging"
+    }
+  ],
+  "unit_cost_services": [
+    {
+      "code": "SV-REL-LOT",
+      "desc": "Internal lot qualification: damp heat 1000 h (11 pcs) + thermal cycling 500 cycles (11 pcs), chamber time and test pieces - per production lot of 1,000 pcs",
+      "qty": 0.001,
+      "uom": "lot",
+      "unit_price": 1650.0,
+      "ext": 1.65
+    }
+  ],
+  "open_pos": {},
+  "quote_rev": "A0",
+  "po": {
+    "no": "KVP-PO-7700-2614",
+    "rev": 0,
+    "qty": 2000,
+    "lines": [
+      {
+        "line": "1.1",
+        "qty": 100,
+        "rev": "A0",
+        "unit_price": 112.0
+      },
+      {
+        "line": "1.2",
+        "qty": 400,
+        "rev": "A0",
+        "unit_price": 112.0
+      },
+      {
+        "line": "1.3",
+        "qty": 750,
+        "rev": "A0",
+        "unit_price": 112.0
+      },
+      {
+        "line": "1.4",
+        "qty": 750,
+        "rev": "A0",
+        "unit_price": 112.0
+      }
+    ],
+    "parts_value": 224000.0,
+    "nre_value": 22100.0,
+    "total_value": 246100.0,
+    "schedule": [
+      {
+        "line": "1.1",
+        "qty": 100,
+        "date": "2026-09-18",
+        "note": "Samples incl. FAI report"
+      },
+      {
+        "line": "1.2",
+        "qty": 400,
+        "date": "2026-10-02",
+        "note": "Lot 1"
+      },
+      {
+        "line": "1.3",
+        "qty": 750,
+        "date": "2026-10-16",
+        "note": "Lot 2"
+      },
+      {
+        "line": "1.4",
+        "qty": 750,
+        "date": "2026-10-30",
+        "note": "Lot 3"
+      }
+    ]
+  }
+}

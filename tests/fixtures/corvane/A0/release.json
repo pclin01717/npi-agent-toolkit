@@ -1,0 +1,342 @@
+{
+  "lpc_pn": "LPC-FO36-M12-LCS",
+  "block_pn": "LPC-FO36-110",
+  "product_type": "Fanout",
+  "product_type_sources": [
+    "R-11"
+  ],
+  "params": {
+    "fibres": {
+      "value": 36,
+      "sources": [
+        "R-02"
+      ]
+    },
+    "trunk_conn_qty": {
+      "value": 3,
+      "sources": [
+        "R-02"
+      ]
+    },
+    "trunk_connector": {
+      "value": "MPO-12 APC female (unpinned), elite grade",
+      "sources": [
+        "R-02"
+      ]
+    },
+    "leg_conn_qty": {
+      "value": 36,
+      "sources": [
+        "R-02"
+      ]
+    },
+    "leg_connector": {
+      "value": "LC/APC simplex",
+      "sources": [
+        "R-02"
+      ]
+    },
+    "end_face": {
+      "value": "APC",
+      "sources": [
+        "R-05"
+      ]
+    },
+    "polarity": {
+      "value": "Method A",
+      "sources": [
+        "DFM email"
+      ]
+    },
+    "trunk_m": {
+      "value": 3.0,
+      "sources": [
+        "R-07"
+      ]
+    },
+    "trunk_tol_plus_mm": {
+      "value": 50,
+      "sources": [
+        "R-07"
+      ]
+    },
+    "trunk_tol_minus_mm": {
+      "value": 0,
+      "sources": [
+        "R-07"
+      ]
+    },
+    "leg_mm": {
+      "value": 500,
+      "sources": [
+        "R-07"
+      ]
+    },
+    "leg_tol_plus_mm": {
+      "value": 20,
+      "sources": [
+        "DFM email"
+      ]
+    },
+    "leg_tol_minus_mm": {
+      "value": 20,
+      "sources": [
+        "DFM email"
+      ]
+    },
+    "trunk_od_mm": {
+      "value": 4.8,
+      "sources": [
+        "MM-002 RM-CB-P36"
+      ]
+    },
+    "leg_od_mm": {
+      "value": 2.0,
+      "sources": [
+        "R-08"
+      ]
+    },
+    "box_l_mm": {
+      "value": 62,
+      "sources": [
+        "MM-002 PP-FOB-36S"
+      ]
+    },
+    "box_w_mm": {
+      "value": 20,
+      "sources": [
+        "MM-002 PP-FOB-36S"
+      ]
+    },
+    "box_h_mm": {
+      "value": 10,
+      "sources": [
+        "MM-002 PP-FOB-36S"
+      ]
+    }
+  },
+  "spec_sections": [
+    {
+      "title": "Scope",
+      "text": "Fan-out assembly per customer draft spec CVN-SPC-3612 and the agreed DFM items.",
+      "sources": []
+    },
+    {
+      "title": "Fibre",
+      "text": "UL-listed OFNP plenum trunk cable, 3 x 12-fibre ribbon G.657.A2.",
+      "sources": [
+        "MM-002 RM-CB-P36"
+      ]
+    },
+    {
+      "title": "Polarity",
+      "text": "TIA-568 Method A with APC connectors (DFM item R-03).",
+      "sources": [
+        "R-03"
+      ]
+    },
+    {
+      "title": "Leg marking",
+      "text": "Port number on a 12 x 6 mm wrap label on every leg.",
+      "sources": [
+        "MM-002 PP-LBL-LEG"
+      ]
+    },
+    {
+      "title": "Delivery",
+      "text": "待工程師填寫",
+      "sources": []
+    }
+  ],
+  "bom": [
+    {
+      "item": "10.10",
+      "part_no": "PP-FOB-36S",
+      "description": "Fan-out box 3 x 12 ribbons in / 36 x 2.0 mm simplex legs out, 62 x 20 x 10 mm, potted",
+      "make_buy": "Buy",
+      "qty_per": 1,
+      "uom": "pcs",
+      "sources": [],
+      "op": "20"
+    },
+    {
+      "item": "10.20",
+      "part_no": "RM-CB-P36",
+      "description": "UL-listed OFNP plenum trunk cable, 36 fibres (3 x 12-fibre ribbon G.657.A2), 4.8 mm",
+      "make_buy": "Buy",
+      "qty_per": 3.0,
+      "uom": "m",
+      "sources": [
+        "R-07"
+      ],
+      "op": "10"
+    },
+    {
+      "item": "10.30",
+      "part_no": "PP-MPO12-APC-F",
+      "description": "MPO-12 APC female connector kit, standard grade",
+      "make_buy": "Buy",
+      "qty_per": 3,
+      "uom": "pcs",
+      "sources": [
+        "R-02"
+      ],
+      "op": "30"
+    },
+    {
+      "item": "20",
+      "part_no": "PP-FURC-20",
+      "description": "Furcation tubing 2.0 mm, aramid strength member, LSZH, for one 250 µm fibre",
+      "make_buy": "Buy",
+      "qty_per": "待工程師填寫",
+      "uom": "m",
+      "sources": [],
+      "op": "20"
+    },
+    {
+      "item": "30",
+      "part_no": "PP-LC-APC-S",
+      "description": "LC/APC simplex connector kit, 2.0 mm, zirconia ferrule grade B (IL ≤ 0.25 dB)",
+      "make_buy": "Buy",
+      "qty_per": 36,
+      "uom": "pcs",
+      "sources": [
+        "R-02"
+      ],
+      "op": "40"
+    },
+    {
+      "item": "40",
+      "part_no": "PP-LBL-LEG",
+      "description": "Leg identification wrap label 12 x 6 mm, thermal-transfer printable",
+      "make_buy": "Buy",
+      "qty_per": 36,
+      "uom": "pcs",
+      "sources": [
+        "R-02"
+      ],
+      "op": "60"
+    },
+    {
+      "item": "50",
+      "part_no": "PK-BAG-FO",
+      "description": "Coil bag 300 x 250 mm with zip and label field, for one fan-out assembly",
+      "make_buy": "Buy",
+      "qty_per": "待工程師填寫",
+      "uom": "pcs",
+      "sources": [],
+      "op": "60"
+    }
+  ],
+  "routing": [
+    {
+      "op": "10",
+      "description": "Trunk cut and jacket strip",
+      "work_centre": "FOA",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "20",
+      "description": "Breakout and fan-out box potting",
+      "work_centre": "FOA",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "30",
+      "description": "MPO termination",
+      "work_centre": "CON",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "40",
+      "description": "LC termination",
+      "work_centre": "SCT",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "50",
+      "description": "Optical test and polarity check",
+      "work_centre": "OPT",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "60",
+      "description": "Label, coil and pack",
+      "work_centre": "PKG",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    }
+  ],
+  "routing_adds": []
+}

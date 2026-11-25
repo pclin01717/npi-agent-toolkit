@@ -1,0 +1,309 @@
+From: Alex Lin <alex.lin@lumora-photonics.com.tw>
+To: Samira Haddad <samira.haddad@corvane-networks.com>
+Cc: Grant Fowler <grant.fowler@corvane-networks.com>,
+ Lena Park <lena.park@corvane-networks.com>,
+ Jessica Liao <jessica.liao@lumora-photonics.com.tw>,
+ Ryan Wu <ryan.wu@lumora-photonics.com.tw>,
+ Kevin Hsieh <kevin.hsieh@lumora-photonics.com.tw>
+Subject: RE: CVN-RFQ-26-1187 - DFM feedback on CVN-SPC-3612 Rev X1 Fan-out 36F
+ SM, 3x MPO-12 APC to 36x LC/APC, 3.0 m (LPC NPI-26-104)
+Date: Fri, 17 Jul 2026 17:40:00 +0800
+Message-ID: <179299085292.99254.10264581124998138552.202607171740@lumora-photonics.com.tw>
+In-Reply-To: <CVN-RFQ-26-1187@corvane-networks.com>
+References: <CVN-RFQ-26-1187@corvane-networks.com>
+X-Mailer: Microsoft Outlook 16.0
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============7549793684827992995=="
+
+--===============7549793684827992995==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Samira,
+
+Thank you for RFQ CVN-RFQ-26-1187 and CVN-SPC-3612 Rev X1. Our DFM review aga=
+inst LPC-QM-021 Rev C (=C2=A74.6, =C2=A711.10) is complete; 11 items need you=
+r decision (4 high risk: item 1: Polarity Method B with APC connectors; item =
+3: LC/APC IL =E2=89=A4 0.15 dB, end to end =E2=89=A4 0.40 dB; item 7: OFNP pl=
+enum rating; item 11: Samples in 3 weeks / 3,000 pcs by 2026-10-16):
+
+ 1. [R-03] Polarity Method B with APC connectors (risk: High)
+    Your requirement: TIA-568 Method B, Type B cassettes
+    LPC capability  : Method B mates key-up to key-up; with APC connectors th=
+e 8=C2=B0 angles face the wrong way - Method B is only possible with UPC (LPC=
+-QM-021 =C2=A74.6, =C2=A711.10).
+    LPC proposal    : Method A (key-up / key-down, fibre n -> leg n) with Typ=
+e A cassettes, or Method C. LPC proposes Method A.
+    Impact          : Corvane to use Type A cassettes / adapters in the CX-HD=
+ panel.
+
+ 2. [R-02] Elite-grade MPO-12 (risk: Medium)
+    Your requirement: MPO-12 APC elite, IL =E2=89=A4 0.25 dB
+    LPC capability  : MPO APC =E2=89=A4 0.35 dB Standard, =E2=89=A4 0.25 dB o=
+nly with elite-grade ferrules (LPC-QM-021 =C2=A74.3). The approved MPO-12 kit=
+ is standard grade; an elite MPO-12 kit needs a new supplier part incl. quali=
+fication (8 weeks, =C2=A710).
+    LPC proposal    : Standard-grade MPO-12 APC female, =E2=89=A4 0.35 dB ran=
+dom mate.
+    Impact          : Corvane link budget to use 0.35 dB per MPO.
+
+ 3. [R-04] LC/APC IL =E2=89=A4 0.15 dB, end to end =E2=89=A4 0.40 dB (risk: H=
+igh)
+    Your requirement: LC =E2=89=A4 0.15 dB; end to end =E2=89=A4 0.40 dB
+    LPC capability  : LC/APC =E2=89=A4 0.25 dB Standard (grade B), =E2=89=A4 =
+0.15 dB Best with grade A low-loss ferrules and 100 % end-face geometry (=C2=
+=A74.6). The two connector losses add (=C2=A711.10).
+    LPC proposal    : LC/APC grade B =E2=89=A4 0.25 dB; end to end =E2=89=A4 =
+0.60 dB per fibre (MPO 0.35 + LC 0.25), typically =E2=89=A4 0.30 dB.
+    Impact          : Grade A ferrules and 100 % geometry would add approx. U=
+SD 35 per assembly.
+
+ 4. [R-05] RL =E2=89=A5 65 dB (risk: Low)
+    Your requirement: =E2=89=A5 65 dB both ends
+    LPC capability  : LC/APC and MPO APC =E2=89=A5 60 dB Standard, =E2=89=A5 =
+65 dB Best (=C2=A74.3, =C2=A74.6).
+    LPC proposal    : =E2=89=A5 60 dB both ends (typical > 65 dB).
+    Impact          : None for DR4 / DR8 optics (=E2=89=A5 26 dB required).
+
+ 5. [R-06] 100 % LC end-face geometry (risk: Medium)
+    Your requirement: 100 % geometry measurement, data per serial
+    LPC capability  : End-face geometry IEC 61755-3-2: 1 per polishing fixtur=
+e Standard; 100 % only as Best capability (=C2=A74.6).
+    LPC proposal    : Geometry measured on 1 connector per 24-connector fixtu=
+re; 100 % end-face inspection to IEC 61300-3-35; IL / RL per fibre in the ser=
+ial-number data file.
+    Impact          : 100 % geometry would add approx. 18 min per assembly.
+
+ 6. [R-07] Leg length =C2=B1 10 mm (risk: Low)
+    Your requirement: Legs 500 =C2=B1 10 mm; trunk 3.0 m + 50 / 0 mm
+    LPC capability  : Leg length =C2=B1 20 mm Standard, =C2=B1 10 mm Best wit=
+h 100 % length measurement; trunk + 50 / 0 mm Standard (=C2=A74.6).
+    LPC proposal    : Legs 500 =C2=B1 20 mm; trunk 3.0 m + 50 / 0 mm.
+    Impact          : None - legs are dressed in the panel.
+
+ 7. [R-08] OFNP plenum rating (risk: High)
+    Your requirement: Trunk OFNP (UL 1651)
+    LPC capability  : In-house jacketing is LSZH (IEC 60332-1-2); OFNP only w=
+ith UL-listed purchased plenum cable, 8 weeks, not stocked (=C2=A74.6, =C2=A7=
+8.2, =C2=A79).
+    LPC proposal    : LSZH trunk jacket (data hall without plenum air space).=
+ OFNP possible as an option with UL-listed cable (8 weeks, approx. + USD 7 pe=
+r pc).
+    Impact          : Corvane to confirm the installation is non-plenum.
+
+ 8. [R-01] G.652.D ribbon (risk: Low)
+    Your requirement: G.652.D, three 12-fibre ribbons
+    LPC capability  : LPC stocks 12-fibre ribbon in G.657.A2 (bend-insensitiv=
+e, fully compatible with G.652.D) (=C2=A78.1).
+    LPC proposal    : 12-fibre ribbon G.657.A2 (RM-FB-RB12-657).
+    Impact          : Better bend performance in the panel; no cost impact.
+
+ 9. [R-09] Trunk pull 100 N (risk: Medium)
+    Your requirement: 100 N during installation
+    LPC capability  : Trunk tensile load =E2=89=A4 50 N with the aramid jacke=
+t; up to 300 N only with a pulling grip on the MPO end (=C2=A74.6).
+    LPC proposal    : =E2=89=A4 50 N (installation by hand, MPOs protected); =
+pulling grip as an option.
+    Impact          : Installation instruction: no pulling on the MPO boots.
+
+10. [R-10] Ink-jet printing on the legs (risk: Low)
+    Your requirement: Port number printed on every leg
+    LPC capability  : Leg identification by printed wrap labels; no ink-jet p=
+rinting on 2.0 mm tubing (=C2=A75, =C2=A711.8).
+    LPC proposal    : Wrap label on every leg 30 mm behind the LC (P01-P36); =
+flag label on the trunk 150 mm from the fan-out box.
+    Impact          : No cost impact.
+
+11. [R-15] Samples in 3 weeks / 3,000 pcs by 2026-10-16 (risk: High)
+    Your requirement: 50 samples in 3 weeks; 3,000 by 2026-10-16
+    LPC capability  : New fan-out box mould 4 weeks; LC / MPO kits 2-3 weeks =
+(=C2=A710).
+    LPC proposal    : 50 samples at Corvane 2026-09-18; 950 pcs 2026-09-29; 1=
+,000 pcs 2026-10-13; 1,000 pcs 2026-10-27.
+    Impact          : Samples 3 weeks and the last 1,000 pcs 11 days later th=
+an requested.
+
+Delivery plan: Samples 50 pcs at Corvane 2026-09-18; Lot 1 950 pcs at Corvane=
+ 2026-09-29; Lot 2 1,000 pcs at Corvane 2026-10-13; Lot 3 1,000 pcs at Corvan=
+e 2026-10-27.
+Unit price expected above your target of USD 150.00; NRE quoted separately.
+Please confirm by 2026-07-22.
+
+Best regards,
+--
+Alex Lin
+Senior NPI Engineer
+Lumora Photonics Co., Ltd.
+No. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinchu City 300, T=
+aiwan
+Tel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photonics.com.tw
+
+--===============7549793684827992995==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><head><style>
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#1f1f1f;}
+table{border-collapse:collapse;margin:6px 0 12px 0;}
+th{background:#005F73;color:#fff;font-weight:600;text-align:left;padding:5px =
+7px;border:1px solid #9aa5b8;font-size:9.5pt;}
+td{padding:5px 7px;border:1px solid #c3c9d4;vertical-align:top;font-size:9.5p=
+t;}
+tr:nth-child(even) td{background:#f4f6fa;}
+.hi{color:#b00020;font-weight:600;}
+.ok{color:#1b7f3b;font-weight:600;}
+.amb{color:#b26a00;font-weight:600;}
+.sig{color:#555;font-size:9.5pt;margin-top:18px;border-top:1px solid #ddd;pad=
+ding-top:8px;}
+h3{color:#005F73;font-size:11.5pt;margin:16px 0 4px 0;}
+</style></head><body>
+<p>Dear Samira,</p>
+<p>Thank you for RFQ CVN-RFQ-26-1187 and draft specification <b>CVN-SPC-3612 =
+Rev X1</b> received on 2026-07-14. Our fan-out engineering team
+has completed the design-for-manufacture review against our process capabilit=
+y document LPC-QM-021 Rev C, section
+=C2=A74.6 Fan-out Assemblies & Simplex Connector Termination and the design g=
+uideline for fan-out assemblies =C2=A711.10.</p>
+<p>The 36-fibre assembly (3 x MPO-12 APC trunk to 36 x LC/APC simplex legs) i=
+s within our standard fan-out configuration (=C2=A74.6: up to 48 fibres, MPO-=
+12 / MPO-16 trunk to LC or SC simplex / duplex legs). The 36-port fan-out box=
+ is a new moulded part (LPC-DWG-FOB-3612, 62 x 20 x 10 mm, inside your R-11 e=
+nvelope; 4 weeks). <b>11 requirements</b> need your decision before we releas=
+e the product specification;
+<span class=3D"hi">4 are high risk</span>:</p>
+<ul><li><span class=3D"hi">Item 1 - Polarity Method B with APC connectors (R-=
+03):</span> Method A (key-up / key-down, fibre n -> leg n) with Type A casset=
+tes, or Method C. LPC proposes Method A. Corvane to use Type A cassettes / ad=
+apters in the CX-HD panel.</li><li><span class=3D"hi">Item 3 - LC/APC IL =E2=
+=89=A4 0.15 dB, end to end =E2=89=A4 0.40 dB (R-04):</span> LC/APC grade B =
+=E2=89=A4 0.25 dB; end to end =E2=89=A4 0.60 dB per fibre (MPO 0.35 + LC 0.25=
+), typically =E2=89=A4 0.30 dB. Grade A ferrules and 100 % geometry would add=
+ approx. USD 35 per assembly.</li><li><span class=3D"hi">Item 7 - OFNP plenum=
+ rating (R-08):</span> LSZH trunk jacket (data hall without plenum air space)=
+. OFNP possible as an option with UL-listed cable (8 weeks, approx. + USD 7 p=
+er pc). Corvane to confirm the installation is non-plenum.</li><li><span clas=
+s=3D"hi">Item 11 - Samples in 3 weeks / 3,000 pcs by 2026-10-16 (R-15):</span=
+> 50 samples at Corvane 2026-09-18; 950 pcs 2026-09-29; 1,000 pcs 2026-10-13;=
+ 1,000 pcs 2026-10-27. Samples 3 weeks and the last 1,000 pcs 11 days later t=
+han requested.</li></ul>
+
+<h3>1. DFM items</h3>
+<table><tr><th>#</th><th>Req.</th><th>Topic</th><th>Corvane draft requirement=
+</th><th>LPC capability / constraint</th><th>LPC proposal</th><th>Impact</th>=
+<th>Risk</th></tr>
+<tr><td>1</td><td>R-03</td><td>Polarity Method B with APC connectors</td><td>=
+TIA-568 Method B, Type B cassettes</td><td>Method B mates key-up to key-up; w=
+ith APC connectors the 8=C2=B0 angles face the wrong way - Method B is only p=
+ossible with UPC (LPC-QM-021 =C2=A74.6, =C2=A711.10).</td><td>Method A (key-u=
+p / key-down, fibre n -> leg n) with Type A cassettes, or Method C. LPC propo=
+ses Method A.</td><td>Corvane to use Type A cassettes / adapters in the CX-HD=
+ panel.</td><td class=3D"hi">High</td></tr>
+<tr><td>2</td><td>R-02</td><td>Elite-grade MPO-12</td><td>MPO-12 APC elite, I=
+L =E2=89=A4 0.25 dB</td><td>MPO APC =E2=89=A4 0.35 dB Standard, =E2=89=A4 0.2=
+5 dB only with elite-grade ferrules (LPC-QM-021 =C2=A74.3). The approved MPO-=
+12 kit is standard grade; an elite MPO-12 kit needs a new supplier part incl.=
+ qualification (8 weeks, =C2=A710).</td><td>Standard-grade MPO-12 APC female,=
+ =E2=89=A4 0.35 dB random mate.</td><td>Corvane link budget to use 0.35 dB pe=
+r MPO.</td><td class=3D"amb">Medium</td></tr>
+<tr><td>3</td><td>R-04</td><td>LC/APC IL =E2=89=A4 0.15 dB, end to end =E2=89=
+=A4 0.40 dB</td><td>LC =E2=89=A4 0.15 dB; end to end =E2=89=A4 0.40 dB</td><t=
+d>LC/APC =E2=89=A4 0.25 dB Standard (grade B), =E2=89=A4 0.15 dB Best with gr=
+ade A low-loss ferrules and 100 % end-face geometry (=C2=A74.6). The two conn=
+ector losses add (=C2=A711.10).</td><td>LC/APC grade B =E2=89=A4 0.25 dB; end=
+ to end =E2=89=A4 0.60 dB per fibre (MPO 0.35 + LC 0.25), typically =E2=89=A4=
+ 0.30 dB.</td><td>Grade A ferrules and 100 % geometry would add approx. USD 3=
+5 per assembly.</td><td class=3D"hi">High</td></tr>
+<tr><td>4</td><td>R-05</td><td>RL =E2=89=A5 65 dB</td><td>=E2=89=A5 65 dB bot=
+h ends</td><td>LC/APC and MPO APC =E2=89=A5 60 dB Standard, =E2=89=A5 65 dB B=
+est (=C2=A74.3, =C2=A74.6).</td><td>=E2=89=A5 60 dB both ends (typical > 65 d=
+B).</td><td>None for DR4 / DR8 optics (=E2=89=A5 26 dB required).</td><td cla=
+ss=3D"ok">Low</td></tr>
+<tr><td>5</td><td>R-06</td><td>100 % LC end-face geometry</td><td>100 % geome=
+try measurement, data per serial</td><td>End-face geometry IEC 61755-3-2: 1 p=
+er polishing fixture Standard; 100 % only as Best capability (=C2=A74.6).</td=
+><td>Geometry measured on 1 connector per 24-connector fixture; 100 % end-fac=
+e inspection to IEC 61300-3-35; IL / RL per fibre in the serial-number data f=
+ile.</td><td>100 % geometry would add approx. 18 min per assembly.</td><td cl=
+ass=3D"amb">Medium</td></tr>
+<tr><td>6</td><td>R-07</td><td>Leg length =C2=B1 10 mm</td><td>Legs 500 =C2=
+=B1 10 mm; trunk 3.0 m + 50 / 0 mm</td><td>Leg length =C2=B1 20 mm Standard, =
+=C2=B1 10 mm Best with 100 % length measurement; trunk + 50 / 0 mm Standard (=
+=C2=A74.6).</td><td>Legs 500 =C2=B1 20 mm; trunk 3.0 m + 50 / 0 mm.</td><td>N=
+one - legs are dressed in the panel.</td><td class=3D"ok">Low</td></tr>
+<tr><td>7</td><td>R-08</td><td>OFNP plenum rating</td><td>Trunk OFNP (UL 1651=
+)</td><td>In-house jacketing is LSZH (IEC 60332-1-2); OFNP only with UL-liste=
+d purchased plenum cable, 8 weeks, not stocked (=C2=A74.6, =C2=A78.2, =C2=A79=
+).</td><td>LSZH trunk jacket (data hall without plenum air space). OFNP possi=
+ble as an option with UL-listed cable (8 weeks, approx. + USD 7 per pc).</td>=
+<td>Corvane to confirm the installation is non-plenum.</td><td class=3D"hi">H=
+igh</td></tr>
+<tr><td>8</td><td>R-01</td><td>G.652.D ribbon</td><td>G.652.D, three 12-fibre=
+ ribbons</td><td>LPC stocks 12-fibre ribbon in G.657.A2 (bend-insensitive, fu=
+lly compatible with G.652.D) (=C2=A78.1).</td><td>12-fibre ribbon G.657.A2 (R=
+M-FB-RB12-657).</td><td>Better bend performance in the panel; no cost impact.=
+</td><td class=3D"ok">Low</td></tr>
+<tr><td>9</td><td>R-09</td><td>Trunk pull 100 N</td><td>100 N during installa=
+tion</td><td>Trunk tensile load =E2=89=A4 50 N with the aramid jacket; up to =
+300 N only with a pulling grip on the MPO end (=C2=A74.6).</td><td>=E2=89=A4 =
+50 N (installation by hand, MPOs protected); pulling grip as an option.</td><=
+td>Installation instruction: no pulling on the MPO boots.</td><td class=3D"am=
+b">Medium</td></tr>
+<tr><td>10</td><td>R-10</td><td>Ink-jet printing on the legs</td><td>Port num=
+ber printed on every leg</td><td>Leg identification by printed wrap labels; n=
+o ink-jet printing on 2.0 mm tubing (=C2=A75, =C2=A711.8).</td><td>Wrap label=
+ on every leg 30 mm behind the LC (P01-P36); flag label on the trunk 150 mm f=
+rom the fan-out box.</td><td>No cost impact.</td><td class=3D"ok">Low</td></t=
+r>
+<tr><td>11</td><td>R-15</td><td>Samples in 3 weeks / 3,000 pcs by 2026-10-16<=
+/td><td>50 samples in 3 weeks; 3,000 by 2026-10-16</td><td>New fan-out box mo=
+uld 4 weeks; LC / MPO kits 2-3 weeks (=C2=A710).</td><td>50 samples at Corvan=
+e 2026-09-18; 950 pcs 2026-09-29; 1,000 pcs 2026-10-13; 1,000 pcs 2026-10-27.=
+</td><td>Samples 3 weeks and the last 1,000 pcs 11 days later than requested.=
+</td><td class=3D"hi">High</td></tr>
+</table>
+
+<h3>2. Proposed delivery plan (subject to PO by 2026-08-06)</h3>
+<table><tr><th>Lot</th><th>Qty</th><th>Ex-works</th><th>At Corvane (air)</th>=
+</tr><tr><td>Samples</td><td>50 pcs</td><td>2026-09-14</td><td><b>2026-09-18<=
+/b></td></tr><tr><td>Lot 1</td><td>950 pcs</td><td>2026-09-25</td><td><b>2026=
+-09-29</b></td></tr><tr><td>Lot 2</td><td>1,000 pcs</td><td>2026-10-09</td><t=
+d><b>2026-10-13</b></td></tr><tr><td>Lot 3</td><td>1,000 pcs</td><td>2026-10-=
+23</td><td><b>2026-10-27</b></td></tr></table>
+<p>The critical purchased item is the fan-out box (PP-FOB-36S, 4 weeks from o=
+rder). We will place the material orders on the day after the PO.</p>
+
+<h3>3. Commercial note</h3>
+<p>With the proposals above we expect our unit price to be <b>above your targ=
+et of USD 150.00</b> (R-14); the main
+drivers are 36 x LC/APC simplex connector kits, 3 x MPO-12 APC female connect=
+or kits and the LC / SC APC polishing film set, and the Simplex Connector Ter=
+mination, MPO Termination and Optical Test work centres with 100 % IL / RL te=
+st and end-face inspection of all 36 fibres at both ends. Tooling / NRE (poli=
+shing fixtures; fan-out jigs; test set-up; FAI and type tests) will be quoted=
+ separately. Ryan Wu will send the formal quotation once the
+specification is agreed.</p>
+
+<h3>4. Next steps</h3>
+<ol>
+<li>Please confirm accept / reject / counter-proposal for items 1-11 by <b>20=
+26-07-22</b>.</li>
+<li>Item 1 (Polarity Method B with APC connectors): Corvane to use Type A cas=
+settes / adapters in the CX-HD panel - please confirm.</li><li>Item 2 (Elite-=
+grade MPO-12): Corvane link budget to use 0.35 dB per MPO - please confirm.</=
+li><li>Item 7 (OFNP plenum rating): please confirm the installation is non-pl=
+enum.</li>
+<li>After your confirmation LPC releases specification, drawing and BOM Rev A=
+0 within 5 working days.</li>
+</ol>
+<p>Best regards,</p>
+<div class=3D"sig"><b>Alex Lin</b><br>Senior NPI Engineer<br>Lumora Photonics=
+ Co., Ltd.<br>No. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinc=
+hu City 300, Taiwan<br>Tel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photon=
+ics.com.tw<br><span style=3D"font-size:8pt;color:#888">This e-mail and any at=
+tachments are confidential and intended solely for the addressee. ISO 9001 / =
+TL 9000 / ISO 14001 certified.</span></div>
+</body></html>
+
+--===============7549793684827992995==--

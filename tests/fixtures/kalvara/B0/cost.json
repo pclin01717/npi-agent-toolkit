@@ -1,0 +1,31 @@
+{
+  "costing_qty": {
+    "value": 5000,
+    "sources": [
+      "CH4"
+    ]
+  },
+  "notes": [
+    {
+      "text": "Costing quantity = PO total 5,000 pcs after CH4.",
+      "sources": [
+        "CH4"
+      ]
+    }
+  ],
+  "lot_size": {
+    "value": 300,
+    "sources": [
+      "RULES §3 成本批量 PM 陣列"
+    ]
+  },
+  "ecr_nre": [
+    {
+      "kind": "ecr",
+      "name": "ECR engineering and document update",
+      "amount": "待工程師填寫",
+      "sources": []
+    }
+  ],
+  "services": []
+}

@@ -1,0 +1,604 @@
+{
+  "lpc_pn": "LPC-FA24-127-8A",
+  "block_pn": "LPC-FA24-110",
+  "product_type": "Fiber_Array",
+  "product_type_sources": [
+    "R-06"
+  ],
+  "params": {
+    "channels": {
+      "value": 24,
+      "sources": [
+        "SPEC Channels / grooves"
+      ]
+    },
+    "pitch_um": {
+      "value": 127,
+      "sources": [
+        "SPEC Fiber pitch"
+      ]
+    },
+    "end_face_angle_deg": {
+      "value": 8,
+      "sources": [
+        "R-05"
+      ]
+    },
+    "pigtail_mm": {
+      "value": 800,
+      "sources": [
+        "R-11"
+      ]
+    },
+    "pigtail_tol_mm": {
+      "value": 20,
+      "sources": [
+        "R-11"
+      ]
+    },
+    "connector": {
+      "value": "2 x MPO-12 APC female (unpinned)",
+      "sources": [
+        "SPEC Connectors"
+      ]
+    },
+    "substrate_w_mm": {
+      "value": 5.0,
+      "sources": [
+        "MM-002 RM-VG-Q24-127"
+      ]
+    },
+    "substrate_l_mm": {
+      "value": 8.0,
+      "sources": [
+        "MM-002 RM-VG-Q24-127"
+      ]
+    },
+    "substrate_t_mm": {
+      "value": 1.0,
+      "sources": [
+        "MM-002 RM-VG-Q24-127"
+      ]
+    },
+    "lid_w_mm": {
+      "value": 5.0,
+      "sources": [
+        "MM-002 RM-LD-Q24"
+      ]
+    },
+    "lid_l_mm": {
+      "value": 5.0,
+      "sources": [
+        "MM-002 RM-LD-Q24"
+      ]
+    },
+    "lid_t_mm": {
+      "value": 0.7,
+      "sources": [
+        "MM-002 RM-LD-Q24"
+      ]
+    },
+    "boot_w_mm": {
+      "value": 8.0,
+      "sources": [
+        "SPEC Strain relief envelope W x H x L"
+      ]
+    },
+    "boot_h_mm": {
+      "value": 4.0,
+      "sources": [
+        "SPEC Strain relief envelope W x H x L"
+      ]
+    },
+    "boot_l_mm": {
+      "value": 14,
+      "sources": [
+        "SPEC Strain relief envelope W x H x L"
+      ]
+    }
+  },
+  "spec_sections": [
+    {
+      "title": "Scope",
+      "text": "Fibre array unit per customer draft spec KVP-SPC-2408 and the agreed DFM items.",
+      "sources": []
+    },
+    {
+      "title": "Fibre",
+      "text": "Bend-insensitive SMF G.657.A2, two 12-fibre ribbons.",
+      "sources": [
+        "R-01"
+      ]
+    },
+    {
+      "title": "Lid",
+      "text": "Fused-silica lid, same glass as the substrate (DFM item R-02).",
+      "sources": []
+    },
+    {
+      "title": "Delivery",
+      "text": "待工程師填寫",
+      "sources": []
+    }
+  ],
+  "bom": [
+    {
+      "item": "10.10",
+      "part_no": "RM-VG-Q24-127",
+      "description": "Fused-silica V-groove substrate 24 ch, 127 µm pitch, 5.0 x 8.0 x 1.0 mm, step 3.0 mm, grade STD (± 0.5 µm)",
+      "make_buy": "Buy",
+      "qty_per": 1,
+      "uom": "pcs",
+      "sources": [],
+      "op": "30"
+    },
+    {
+      "item": "10.20",
+      "part_no": "RM-LD-Q24",
+      "description": "Fused-silica lid 5.0 x 5.0 x 0.7 mm, polished, chamfered",
+      "make_buy": "Buy",
+      "qty_per": 1,
+      "uom": "pcs",
+      "sources": [],
+      "op": "30"
+    },
+    {
+      "item": "10.30",
+      "part_no": "CM-EP-UV365",
+      "description": "UV / thermal dual-cure optical epoxy, low shrinkage, Tg 125 °C",
+      "make_buy": "Buy",
+      "qty_per": "待工程師填寫",
+      "uom": "g",
+      "sources": [],
+      "op": "30"
+    },
+    {
+      "item": "20",
+      "part_no": "LPC-FA24-120",
+      "description": "24-fibre pigtail, 2 ribbons",
+      "make_buy": "Make",
+      "qty_per": 1,
+      "uom": "pcs",
+      "sources": [
+        "R-01"
+      ],
+      "op": "10"
+    },
+    {
+      "item": "20.10",
+      "part_no": "RM-FB-RB12-657",
+      "description": "12-fibre flat ribbon G.657.A2",
+      "make_buy": "Buy",
+      "qty_per": "待工程師填寫",
+      "uom": "km",
+      "sources": [],
+      "op": "10"
+    },
+    {
+      "item": "30",
+      "part_no": "PP-MPO12-APC-F",
+      "description": "MPO-12 APC female connector kit, standard grade",
+      "make_buy": "Buy",
+      "qty_per": 2,
+      "uom": "pcs",
+      "sources": [
+        "SPEC Connectors"
+      ],
+      "op": "90"
+    },
+    {
+      "item": "35",
+      "part_no": "CM-EP-TH150",
+      "description": "Thermal-cure epoxy for MT ferrules, Tg 150 °C",
+      "make_buy": "Buy",
+      "qty_per": "待工程師填寫",
+      "uom": "g",
+      "sources": [],
+      "op": "80"
+    },
+    {
+      "item": "40",
+      "part_no": "PP-BOOT-FA24",
+      "description": "Silicone strain-relief boot for 24-ch fibre array, two stacked ribbons, 8.0 x 4.0 x 14 mm",
+      "make_buy": "Buy",
+      "qty_per": 1,
+      "uom": "pcs",
+      "sources": [],
+      "op": "80"
+    },
+    {
+      "item": "45",
+      "part_no": "PP-LBL-FLAG",
+      "description": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+      "make_buy": "Buy",
+      "qty_per": 1,
+      "uom": "pcs",
+      "sources": [
+        "R-01"
+      ],
+      "op": "110"
+    },
+    {
+      "item": "60",
+      "part_no": "LPC-FA24-PKG",
+      "description": "Packing kit",
+      "make_buy": "Make",
+      "qty_per": 1,
+      "uom": "set",
+      "sources": [],
+      "op": "110"
+    },
+    {
+      "item": "60.10",
+      "part_no": "PP-CAP-FA24",
+      "description": "End-face protection cap for 24-ch fibre array block (5.0 mm)",
+      "make_buy": "Buy",
+      "qty_per": 1,
+      "uom": "pcs",
+      "sources": [],
+      "op": "110"
+    },
+    {
+      "item": "60.15",
+      "part_no": "PP-CAP-MPOF",
+      "description": "MPO dust cap, female (unpinned) connector",
+      "make_buy": "Buy",
+      "qty_per": 2,
+      "uom": "pcs",
+      "sources": [
+        "SPEC Connectors"
+      ],
+      "op": "110"
+    },
+    {
+      "item": "60.20",
+      "part_no": "PK-TRAY-FA",
+      "description": "ESD clamshell with fibre coil holder, 1 fibre array + pigtail",
+      "make_buy": "Buy",
+      "qty_per": 1,
+      "uom": "pcs",
+      "sources": [],
+      "op": "110"
+    },
+    {
+      "item": "60.40",
+      "part_no": "PK-BOX-50",
+      "description": "Corrugated carton for 50 clamshells, with ESD liner",
+      "make_buy": "Buy",
+      "qty_per": "待工程師填寫",
+      "uom": "pcs",
+      "sources": [],
+      "op": "110"
+    }
+  ],
+  "changes": {},
+  "routing": [
+    {
+      "op": "10",
+      "description": "Fibre preparation and ribbonizing",
+      "work_centre": "FPR",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "30",
+      "description": "V-groove assembly and lid",
+      "work_centre": "VGA",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "40",
+      "description": "Epoxy cure",
+      "work_centre": "CUR",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "50",
+      "description": "Angle polishing",
+      "work_centre": "POL",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "60",
+      "description": "End-face interferometry",
+      "work_centre": "EFI",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "70",
+      "description": "Core position measurement",
+      "work_centre": "CPM",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "80",
+      "description": "Strain-relief boot",
+      "work_centre": "VGA",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "90",
+      "description": "MPO termination",
+      "work_centre": "CON",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "100",
+      "description": "Optical test",
+      "work_centre": "OPT",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    },
+    {
+      "op": "110",
+      "description": "Label and pack",
+      "work_centre": "PKG",
+      "kinds": [
+        "base"
+      ],
+      "setup_min": {
+        "value": 20,
+        "sources": [
+          "RULES §4 整備時間"
+        ]
+      },
+      "run_min": {
+        "value": "待工程師填寫",
+        "sources": []
+      }
+    }
+  ],
+  "routing_adds": [],
+  "channel_map": [
+    {
+      "channel": 1,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 2,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 3,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 4,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 5,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 6,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 7,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 8,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 9,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 10,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 11,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 12,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 13,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 14,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 15,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 16,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 17,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 18,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 19,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 20,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 21,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 22,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 23,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "channel": 24,
+      "function": "待工程師填寫",
+      "fibre": "待工程師填寫",
+      "sources": []
+    }
+  ]
+}

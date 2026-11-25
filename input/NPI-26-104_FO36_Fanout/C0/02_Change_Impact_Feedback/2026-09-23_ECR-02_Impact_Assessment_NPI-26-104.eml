@@ -1,0 +1,199 @@
+From: Alex Lin <alex.lin@lumora-photonics.com.tw>
+To: Samira Haddad <samira.haddad@corvane-networks.com>
+Cc: Owen Mercer <owen.mercer@corvane-networks.com>,
+ Grant Fowler <grant.fowler@corvane-networks.com>,
+ Lena Park <lena.park@corvane-networks.com>,
+ Jessica Liao <jessica.liao@lumora-photonics.com.tw>,
+ Ryan Wu <ryan.wu@lumora-photonics.com.tw>,
+ Kevin Hsieh <kevin.hsieh@lumora-photonics.com.tw>,
+ Ben Kuo <ben.kuo@lumora-photonics.com.tw>
+Subject: RE: CVN-ECR-3612-02 - LPC change impact assessment, CVN-FO-3612 Rev B
+ -> Rev C (LPC NPI-26-104)
+Date: Wed, 23 Sep 2026 18:05:00 +0800
+Message-ID:
+ <179299092940.99297.9174898206190603255.202609231805@lumora-photonics.com.tw>
+In-Reply-To: <CVN-ECR-3612-02@corvane-networks.com>
+References: <CVN-ECR-3612-02@corvane-networks.com>
+X-Mailer: Microsoft Outlook 16.0
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============7234535497355313922=="
+
+--===============7234535497355313922==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Samira,
+
+Thank you for ECR CVN-ECR-3612-02. All 3 changes are feasible.
+IMPORTANT (CH1, not in the ECR): grade A ferrules are only guaranteed with 10=
+0 % end-face geometry measurement (+ 0.5 min per ferrule) and IL test against=
+ grade A reference cords.
+IMPORTANT (CH2, not in the ECR): the UL listing covers the trunk cable only -=
+ the fan-out box and the 3.0 mm legs remain LSZH and must stay inside the rac=
+k (non-plenum). Please confirm this.
+Proposed effectivity: Samples, Lot 1 (Rev A0) and Lots 2 / 3 (Rev B0, materia=
+l issued) unchanged; Rev C0 / customer Rev C from Lot 4 (PO line 1.5, moved t=
+o 2026-12-15 for the 8-week plenum cable and the elite MPO qualification) onw=
+ards.
+
+CH1 Low-loss connectors: MPO-12 APC male elite and LC/APC grade A: Feasible a=
+t best capability (LPC-QM-021 =C2=A74.3, =C2=A74.6). The elite MPO-12 male ki=
+t is a new supplier part with first-article qualification (8 weeks). Not requ=
+ested but required: grade A ferrules are only guaranteed with 100 % end-face =
+geometry measurement (+ 0.5 min per ferrule) and IL test against grade A refe=
+rence cords. Cost: Approx. + USD 60 per pc full cost (grade A uniboot kits, e=
+lite MPO-12 kits, + 21 min 100 % geometry / test)
+CH2 Trunk LSZH -> OFNP plenum (UL 1651): Feasible only with UL-listed purchas=
+ed cable (RM-CB-P36, 8 weeks; LPC-QM-021 =C2=A78.2, =C2=A79). Not requested b=
+ut required: the UL listing covers the trunk cable only - the fan-out box and=
+ the 3.0 mm legs remain LSZH and must stay inside the rack (non-plenum). Corv=
+ane to confirm. Cost: Approx. + USD 21 per pc full cost (UL-listed plenum cab=
+le replaces ribbons and jacket)
+CH3 Quantity +1,000 pcs: Capacity available. B0 Lot 4 (1,000 pcs, 2026-11-17)=
+ becomes C0 Lot 4 on 2026-12-15 (plenum cable lead time); new C0 Lot 5 1,000 =
+pcs 2026-12-29. Cost: At Rev C0 unit price
+
+Unit price USD 224.00 -> 342.00; ECR NRE USD 5,400.00.
+Rev C lots: Lot 4 1,000 pcs 2026-12-15; Lot 5 1,000 pcs 2026-12-29.
+Please approve by 2026-09-28.
+
+Best regards,
+--
+Alex Lin
+Senior NPI Engineer
+Lumora Photonics Co., Ltd.
+No. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinchu City 300, T=
+aiwan
+Tel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photonics.com.tw
+
+--===============7234535497355313922==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><head><style>
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#1f1f1f;}
+table{border-collapse:collapse;margin:6px 0 12px 0;}
+th{background:#005F73;color:#fff;font-weight:600;text-align:left;padding:5px =
+7px;border:1px solid #9aa5b8;font-size:9.5pt;}
+td{padding:5px 7px;border:1px solid #c3c9d4;vertical-align:top;font-size:9.5p=
+t;}
+tr:nth-child(even) td{background:#f4f6fa;}
+.hi{color:#b00020;font-weight:600;}
+.ok{color:#1b7f3b;font-weight:600;}
+.amb{color:#b26a00;font-weight:600;}
+.sig{color:#555;font-size:9.5pt;margin-top:18px;border-top:1px solid #ddd;pad=
+ding-top:8px;}
+h3{color:#005F73;font-size:11.5pt;margin:16px 0 4px 0;}
+</style></head><body>
+<p>Dear Samira,</p>
+<p>Thank you for engineering change request <b>CVN-ECR-3612-02</b> dated 2026=
+-09-18 (received 2026-09-21). We have assessed all 3 changes
+against the released Rev B0 documents (LPC-PS-26104, LPC-DWG-26104, LPC-BOM-2=
+6104), our process capability document LPC-QM-021 Rev C
+and the current production status.</p>
+<p><b>Summary:</b> all 3 changes are feasible.
+ Our assessment found 2 consequences that are not in your ECR (see below).
+ The effectivity is driven by the lead times: CH1: elite MPO-12 qualification=
+ 8 weeks; CH2: plenum cable 8 weeks - C0 from Lot 4 (2026-12-15).
+ <span class=3D"hi">Lot 4 (PO line 1.5) moves from 2026-11-17 to 2026-12-15 b=
+ecause of these lead times.</span>
+ Samples / Lot 1 (1,000 pcs) stay Rev A (LPC A0); Lot 2 / Lot 3 (3,000 pcs) s=
+tay Rev B (LPC B0), so we propose <span class=3D"hi">Rev C (LPC C0) from Lot =
+4 (PO line 1.5)</span>.</p>
+<p class=3D"hi">Important - not in your ECR but required by the change:</p><u=
+l><li><span class=3D"hi">CH1 (Low-loss connectors: MPO-12 APC male elite and =
+LC/APC grade A):</span> grade A ferrules are only guaranteed with 100 % end-f=
+ace geometry measurement (+ 0.5 min per ferrule) and IL test against grade A =
+reference cords.</li><li><span class=3D"hi">CH2 (Trunk LSZH -> OFNP plenum (U=
+L 1651)):</span> the UL listing covers the trunk cable only - the fan-out box=
+ and the 3.0 mm legs remain LSZH and must stay inside the rack (non-plenum). =
+<b>Please confirm this before you approve the ECR.</b></li></ul>
+
+<h3>1. Assessment per change</h3>
+<table><tr><th>#</th><th>Change</th><th>LPC feasibility assessment</th><th>Co=
+st impact</th><th>Schedule</th></tr>
+<tr><td>CH1</td><td>Low-loss connectors: MPO-12 APC male elite and LC/APC gra=
+de A</td><td>Feasible at best capability (LPC-QM-021 =C2=A74.3, =C2=A74.6). T=
+he elite MPO-12 male kit is a new supplier part with first-article qualificat=
+ion (8 weeks). <b>Not requested but required:</b> grade A ferrules are only g=
+uaranteed with 100 % end-face geometry measurement (+ 0.5 min per ferrule) an=
+d IL test against grade A reference cords.</td><td>Approx. + USD 60 per pc fu=
+ll cost (grade A uniboot kits, elite MPO-12 kits, + 21 min 100 % geometry / t=
+est)</td><td>Elite MPO-12 qualification 8 weeks</td></tr>
+<tr><td>CH2</td><td>Trunk LSZH -> OFNP plenum (UL 1651)</td><td>Feasible only=
+ with UL-listed purchased cable (RM-CB-P36, 8 weeks; LPC-QM-021 =C2=A78.2, =
+=C2=A79). <b>Not requested but required:</b> the UL listing covers the trunk =
+cable only - the fan-out box and the 3.0 mm legs remain LSZH and must stay in=
+side the rack (non-plenum). Corvane to confirm.</td><td>Approx. + USD 21 per =
+pc full cost (UL-listed plenum cable replaces ribbons and jacket)</td><td>Ple=
+num cable 8 weeks - C0 from Lot 4 (2026-12-15)</td></tr>
+<tr><td>CH3</td><td>Quantity +1,000 pcs</td><td>Capacity available. B0 Lot 4 =
+(1,000 pcs, 2026-11-17) becomes C0 Lot 4 on 2026-12-15 (plenum cable lead tim=
+e); new C0 Lot 5 1,000 pcs 2026-12-29.</td><td>At Rev C0 unit price</td><td>C=
+0 Lots: 1,000 pcs 2026-12-15, 1,000 pcs 2026-12-29</td></tr>
+</table>
+
+<h3>2. Effectivity and revised delivery plan</h3>
+<table><tr><th></th><th>Detail</th></tr>
+<tr><td>Corvane request</td><td>All assemblies not yet in production.</td></t=
+r>
+<tr><td>LPC proposal</td><td><b>Samples, Lot 1 (Rev A0) and Lots 2 / 3 (Rev B=
+0, material issued) unchanged; Rev C0 / customer Rev C from Lot 4 (PO line 1.=
+5, moved to 2026-12-15 for the 8-week plenum cable and the elite MPO qualific=
+ation) onwards.</b></td></tr></table>
+<table><tr><th>Lot</th><th>PO line</th><th>Qty</th><th>Configuration</th><th>=
+At Corvane</th><th>Previous plan</th></tr><tr><td>Samples</td><td>1.1</td><td=
+>50</td><td>Rev A (LPC A0)</td><td>2026-09-18</td><td>unchanged</td></tr><tr>=
+<td>Lot 1</td><td>1.2</td><td>950</td><td>Rev A (LPC A0)</td><td>2026-09-29</=
+td><td>unchanged</td></tr><tr><td>Lot 2</td><td>1.3</td><td>1,500</td><td>Rev=
+ B (LPC B0)</td><td>2026-10-20</td><td>unchanged</td></tr><tr><td>Lot 3</td><=
+td>1.4</td><td>1,500</td><td>Rev B (LPC B0)</td><td>2026-11-03</td><td>unchan=
+ged</td></tr><tr><td>Lot 4</td><td>1.5</td><td>1,000</td><td>Rev C (LPC C0)</=
+td><td>2026-12-15</td><td>1,000 pcs Rev B / 2026-11-17</td></tr><tr><td>Lot 5=
+</td><td>1.6</td><td>1,000</td><td>Rev C (LPC C0)</td><td>2026-12-29</td><td>=
+NEW</td></tr></table>
+<p>To hold the Lot 4 date (2026-12-15) we would order the long-lead parts (UL=
+-listed OFNP plenum trunk cable, elite-grade MPO-12 APC male (pinned) connect=
+or kit and grade A LC/APC uniboot duplex connector kit) on 2026-09-29, the da=
+y after your approval (risk buy). Previously planned Lot 4 (1,000 pcs, due 20=
+26-11-17) is replaced by the Rev C lots above.</p>
+
+<h3>3. Commercial impact (estimate - revised quotation to follow)</h3>
+<table><tr><th>Item</th><th>Rev B (LPC B0)</th><th>Rev C (LPC C0)</th><th>Del=
+ta</th></tr>
+<tr><td>Unit price per assembly, FCA Taoyuan Intl. Airport</td><td>USD 224.00=
+</td><td>USD 342.00</td><td>+118.00 (+52.7%)</td></tr>
+<tr><td>Quantity (PO total)</td><td>5,000 pcs</td><td>6,000 pcs</td><td>+1,00=
+0 pcs</td></tr></table>
+<p>The price change follows the cost impacts in section 1 (increase: CH1, CH2=
+); the unit price also covers yield loss and overheads on the added cost. Sam=
+ples / Lot 1 stay at USD 179.50 (Rev A); Lot 2 / Lot 3 stay at USD 224.00 (Re=
+v B).</p>
+<table><tr><th>ECR NRE item</th><th>USD</th></tr>
+<tr><td>ECR-02: elite MPO-12 male first-article qualification (incl. interfer=
+ometry of 30 ferrules)</td><td>2,400.00</td></tr>
+<tr><td>ECR-02: grade A reference cords and 100 % geometry recipe for uniboot=
+ LC</td><td>1,900.00</td></tr>
+<tr><td>ECR-02: delta FAI and fire-rating documentation (UL listing file revi=
+ew)</td><td>1,100.00</td></tr>
+<tr><td><b>Total additional NRE</b></td><td><b>5,400.00</b></td></tr>
+</table>
+<h3>4. Next steps</h3>
+<ol><li>Please approve the ECR with the proposed effectivity by <b>2026-09-28=
+</b>.</li><li>CH2: please confirm that the fan-out box and the 3.0 mm legs re=
+main LSZH and must stay inside the rack (non-plenum).</li><li>LPC releases sp=
+ecification, drawing and BOM Rev C0 by 2026-10-01; Ryan Wu will issue the rev=
+ised quotation.</li><li>Please issue a PO change order for the revised lots, =
+quantity and the ECR NRE.</li></ol>
+<p>Best regards,</p>
+<div class=3D"sig"><b>Alex Lin</b><br>Senior NPI Engineer<br>Lumora Photonics=
+ Co., Ltd.<br>No. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinc=
+hu City 300, Taiwan<br>Tel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photon=
+ics.com.tw<br><span style=3D"font-size:8pt;color:#888">This e-mail and any at=
+tachments are confidential and intended solely for the addressee. ISO 9001 / =
+TL 9000 / ISO 14001 certified.</span></div>
+</body></html>
+
+--===============7234535497355313922==--

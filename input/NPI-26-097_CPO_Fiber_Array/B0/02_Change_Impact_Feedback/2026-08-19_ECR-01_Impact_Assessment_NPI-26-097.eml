@@ -1,0 +1,201 @@
+From: Alex Lin <alex.lin@lumora-photonics.com.tw>
+To: Dr. Priya Raman <priya.raman@kalvara-photonics.com>
+Cc: Dr. Henrik Sand <henrik.sand@kalvara-photonics.com>,
+ Tom Becker <tom.becker@kalvara-photonics.com>,
+ Ana Morales <ana.morales@kalvara-photonics.com>,
+ Jessica Liao <jessica.liao@lumora-photonics.com.tw>,
+ Ryan Wu <ryan.wu@lumora-photonics.com.tw>,
+ Kevin Hsieh <kevin.hsieh@lumora-photonics.com.tw>,
+ Ben Kuo <ben.kuo@lumora-photonics.com.tw>
+Subject: RE: KVP-ECR-2408-01 - LPC change impact assessment, KVP-FAU-2408 Rev
+ A -> Rev B (LPC NPI-26-097)
+Date: Wed, 19 Aug 2026 18:05:00 +0800
+Message-ID: <179285778550.59174.12944402560529484529.202608191805@lumora-photonics.com.tw>
+In-Reply-To: <KVP-ECR-2408-01@kalvara-photonics.com>
+References: <KVP-ECR-2408-01@kalvara-photonics.com>
+X-Mailer: Microsoft Outlook 16.0
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============4248284879883681999=="
+
+--===============4248284879883681999==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Dr. Raman,
+
+Thank you for ECR KVP-ECR-2408-01. All 4 changes are feasible.
+Proposed effectivity: Samples and Lot 1 (PO lines 1.1 / 1.2, 500 pcs, materia=
+l in production) delivered to Rev A0 / customer Rev A; Rev B0 / customer Rev =
+B from Lot 2 (PO line 1.3) onwards.
+
+CH1 Channel count 24 -> 32 (two 16-fibre ribbons): Feasible. New 32-groove su=
+bstrate (6.0 x 8.0 mm, 5 weeks) and fused-silica lid 6.0 x 5.0 mm; arrays wid=
+er than 4.5 mm need the wide-array polishing fixture with centre support (+20=
+ % polish time, LPC-LL-003 DR-13) and an incoming cumulative-pitch check. No =
+16-fibre ribbon is stocked: ribbons are made in-house from loose G.657.A2 fib=
+re. Boot 9.0 x 4.5 x 16 mm (new). Cost: Approx. + USD 13 per pc full cost (su=
+bstrate, lid, in-house ribbonizing, +8 min assembly / polish / test); NRE fix=
+tures USD 7,200
+CH2 4 PM fibres for the external laser source (ch 1, 16, 17, 32): Feasible wi=
+thin LPC-QM-021 =C2=A74.4 (=C2=B1 2.0=C2=B0 / ER =E2=89=A5 22 dB best; Kalvar=
+a asked =C2=B1 1.5=C2=B0 - not achievable, LPC-LL-003 DR-05). PM fibre lead t=
+ime 6 weeks is the critical path for Lot 2. Cost: Approx. + USD 21 per pc ful=
+l cost (PM fibre, alignment of 4 channels, ER test); NRE PM fixture / softwar=
+e USD 3,600
+CH3 Connectors 2 x MPO-12 APC female -> 2 x MPO-16 APC male (pinned), elite: =
+Feasible - stocked elite MPO-16 kit (PP-MPO16-APC-M); MPO IL improves to =E2=
+=89=A4 0.25 dB (elite). Cost: Approx. + USD 10 per pc full cost (elite MPO-16=
+ kits, termination time)
+CH4 Quantity +3,000 pcs: Capacity available. A0 Lots 2 / 3 (1,500 pcs) are re=
+placed by B0 Lots 2-4 (4,500 pcs). Cost: At Rev B0 unit price
+
+Unit price USD 112.00 -> 175.00; ECR NRE USD 43,054.65.
+Rev B lots: Lot 2 1,000 pcs 2026-10-30; Lot 3 1,500 pcs 2026-11-13; Lot 4 2,0=
+00 pcs 2026-11-27.
+Please approve by 2026-08-24.
+
+Best regards,
+--
+Alex Lin
+Senior NPI Engineer
+Lumora Photonics Co., Ltd.
+No. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinchu City 300, T=
+aiwan
+Tel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photonics.com.tw
+
+--===============4248284879883681999==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><head><style>
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#1f1f1f;}
+table{border-collapse:collapse;margin:6px 0 12px 0;}
+th{background:#005F73;color:#fff;font-weight:600;text-align:left;padding:5px =
+7px;border:1px solid #9aa5b8;font-size:9.5pt;}
+td{padding:5px 7px;border:1px solid #c3c9d4;vertical-align:top;font-size:9.5p=
+t;}
+tr:nth-child(even) td{background:#f4f6fa;}
+.hi{color:#b00020;font-weight:600;}
+.ok{color:#1b7f3b;font-weight:600;}
+.amb{color:#b26a00;font-weight:600;}
+.sig{color:#555;font-size:9.5pt;margin-top:18px;border-top:1px solid #ddd;pad=
+ding-top:8px;}
+h3{color:#005F73;font-size:11.5pt;margin:16px 0 4px 0;}
+</style></head><body>
+<p>Dear Dr. Raman,</p>
+<p>Thank you for engineering change request <b>KVP-ECR-2408-01</b> dated 2026=
+-08-14 (received 2026-08-17). We have assessed all 4 changes
+against the released Rev A0 documents (LPC-PS-26097, LPC-DWG-26097, LPC-BOM-2=
+6097) and against the current production status.</p>
+<p><b>Summary:</b> all 4 changes are feasible.
+ The effectivity is driven by the lead times: CH1 (substrate 5 weeks - B0 fro=
+m Lot 2; risk buy at ECR approval); CH2 (PM fibre 6 weeks - ordered at ECR ap=
+proval); CH3 (MPO-16 kits 4 weeks).
+ CH2: PM fibre lead time 6 weeks is the critical path for Lot 2.
+ Samples / Lot 1 (500 pcs) stay Rev A (LPC A0), so we propose <span class=3D"=
+hi">Rev B (LPC B0) from Lot 2 (PO line 1.3)</span>.</p>
+<p><b>CH2:</b> the requested =C2=B1 1.5=C2=B0 is not achievable (LPC-LL-003 D=
+R-05); we propose channels 1, 16, 17, 32 PM PANDA 1310, slow axis =C2=B1 2.0=
+=C2=B0, ER =E2=89=A5 22 dB.</p>
+<p>Project-specific A0 material already bought for the replaced lots becomes =
+obsolete; it is listed at cost as a separate line in section 3.</p>
+
+<h3>1. Assessment per change</h3>
+<table><tr><th>#</th><th>Change</th><th>LPC feasibility assessment</th><th>Co=
+st impact</th><th>Schedule</th></tr>
+<tr><td>CH1</td><td>Channel count 24 -> 32 (two 16-fibre ribbons)</td><td>Fea=
+sible. New 32-groove substrate (6.0 x 8.0 mm, 5 weeks) and fused-silica lid 6=
+.0 x 5.0 mm; arrays wider than 4.5 mm need the wide-array polishing fixture w=
+ith centre support (+20 % polish time, LPC-LL-003 DR-13) and an incoming cumu=
+lative-pitch check. No 16-fibre ribbon is stocked: ribbons are made in-house =
+from loose G.657.A2 fibre. Boot 9.0 x 4.5 x 16 mm (new).</td><td>Approx. + US=
+D 13 per pc full cost (substrate, lid, in-house ribbonizing, +8 min assembly =
+/ polish / test); NRE fixtures USD 7,200</td><td>Substrate 5 weeks - B0 from =
+Lot 2; risk buy at ECR approval</td></tr>
+<tr><td>CH2</td><td>4 PM fibres for the external laser source (ch 1, 16, 17, =
+32)</td><td>Feasible within LPC-QM-021 =C2=A74.4 (=C2=B1 2.0=C2=B0 / ER =E2=
+=89=A5 22 dB best; Kalvara asked =C2=B1 1.5=C2=B0 - not achievable, LPC-LL-00=
+3 DR-05). PM fibre lead time 6 weeks is the critical path for Lot 2.</td><td>=
+Approx. + USD 21 per pc full cost (PM fibre, alignment of 4 channels, ER test=
+); NRE PM fixture / software USD 3,600</td><td>PM fibre 6 weeks - ordered at =
+ECR approval</td></tr>
+<tr><td>CH3</td><td>Connectors 2 x MPO-12 APC female -> 2 x MPO-16 APC male (=
+pinned), elite</td><td>Feasible - stocked elite MPO-16 kit (PP-MPO16-APC-M); =
+MPO IL improves to =E2=89=A4 0.25 dB (elite).</td><td>Approx. + USD 10 per pc=
+ full cost (elite MPO-16 kits, termination time)</td><td>MPO-16 kits 4 weeks<=
+/td></tr>
+<tr><td>CH4</td><td>Quantity +3,000 pcs</td><td>Capacity available. A0 Lots 2=
+ / 3 (1,500 pcs) are replaced by B0 Lots 2-4 (4,500 pcs).</td><td>At Rev B0 u=
+nit price</td><td>B0 Lots: 1,000 pcs 2026-10-30, 1,500 pcs 2026-11-13, 2,000 =
+pcs 2026-11-27</td></tr>
+</table>
+
+<h3>2. Effectivity and revised delivery plan</h3>
+<table><tr><th></th><th>Detail</th></tr>
+<tr><td>Kalvara request</td><td>All FAU not yet shipped.</td></tr>
+<tr><td>LPC proposal</td><td><b>Samples and Lot 1 (PO lines 1.1 / 1.2, 500 pc=
+s, material in production) delivered to Rev A0 / customer Rev A; Rev B0 / cus=
+tomer Rev B from Lot 2 (PO line 1.3) onwards.</b></td></tr></table>
+<table><tr><th>Lot</th><th>PO line</th><th>Qty</th><th>Configuration</th><th>=
+At Kalvara</th><th>Previous plan</th></tr><tr><td>Samples</td><td>1.1</td><td=
+>100</td><td>Rev A (LPC A0)</td><td>2026-09-18</td><td>unchanged</td></tr><tr=
+><td>Lot 1</td><td>1.2</td><td>400</td><td>Rev A (LPC A0)</td><td>2026-10-02<=
+/td><td>unchanged</td></tr><tr><td>Lot 2</td><td>1.3</td><td>1,000</td><td>Re=
+v B (LPC B0)</td><td>2026-10-30</td><td>750 pcs Rev A / 2026-10-16</td></tr><=
+tr><td>Lot 3</td><td>1.4</td><td>1,500</td><td>Rev B (LPC B0)</td><td>2026-11=
+-13</td><td>750 pcs Rev A / 2026-10-30</td></tr><tr><td>Lot 4</td><td>1.5</td=
+><td>2,000</td><td>Rev B (LPC B0)</td><td>2026-11-27</td><td>NEW</td></tr></t=
+able>
+<p>To hold the Lot 2 date (2026-10-30) we would order the long-lead parts (fu=
+sed-silica V-groove substrate 32 ch, fused-silica lid 6.0 x 5.0 x 0.7 mm, sil=
+icone strain-relief boot for 32-ch fibre array and PM fibre PANDA 1310 nm) on=
+ 2026-08-25, the day after your approval (risk buy). Previously planned Lot 2=
+ / Lot 3 (1,500 pcs, due 2026-10-16 / 2026-10-30) are replaced by the Rev B l=
+ots above.</p>
+
+<h3>3. Commercial impact (estimate - revised quotation to follow)</h3>
+<table><tr><th>Item</th><th>Rev A (LPC A0)</th><th>Rev B (LPC B0)</th><th>Del=
+ta</th></tr>
+<tr><td>Unit price per FAU, FCA TPE</td><td>USD 112.00</td><td>USD 175.00</td=
+><td>+63.00 (+56.2%)</td></tr>
+<tr><td>Quantity (PO total)</td><td>2,000 pcs</td><td>5,000 pcs</td><td>+3,00=
+0 pcs</td></tr></table>
+<p>The price change follows the cost impacts in section 1 (increase: CH1, CH2=
+, CH3); the unit price also covers yield loss and overheads on the added cost=
+. Samples / Lot 1 stay at USD 112.00 (Rev A).</p>
+<table><tr><th>ECR NRE item</th><th>USD</th></tr>
+<tr><td>ECR-01: wide-array polishing fixtures with centre support for 32-ch a=
+rrays (2 sets) + MPO-16 polishing inserts</td><td>7,200.00</td></tr>
+<tr><td>ECR-01: PM alignment fixture for 4 edge channels + ER test software</=
+td><td>3,600.00</td></tr>
+<tr><td>ECR-01: 32-ch test configuration (switch, reference jumpers MPO-16 el=
+ite)</td><td>2,400.00</td></tr>
+<tr><td>ECR-01: delta qualification - thermal cycling 500 cycles, 11 pcs, 32-=
+ch array</td><td>2,400.00</td></tr>
+<tr><td><b>Subtotal tooling / qualification</b></td><td><b>15,600.00</b></td>=
+</tr>
+<tr><td>ECR-01: obsolete Rev A0 project-specific material, at cost (1,655 sub=
+strates 24 ch, 1,655 lids, 2,455 boots, 1,500 end-face caps bought for A0 Lot=
+s 2 / 3)</td><td>27,454.65</td></tr>
+<tr><td><b>Total additional NRE incl. material liability</b></td><td><b>43,05=
+4.65</b></td></tr>
+</table>
+<h3>4. Next steps</h3>
+<ol><li>Please approve the ECR with the proposed effectivity by <b>2026-08-24=
+</b>.</li><li>CH2: please accept channels 1, 16, 17, 32 PM PANDA 1310, slow a=
+xis =C2=B1 2.0=C2=B0, ER =E2=89=A5 22 dB.</li><li>LPC releases specification,=
+ drawing and BOM Rev B0 by 2026-08-27; Ryan Wu will issue the revised quotati=
+on.</li><li>Please issue a PO change order for the revised lots, quantity and=
+ the ECR NRE.</li></ol>
+<p>Best regards,</p>
+<div class=3D"sig"><b>Alex Lin</b><br>Senior NPI Engineer<br>Lumora Photonics=
+ Co., Ltd.<br>No. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinc=
+hu City 300, Taiwan<br>Tel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photon=
+ics.com.tw<br><span style=3D"font-size:8pt;color:#888">This e-mail and any at=
+tachments are confidential and intended solely for the addressee. ISO 9001 / =
+TL 9000 / ISO 14001 certified.</span></div>
+</body></html>
+
+--===============4248284879883681999==--

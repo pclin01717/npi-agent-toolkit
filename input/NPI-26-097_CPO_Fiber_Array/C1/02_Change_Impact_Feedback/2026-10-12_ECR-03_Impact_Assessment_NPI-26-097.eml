@@ -1,0 +1,149 @@
+From: Alex Lin <alex.lin@lumora-photonics.com.tw>
+To: Dr. Priya Raman <priya.raman@kalvara-photonics.com>
+Cc: Dr. Henrik Sand <henrik.sand@kalvara-photonics.com>,
+ Tom Becker <tom.becker@kalvara-photonics.com>,
+ Ana Morales <ana.morales@kalvara-photonics.com>,
+ Jessica Liao <jessica.liao@lumora-photonics.com.tw>,
+ Ryan Wu <ryan.wu@lumora-photonics.com.tw>,
+ Kevin Hsieh <kevin.hsieh@lumora-photonics.com.tw>,
+ Ben Kuo <ben.kuo@lumora-photonics.com.tw>
+Subject: RE: KVP-ECR-2408-03 - LPC change impact assessment (minor change),
+ KVP-FAU-2408 Rev C -> Rev D (LPC NPI-26-097)
+Date: Mon, 12 Oct 2026 18:05:00 +0800
+Message-ID:
+ <179285781005.59198.9925969650098138487.202610121805@lumora-photonics.com.tw>
+In-Reply-To: <KVP-ECR-2408-03@kalvara-photonics.com>
+References: <KVP-ECR-2408-03@kalvara-photonics.com>
+X-Mailer: Microsoft Outlook 16.0
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============6198070851208110386=="
+
+--===============6198070851208110386==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Dr. Raman,
+
+Thank you for ECR KVP-ECR-2408-03. All 3 changes are feasible.
+Proposed effectivity: Lot 3 (Rev C0, material kitted and AR-coating batch boo=
+ked for the 2026-10-26 start) unchanged; Rev C1 / customer Rev D from Lot 4 (=
+PO line 1.5) onwards. Open PO lines 1.5 / 1.6 are delivered to Rev D at the R=
+ev C price - no PO revision.
+
+CH1 Pigtail length 500 -> 520 mm: Feasible - cutting length only; fibre + 0.6=
+ m per FAU. Cost: Material approx. + USD 0.2 per pc
+CH2 Flag label with 2D DataMatrix: Feasible - label template change (LPC-QM-0=
+21 =C2=A75); verification grade checked in Op 110. Cost: + 0.2 min per pc
+CH3 Packing 50 -> 40 FAU per carton: Feasible - same carton, packing instruct=
+ion change. Cost: Packaging + USD 0.01 per pc
+
+Unit price USD 180.50 -> 180.50 (unchanged per ECR, no PO revision); no ECR N=
+RE.
+Rev D lots: Lot 4 2,000 pcs 2026-12-11; Lot 5 1,000 pcs 2027-01-08.
+Please approve by 2026-10-14.
+
+Best regards,
+--
+Alex Lin
+Senior NPI Engineer
+Lumora Photonics Co., Ltd.
+No. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinchu City 300, T=
+aiwan
+Tel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photonics.com.tw
+
+--===============6198070851208110386==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><head><style>
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#1f1f1f;}
+table{border-collapse:collapse;margin:6px 0 12px 0;}
+th{background:#005F73;color:#fff;font-weight:600;text-align:left;padding:5px =
+7px;border:1px solid #9aa5b8;font-size:9.5pt;}
+td{padding:5px 7px;border:1px solid #c3c9d4;vertical-align:top;font-size:9.5p=
+t;}
+tr:nth-child(even) td{background:#f4f6fa;}
+.hi{color:#b00020;font-weight:600;}
+.ok{color:#1b7f3b;font-weight:600;}
+.amb{color:#b26a00;font-weight:600;}
+.sig{color:#555;font-size:9.5pt;margin-top:18px;border-top:1px solid #ddd;pad=
+ding-top:8px;}
+h3{color:#005F73;font-size:11.5pt;margin:16px 0 4px 0;}
+</style></head><body>
+<p>Dear Dr. Raman,</p>
+<p>Thank you for engineering change request <b>KVP-ECR-2408-03</b> dated 2026=
+-10-08 (received 2026-10-09). We have assessed all 3 changes
+against the released Rev C0 documents (LPC-PS-26097, LPC-DWG-26097, LPC-BOM-2=
+6097) and against the current production status.</p>
+<p><b>Summary:</b> all 3 changes are feasible and minor - no schedule impact.
+ Samples / Lot 1 (500 pcs) stay Rev A (LPC A0); Lot 2 (1,000 pcs) stays Rev B=
+ (LPC B0); Lot 3 (1,500 pcs) stays Rev C (LPC C0), so we propose <span class=
+=3D"hi">Rev D (LPC C1) from Lot 4 (PO line 1.5)</span>.</p>
+<p>As requested in the ECR, the unit price stays at the Rev C (LPC C0) quotat=
+ion and <b>no PO revision is needed</b>.</p>
+
+<h3>1. Assessment per change</h3>
+<table><tr><th>#</th><th>Change</th><th>LPC feasibility assessment</th><th>Co=
+st impact</th><th>Schedule</th></tr>
+<tr><td>CH1</td><td>Pigtail length 500 -> 520 mm</td><td>Feasible - cutting l=
+ength only; fibre + 0.6 m per FAU.</td><td>Material approx. + USD 0.2 per pc<=
+/td><td>None</td></tr>
+<tr><td>CH2</td><td>Flag label with 2D DataMatrix</td><td>Feasible - label te=
+mplate change (LPC-QM-021 =C2=A75); verification grade checked in Op 110.</td=
+><td>+ 0.2 min per pc</td><td>None</td></tr>
+<tr><td>CH3</td><td>Packing 50 -> 40 FAU per carton</td><td>Feasible - same c=
+arton, packing instruction change.</td><td>Packaging + USD 0.01 per pc</td><t=
+d>None</td></tr>
+</table>
+
+<h3>2. Effectivity and revised delivery plan</h3>
+<table><tr><th></th><th>Detail</th></tr>
+<tr><td>Kalvara request</td><td>Next production lot.</td></tr>
+<tr><td>LPC proposal</td><td><b>Lot 3 (Rev C0, material kitted and AR-coating=
+ batch booked for the 2026-10-26 start) unchanged; Rev C1 / customer Rev D fr=
+om Lot 4 (PO line 1.5) onwards. Open PO lines 1.5 / 1.6 are delivered to Rev =
+D at the Rev C price - no PO revision.</b></td></tr></table>
+<table><tr><th>Lot</th><th>PO line</th><th>Qty</th><th>Configuration</th><th>=
+At Kalvara</th><th>Previous plan</th></tr><tr><td>Samples</td><td>1.1</td><td=
+>100</td><td>Rev A (LPC A0)</td><td>2026-09-18</td><td>unchanged</td></tr><tr=
+><td>Lot 1</td><td>1.2</td><td>400</td><td>Rev A (LPC A0)</td><td>2026-10-02<=
+/td><td>unchanged</td></tr><tr><td>Lot 2</td><td>1.3</td><td>1,000</td><td>Re=
+v B (LPC B0)</td><td>2026-10-30</td><td>unchanged</td></tr><tr><td>Lot 3</td>=
+<td>1.4</td><td>1,500</td><td>Rev C (LPC C0)</td><td>2026-11-27</td><td>uncha=
+nged</td></tr><tr><td>Lot 4</td><td>1.5</td><td>2,000</td><td>Rev D (LPC C1)<=
+/td><td>2026-12-11</td><td>2,000 pcs Rev C / 2026-12-11</td></tr><tr><td>Lot =
+5</td><td>1.6</td><td>1,000</td><td>Rev D (LPC C1)</td><td>2027-01-08</td><td=
+>1,000 pcs Rev C / 2027-01-08</td></tr></table>
+<p>Lot 4 / Lot 5 keep their quantities and dates and are built to Rev D (LPC =
+C1).</p>
+
+<h3>3. Commercial impact</h3>
+<table><tr><th>Item</th><th>Rev C (LPC C0)</th><th>Rev D (LPC C1)</th><th>Del=
+ta</th></tr>
+<tr><td>Unit price per FAU, FCA TPE</td><td>USD 180.50</td><td>USD 180.50 (Re=
+v C quotation)</td><td>unchanged</td></tr>
+<tr><td>Quantity (PO total)</td><td>6,000 pcs</td><td>6,000 pcs</td><td>uncha=
+nged</td></tr></table>
+<p>Per your ECR there is no price change: Rev D lots are delivered at the Rev=
+ C price (quotation LPC-Q-26-0391-R2). The small cost impacts listed in secti=
+on 1 are absorbed by LPC - no revised quotation and no PO revision. Samples /=
+ Lot 1 stay at USD 112.00 (Rev A); Lot 2 stays at USD 175.00 (Rev B); Lot 3 s=
+tays at USD 180.50 (Rev C).</p>
+<p>No additional NRE.</p>
+<h3>4. Next steps</h3>
+<ol><li>Please approve the ECR with the proposed effectivity by <b>2026-10-14=
+</b>.</li><li>LPC releases specification, drawing and BOM Rev C1 by 2026-10-1=
+6.</li><li>No PO change order is needed: PO lines 1.5 / 1.6 stay as ordered a=
+nd are delivered to Rev D.</li></ol>
+<p>Best regards,</p>
+<div class=3D"sig"><b>Alex Lin</b><br>Senior NPI Engineer<br>Lumora Photonics=
+ Co., Ltd.<br>No. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinc=
+hu City 300, Taiwan<br>Tel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photon=
+ics.com.tw<br><span style=3D"font-size:8pt;color:#888">This e-mail and any at=
+tachments are confidential and intended solely for the addressee. ISO 9001 / =
+TL 9000 / ISO 14001 certified.</span></div>
+</body></html>
+
+--===============6198070851208110386==--

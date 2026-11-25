@@ -1,0 +1,31 @@
+{
+  "costing_qty": {
+    "value": 6000,
+    "sources": [
+      "CH4"
+    ]
+  },
+  "notes": [],
+  "lot_size": {
+    "value": 150,
+    "sources": [
+      "RULES §3 成本批量 鍍膜批次"
+    ]
+  },
+  "ecr_nre": [
+    {
+      "kind": "ecr",
+      "name": "ECR engineering and document update",
+      "amount": "待工程師填寫",
+      "sources": []
+    }
+  ],
+  "services": [
+    {
+      "code": "SV-ARC-1310",
+      "sources": [
+        "ROUTING 64"
+      ]
+    }
+  ]
+}

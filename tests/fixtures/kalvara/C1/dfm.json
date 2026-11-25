@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "ref": "CH1",
+      "title": "Pigtail length 500 -> 520 mm",
+      "feasibility": "Feasible",
+      "assessment": "Cutting length only.",
+      "cost": "待工程師填寫",
+      "sources": []
+    },
+    {
+      "ref": "CH2",
+      "title": "Flag label with 2D DataMatrix",
+      "feasibility": "Feasible",
+      "assessment": "Label template change.",
+      "cost": "待工程師填寫",
+      "sources": [
+        "QM-021 §5"
+      ]
+    },
+    {
+      "ref": "CH3",
+      "title": "Packing 50 -> 40 FAU per carton",
+      "feasibility": "Feasible",
+      "assessment": "Packing instruction change; 40 FAU per carton (≤ 12 kg).",
+      "cost": "待工程師填寫",
+      "sources": []
+    }
+  ],
+  "notes": [],
+  "po_change": "",
+  "revision_kind": {
+    "value": "minor",
+    "sources": [
+      "ECR affected"
+    ]
+  }
+}

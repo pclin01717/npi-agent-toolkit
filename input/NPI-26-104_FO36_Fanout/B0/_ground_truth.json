@@ -1,0 +1,2255 @@
+{
+  "revision": "B0",
+  "effectivity": "Samples and Lot 1 (PO lines 1.1 / 1.2, 1,000 pcs, material issued) delivered to Rev A0 / customer Rev A; Rev B0 / customer Rev B from Lot 2 (PO line 1.3) onwards.",
+  "project": {
+    "npi_no": "NPI-26-104",
+    "name": "FO36 Fan-out Assembly, 3 x MPO-12 APC to 18 x LC/APC uniboot duplex, 10.0 m",
+    "lpc_pn": "LPC-FO36-M12LD-B",
+    "cust_pn": "CVN-FO-3612",
+    "cust_desc": "Fan-out 36F SM, 3x MPO-12 APC to 18x LC/APC uniboot, 10.0 m",
+    "rfq_no": "CVN-RFQ-26-1187",
+    "cust_rev": "B",
+    "annual_volume": 30000,
+    "costing_lot": 500,
+    "unit": "pcs",
+    "sub_pn": {
+      "trunk": "LPC-FO36-110",
+      "fanout": "LPC-FO36-120"
+    }
+  },
+  "customer": "Corvane Networks Inc.",
+  "timeline": {
+    "draft_spec_issued": "2026-07-13",
+    "draft_spec_received": "2026-07-14",
+    "dfm_feedback": "2026-07-17",
+    "customer_agreement": "2026-07-22",
+    "formal_spec_release": "2026-09-03",
+    "spec_acceptance": "2026-09-04",
+    "unit_cost_to_finance": "2026-09-07",
+    "finance_confirmed": "2026-09-08",
+    "quotation": "2026-09-09",
+    "po_date": "2026-09-11",
+    "po_received": "2026-09-11",
+    "scm_notice": "2026-09-14",
+    "ecr_issued": "2026-08-24",
+    "ecr_received": "2026-08-25",
+    "impact_assessment": "2026-08-27",
+    "ecr_approval": "2026-08-31",
+    "risk_buy": "2026-09-01"
+  },
+  "documents": {
+    "capability": {
+      "no": "LPC-QM-021",
+      "rev": "C",
+      "date": "2026-05-12"
+    },
+    "material_master": {
+      "no": "LPC-MM-002",
+      "rev": "2026.09",
+      "date": "2026-09-11"
+    },
+    "price_list": {
+      "no": "LPC-PL-2026H2",
+      "rev": "1",
+      "date": "2026-07-01"
+    },
+    "draft_spec": {
+      "no": "CVN-SPC-3612",
+      "rev": "X1",
+      "date": "2026-07-13"
+    },
+    "formal_spec": {
+      "no": "LPC-PS-26104",
+      "rev": "B0",
+      "date": "2026-09-03"
+    },
+    "drawing": {
+      "no": "LPC-DWG-26104",
+      "rev": "B0",
+      "date": "2026-09-03"
+    },
+    "bom": {
+      "no": "LPC-BOM-26104",
+      "rev": "B0",
+      "date": "2026-09-03"
+    },
+    "unit_cost": {
+      "no": "LPC-UC-26104",
+      "rev": "B0",
+      "date": "2026-09-07"
+    },
+    "quotation": {
+      "no": "LPC-Q-26-0402-R1",
+      "date": "2026-09-09",
+      "supersedes": "LPC-Q-26-0402"
+    },
+    "po": {
+      "no": "CVN-PO-55-30418",
+      "date": "2026-09-11",
+      "rev": 1,
+      "original_date": "2026-08-06"
+    },
+    "ecr": {
+      "no": "CVN-ECR-3612-01",
+      "rev": "1",
+      "date": "2026-08-24"
+    }
+  },
+  "revision_history": [
+    {
+      "rev": "A0",
+      "date": "2026-07-28",
+      "zone": "-",
+      "by": "Alex Lin",
+      "approved": "Jessica Liao",
+      "desc": "Initial release per DFM agreement 2026-07-22"
+    },
+    {
+      "rev": "B0",
+      "date": "2026-09-03",
+      "zone": "Sh1 A7, B2, B7, B8, C4, C7, D1, D5, E1, E5, F1 / Sh2 A3, B6, C1, C8, D7, E1, F1 / Sh3 A3, A5, B2, E1, E7, F2",
+      "by": "Alex Lin",
+      "approved": "Jessica Liao",
+      "desc": "ECR CVN-ECR-3612-01 (approved 2026-08-31): 18 uniboot duplex legs 1.0 m, new fan-out box, trunk 10.0 m with pulling grip, reel packing, qty +2,000. Effective from Lot 2."
+    }
+  ],
+  "dfm_items": [
+    {
+      "no": 1,
+      "ref": "R-03",
+      "topic": "Polarity Method B with APC connectors",
+      "risk": "High",
+      "decision": "Accepted - Method A, Corvane panel CX-HD-36 with Type A adapters."
+    },
+    {
+      "no": 2,
+      "ref": "R-02",
+      "topic": "Elite-grade MPO-12",
+      "risk": "Medium",
+      "decision": "Accepted - standard grade for Rev A."
+    },
+    {
+      "no": 3,
+      "ref": "R-04",
+      "topic": "LC/APC IL ≤ 0.15 dB, end to end ≤ 0.40 dB",
+      "risk": "High",
+      "decision": "Accepted - end to end ≤ 0.60 dB."
+    },
+    {
+      "no": 4,
+      "ref": "R-05",
+      "topic": "RL ≥ 65 dB",
+      "risk": "Low",
+      "decision": "Accepted."
+    },
+    {
+      "no": 5,
+      "ref": "R-06",
+      "topic": "100 % LC end-face geometry",
+      "risk": "Medium",
+      "decision": "Accepted."
+    },
+    {
+      "no": 6,
+      "ref": "R-07",
+      "topic": "Leg length ± 10 mm",
+      "risk": "Low",
+      "decision": "Accepted."
+    },
+    {
+      "no": 7,
+      "ref": "R-08",
+      "topic": "OFNP plenum rating",
+      "risk": "High",
+      "decision": "Accepted - LSZH for Rev A (overhead trays, no plenum)."
+    },
+    {
+      "no": 8,
+      "ref": "R-01",
+      "topic": "G.652.D ribbon",
+      "risk": "Low",
+      "decision": "Accepted."
+    },
+    {
+      "no": 9,
+      "ref": "R-09",
+      "topic": "Trunk pull 100 N",
+      "risk": "Medium",
+      "decision": "Accepted - 50 N for 3 m trunks."
+    },
+    {
+      "no": 10,
+      "ref": "R-10",
+      "topic": "Ink-jet printing on the legs",
+      "risk": "Low",
+      "decision": "Accepted."
+    },
+    {
+      "no": 11,
+      "ref": "R-15",
+      "topic": "Samples in 3 weeks / 3,000 pcs by 2026-10-16",
+      "risk": "High",
+      "decision": "Accepted - PO schedule per LPC proposal."
+    }
+  ],
+  "ecr": {
+    "no": "CVN-ECR-3612-01",
+    "date": "2026-08-24",
+    "title": "Fan-out CVN-FO-3612 - change Rev A to Rev B (18 LC/APC uniboot duplex legs, legs 1.0 m, trunk 10.0 m with pulling grip, +2,000 pcs)",
+    "originator": "eng",
+    "approver": "design_head",
+    "priority": "High - row-level cabling layout for the Phase 2 data hall",
+    "reason": "The Phase 2 data hall places the LC patch panels one rack away from the switches: the trunk grows to 10 m and is pulled through the overhead trays, so a pulling grip is needed. The new panels are duplex (18 LC duplex ports) and need 1 m legs for the cable management arms. Forecast increased.",
+    "requested_effectivity": "All assemblies not yet shipped.",
+    "agreed_effectivity": "Samples and Lot 1 (PO lines 1.1 / 1.2, 1,000 pcs, material issued) delivered to Rev A0 / customer Rev A; Rev B0 / customer Rev B from Lot 2 (PO line 1.3) onwards.",
+    "reply_by": "2026-08-27",
+    "attachments": [
+      "CVN-DWG-3612 Rev B (fan-out outline and port map)",
+      "CVN-INS-022 (trunk installation instruction)"
+    ]
+  },
+  "changes": [
+    {
+      "no": "CH1",
+      "title": "Legs 36 x LC/APC simplex -> 18 x LC/APC uniboot duplex",
+      "from": "36 simplex legs 2.0 mm, LC/APC simplex",
+      "to": "18 duplex legs 3.0 mm round (2 fibres), LC/APC uniboot duplex",
+      "reason": "Duplex patch panels (18 ports)",
+      "lpc": "Feasible - stocked uniboot kits (PP-LC-APC-DU) and 3.0 mm duplex leg cable. Not requested but required: the 36-port fan-out box (Ø 2.0 mm ports, 20 x 10 mm cross-section) cannot take 18 duplex legs of Ø 3.0 mm; a new box 80 x 26 x 12 mm (new mould, 4 weeks) is needed, which exceeds the R-11 envelope 65 x 22 x 12 mm - Corvane to confirm the panel slot. The Rev A0 boxes bought for Lots 2 / 3 become obsolete.",
+      "cost": "Approx. + USD 12 per pc full cost (uniboot kits, new fan-out box, duplex leg cable)",
+      "schedule": "New fan-out box 4 weeks - B0 from Lot 2; risk buy at ECR approval",
+      "decision": "Accepted - Corvane confirmed panel slot 82 x 28 x 14 mm",
+      "kc": [
+        "2",
+        "10",
+        "12"
+      ],
+      "zone": "Sh1 A7, B7, B8, C7, D1, D5, E5, F1 / Sh2 A3, B6, C1, C8, E1, F1 / Sh3 A3, A5, B2, E7"
+    },
+    {
+      "no": "CH2",
+      "title": "Leg length 500 -> 1,000 mm",
+      "from": "Legs 500 ± 20 mm",
+      "to": "Legs 1,000 ± 20 mm",
+      "reason": "Cable management arms of the duplex panel",
+      "lpc": "Feasible - cutting length only (leg cable and fibre).",
+      "cost": "Approx. + USD 2.5 per pc full cost (leg cable, fibre)",
+      "schedule": "None",
+      "decision": "Accepted",
+      "kc": [
+        "9"
+      ],
+      "zone": "Sh1 C7, D1, D5, F1 / Sh2 F1"
+    },
+    {
+      "no": "CH3",
+      "title": "Trunk 3.0 -> 10.0 m with pulling grip (300 N)",
+      "from": "Trunk 3.0 m + 50 / 0 mm, ≤ 50 N, coiled in bag",
+      "to": "Trunk 10.0 m + 50 / 0 mm, pulling grip over the MPOs, 300 N",
+      "reason": "Trunk pulled through overhead trays to the next rack",
+      "lpc": "Feasible - pulling grip PP-PULL-M12x3 rated 300 N (LPC-QM-021 §4.6). Not requested but required: trunks longer than 5 m are shipped on a 300 mm reel (§11.10), 8 reels per carton instead of 10 coils.",
+      "cost": "Approx. + USD 16 per pc full cost (ribbon, jacket, pulling grip, reel, + 8 min cutting / grip / winding)",
+      "schedule": "None",
+      "decision": "Accepted",
+      "kc": [
+        "8",
+        "11"
+      ],
+      "zone": "Sh1 B2, C4, D1, D5, E1, F1 / Sh2 D7, F1 / Sh3 E1, F2"
+    },
+    {
+      "no": "CH4",
+      "title": "Quantity +2,000 pcs",
+      "from": "PO total 3,000 pcs",
+      "to": "PO total 5,000 pcs",
+      "reason": "Phase 2 data hall forecast",
+      "lpc": "Capacity available. A0 Lots 2 / 3 (2,000 pcs) are replaced by B0 Lots 2-4 (4,000 pcs).",
+      "cost": "At Rev B0 unit price",
+      "schedule": "B0 Lots: 1,500 pcs 2026-10-20, 1,500 pcs 2026-11-03, 1,000 pcs 2026-11-17",
+      "decision": "Accepted",
+      "kc": [],
+      "zone": "-"
+    }
+  ],
+  "key_characteristics": [
+    {
+      "id": "1",
+      "char": "Insertion loss per fibre, MPO-12 random mate, 1310 / 1550 nm",
+      "nominal": "-",
+      "tol": "≤ 0.35 dB",
+      "method": "IL test bench",
+      "freq": "100 %",
+      "class": "K"
+    },
+    {
+      "id": "2",
+      "char": "Insertion loss per fibre, LC/APC (uniboot) random mate, 1310 / 1550 nm",
+      "nominal": "-",
+      "tol": "≤ 0.25 dB",
+      "method": "IL test bench",
+      "freq": "100 %",
+      "class": "K"
+    },
+    {
+      "id": "3",
+      "char": "Insertion loss per fibre, end to end (MPO + LC)",
+      "nominal": "-",
+      "tol": "≤ 0.60 dB",
+      "method": "IL test bench",
+      "freq": "100 %",
+      "class": "K"
+    },
+    {
+      "id": "4",
+      "char": "Return loss, MPO and LC end",
+      "nominal": "-",
+      "tol": "≥ 60 dB",
+      "method": "RL test bench",
+      "freq": "100 %",
+      "class": "K"
+    },
+    {
+      "id": "5",
+      "char": "Polarity / fibre mapping per channel map",
+      "nominal": "Method A",
+      "tol": "no crossed fibre",
+      "method": "VFL + IL bench",
+      "freq": "100 %",
+      "class": "K"
+    },
+    {
+      "id": "6",
+      "char": "End face: no scratches / contamination in the core zones (MPO and LC)",
+      "nominal": "-",
+      "tol": "IEC 61300-3-35",
+      "method": "Video microscope",
+      "freq": "100 %",
+      "class": "K"
+    },
+    {
+      "id": "7",
+      "char": "LC end-face geometry (radius, apex offset, fibre height)",
+      "nominal": "-",
+      "tol": "IEC 61755-3-2",
+      "method": "Interferometer",
+      "freq": "1 / fixture",
+      "class": ""
+    },
+    {
+      "id": "8",
+      "char": "Trunk length (MPO-1 end face to fan-out box; MPO-2 / -3 staggered in the grip)",
+      "nominal": "10000 mm",
+      "tol": "+ 50 / 0 mm",
+      "method": "Length board",
+      "freq": "1 / lot + first-off",
+      "class": ""
+    },
+    {
+      "id": "9",
+      "char": "Leg length (fan-out box to LC end face)",
+      "nominal": "1000 mm",
+      "tol": "± 20 mm",
+      "method": "Length board",
+      "freq": "5 / lot",
+      "class": ""
+    },
+    {
+      "id": "10",
+      "char": "Fan-out box envelope",
+      "nominal": "80 x 26 x 12 mm",
+      "tol": "max. 82 x 28 x 14 mm",
+      "method": "Calliper",
+      "freq": "5 / lot",
+      "class": ""
+    },
+    {
+      "id": "11",
+      "char": "Trunk tensile load with pulling grip / leg retention (type test)",
+      "nominal": "-",
+      "tol": "300 N / 10 N, ΔIL ≤ 0.2 dB",
+      "method": "Tensile tester",
+      "freq": "FAI + 3 / lot",
+      "class": ""
+    },
+    {
+      "id": "12",
+      "char": "Leg and trunk labels (content, position 30 mm behind LC)",
+      "nominal": "P01-P18 A / B",
+      "tol": "readable, correct",
+      "method": "Visual",
+      "freq": "100 %",
+      "class": ""
+    }
+  ],
+  "geometry": {
+    "n_fibres": 36,
+    "n_mpo": 3,
+    "fibres_per_mpo": 12,
+    "fibre_pn": "RM-FB-RB12-657",
+    "trunk_source": "in-house jacket",
+    "jacket_pn": "PP-JKT-45",
+    "trunk_d": 4.5,
+    "fire_rating": "LSZH (IEC 60332-1-2)",
+    "trunk_len": 10000.0,
+    "trunk_tol": "+ 50 / 0 mm",
+    "mpo_split_len": 150.0,
+    "mpo": {
+      "type": "MPO-12 APC female",
+      "grade": "standard",
+      "pn": "PP-MPO12-APC-F",
+      "cap": "PP-CAP-MPOF",
+      "pins": false,
+      "w": 12.4,
+      "h": 7.6,
+      "l": 25.0,
+      "boot_l": 30.0,
+      "ferrule_w": 6.4,
+      "n": 3
+    },
+    "fob": {
+      "pn": "PP-FOB-18D",
+      "l": 80.0,
+      "w": 26.0,
+      "h": 12.0,
+      "ports": "18 x 3.0 mm duplex (3 rows of 6)"
+    },
+    "leg_type": "duplex",
+    "n_legs": 18,
+    "fibres_per_leg": 2,
+    "leg_pn": "PP-FURC-30D",
+    "leg_d": 3.0,
+    "leg_len": 1000.0,
+    "leg_tol": 20.0,
+    "lc": {
+      "type": "LC/APC uniboot duplex",
+      "grade": "B",
+      "pn": "PP-LC-APC-DU",
+      "cap": "PP-CAP-LC",
+      "ferrules": 2
+    },
+    "polarity": "Method A (TIA-568.3-E): fibres in MPO order to duplex legs in sequence (odd fibre = A, even fibre = B), key-up / key-down",
+    "label_scheme": "P01-P18 (sequential duplex port number, fibres A / B)",
+    "label_2d": false,
+    "pull_grip": "PP-PULL-M12x3",
+    "packing": "reel",
+    "coil_d": 250.0,
+    "per_carton": 8,
+    "fibre_allowance_m": 0.6,
+    "il_test": "1310 / 1550 nm"
+  },
+  "channel_map": [
+    {
+      "fibre": 1,
+      "mpo": "MPO-1",
+      "mpo_pos": 1,
+      "colour": "blue",
+      "leg": 1,
+      "port": "P01 A"
+    },
+    {
+      "fibre": 2,
+      "mpo": "MPO-1",
+      "mpo_pos": 2,
+      "colour": "orange",
+      "leg": 1,
+      "port": "P01 B"
+    },
+    {
+      "fibre": 3,
+      "mpo": "MPO-1",
+      "mpo_pos": 3,
+      "colour": "green",
+      "leg": 2,
+      "port": "P02 A"
+    },
+    {
+      "fibre": 4,
+      "mpo": "MPO-1",
+      "mpo_pos": 4,
+      "colour": "brown",
+      "leg": 2,
+      "port": "P02 B"
+    },
+    {
+      "fibre": 5,
+      "mpo": "MPO-1",
+      "mpo_pos": 5,
+      "colour": "slate",
+      "leg": 3,
+      "port": "P03 A"
+    },
+    {
+      "fibre": 6,
+      "mpo": "MPO-1",
+      "mpo_pos": 6,
+      "colour": "white",
+      "leg": 3,
+      "port": "P03 B"
+    },
+    {
+      "fibre": 7,
+      "mpo": "MPO-1",
+      "mpo_pos": 7,
+      "colour": "red",
+      "leg": 4,
+      "port": "P04 A"
+    },
+    {
+      "fibre": 8,
+      "mpo": "MPO-1",
+      "mpo_pos": 8,
+      "colour": "black",
+      "leg": 4,
+      "port": "P04 B"
+    },
+    {
+      "fibre": 9,
+      "mpo": "MPO-1",
+      "mpo_pos": 9,
+      "colour": "yellow",
+      "leg": 5,
+      "port": "P05 A"
+    },
+    {
+      "fibre": 10,
+      "mpo": "MPO-1",
+      "mpo_pos": 10,
+      "colour": "violet",
+      "leg": 5,
+      "port": "P05 B"
+    },
+    {
+      "fibre": 11,
+      "mpo": "MPO-1",
+      "mpo_pos": 11,
+      "colour": "rose",
+      "leg": 6,
+      "port": "P06 A"
+    },
+    {
+      "fibre": 12,
+      "mpo": "MPO-1",
+      "mpo_pos": 12,
+      "colour": "aqua",
+      "leg": 6,
+      "port": "P06 B"
+    },
+    {
+      "fibre": 13,
+      "mpo": "MPO-2",
+      "mpo_pos": 1,
+      "colour": "blue",
+      "leg": 7,
+      "port": "P07 A"
+    },
+    {
+      "fibre": 14,
+      "mpo": "MPO-2",
+      "mpo_pos": 2,
+      "colour": "orange",
+      "leg": 7,
+      "port": "P07 B"
+    },
+    {
+      "fibre": 15,
+      "mpo": "MPO-2",
+      "mpo_pos": 3,
+      "colour": "green",
+      "leg": 8,
+      "port": "P08 A"
+    },
+    {
+      "fibre": 16,
+      "mpo": "MPO-2",
+      "mpo_pos": 4,
+      "colour": "brown",
+      "leg": 8,
+      "port": "P08 B"
+    },
+    {
+      "fibre": 17,
+      "mpo": "MPO-2",
+      "mpo_pos": 5,
+      "colour": "slate",
+      "leg": 9,
+      "port": "P09 A"
+    },
+    {
+      "fibre": 18,
+      "mpo": "MPO-2",
+      "mpo_pos": 6,
+      "colour": "white",
+      "leg": 9,
+      "port": "P09 B"
+    },
+    {
+      "fibre": 19,
+      "mpo": "MPO-2",
+      "mpo_pos": 7,
+      "colour": "red",
+      "leg": 10,
+      "port": "P10 A"
+    },
+    {
+      "fibre": 20,
+      "mpo": "MPO-2",
+      "mpo_pos": 8,
+      "colour": "black",
+      "leg": 10,
+      "port": "P10 B"
+    },
+    {
+      "fibre": 21,
+      "mpo": "MPO-2",
+      "mpo_pos": 9,
+      "colour": "yellow",
+      "leg": 11,
+      "port": "P11 A"
+    },
+    {
+      "fibre": 22,
+      "mpo": "MPO-2",
+      "mpo_pos": 10,
+      "colour": "violet",
+      "leg": 11,
+      "port": "P11 B"
+    },
+    {
+      "fibre": 23,
+      "mpo": "MPO-2",
+      "mpo_pos": 11,
+      "colour": "rose",
+      "leg": 12,
+      "port": "P12 A"
+    },
+    {
+      "fibre": 24,
+      "mpo": "MPO-2",
+      "mpo_pos": 12,
+      "colour": "aqua",
+      "leg": 12,
+      "port": "P12 B"
+    },
+    {
+      "fibre": 25,
+      "mpo": "MPO-3",
+      "mpo_pos": 1,
+      "colour": "blue",
+      "leg": 13,
+      "port": "P13 A"
+    },
+    {
+      "fibre": 26,
+      "mpo": "MPO-3",
+      "mpo_pos": 2,
+      "colour": "orange",
+      "leg": 13,
+      "port": "P13 B"
+    },
+    {
+      "fibre": 27,
+      "mpo": "MPO-3",
+      "mpo_pos": 3,
+      "colour": "green",
+      "leg": 14,
+      "port": "P14 A"
+    },
+    {
+      "fibre": 28,
+      "mpo": "MPO-3",
+      "mpo_pos": 4,
+      "colour": "brown",
+      "leg": 14,
+      "port": "P14 B"
+    },
+    {
+      "fibre": 29,
+      "mpo": "MPO-3",
+      "mpo_pos": 5,
+      "colour": "slate",
+      "leg": 15,
+      "port": "P15 A"
+    },
+    {
+      "fibre": 30,
+      "mpo": "MPO-3",
+      "mpo_pos": 6,
+      "colour": "white",
+      "leg": 15,
+      "port": "P15 B"
+    },
+    {
+      "fibre": 31,
+      "mpo": "MPO-3",
+      "mpo_pos": 7,
+      "colour": "red",
+      "leg": 16,
+      "port": "P16 A"
+    },
+    {
+      "fibre": 32,
+      "mpo": "MPO-3",
+      "mpo_pos": 8,
+      "colour": "black",
+      "leg": 16,
+      "port": "P16 B"
+    },
+    {
+      "fibre": 33,
+      "mpo": "MPO-3",
+      "mpo_pos": 9,
+      "colour": "yellow",
+      "leg": 17,
+      "port": "P17 A"
+    },
+    {
+      "fibre": 34,
+      "mpo": "MPO-3",
+      "mpo_pos": 10,
+      "colour": "violet",
+      "leg": 17,
+      "port": "P17 B"
+    },
+    {
+      "fibre": 35,
+      "mpo": "MPO-3",
+      "mpo_pos": 11,
+      "colour": "rose",
+      "leg": 18,
+      "port": "P18 A"
+    },
+    {
+      "fibre": 36,
+      "mpo": "MPO-3",
+      "mpo_pos": 12,
+      "colour": "aqua",
+      "leg": 18,
+      "port": "P18 B"
+    }
+  ],
+  "bom": [
+    {
+      "lvl": 0,
+      "item": "0",
+      "pn": "LPC-FO36-M12LD-B",
+      "desc": "Fan-out assembly 36F SM, 3 x MPO-12 APC female to 18 x LC/APC uniboot duplex, trunk 10.0 m, legs 1000 mm, LSZH (Cust. P/N CVN-FO-3612)",
+      "type": "MFG",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": null,
+      "remark": ""
+    },
+    {
+      "lvl": 1,
+      "item": "10",
+      "pn": "LPC-FO36-110",
+      "desc": "Trunk, 10.0 m, LSZH (IEC 60332-1-2)",
+      "type": "MFG",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": null,
+      "remark": "Op 10"
+    },
+    {
+      "lvl": 2,
+      "item": "10.10",
+      "pn": "RM-FB-RB12-657",
+      "desc": "12-fibre flat ribbon G.657.A2",
+      "type": "RM",
+      "qty": 0.0348,
+      "uom": "km",
+      "mat": "RM-FB-RB12-657",
+      "remark": "3 ribbons x (10.00 + 1.00 + 0.60) m"
+    },
+    {
+      "lvl": 2,
+      "item": "10.20",
+      "pn": "PP-JKT-45",
+      "desc": "Round LSZH trunk jacket tubing 4.5 mm with aramid yarn, for up to 4 x 12-fibre ribbons",
+      "type": "RM",
+      "qty": 9.9,
+      "uom": "m",
+      "mat": "PP-JKT-45",
+      "remark": "Trunk length - MPO split + 0.05 m"
+    },
+    {
+      "lvl": 2,
+      "item": "10.30",
+      "pn": "PP-PULL-M12x3",
+      "desc": "Pulling grip with eye for 3 x MPO-12 connectors, mesh sleeve 300 mm, rated 300 N",
+      "type": "BUY",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": "PP-PULL-M12x3",
+      "remark": "Pulling grip over the 3 MPOs"
+    },
+    {
+      "lvl": 1,
+      "item": "20",
+      "pn": "LPC-FO36-120",
+      "desc": "Fan-out, 18 legs x 1000 mm",
+      "type": "MFG",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": null,
+      "remark": "Op 20"
+    },
+    {
+      "lvl": 2,
+      "item": "20.10",
+      "pn": "PP-FOB-18D",
+      "desc": "Fan-out box 3 x 12 ribbons in / 18 x 3.0 mm duplex legs out, 80 x 26 x 12 mm, potted",
+      "type": "BUY",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": "PP-FOB-18D",
+      "remark": "18 x 3.0 mm duplex (3 rows of 6)"
+    },
+    {
+      "lvl": 2,
+      "item": "20.20",
+      "pn": "PP-FURC-30D",
+      "desc": "Round duplex leg cable 3.0 mm, 2 x 250 µm fibre, aramid, LSZH (for uniboot LC)",
+      "type": "RM",
+      "qty": 18.54,
+      "uom": "m",
+      "mat": "PP-FURC-30D",
+      "remark": "18 legs x (1.00 + 0.03) m"
+    },
+    {
+      "lvl": 2,
+      "item": "20.30",
+      "pn": "CM-EP-TH150",
+      "desc": "Thermal-cure epoxy for MT ferrules, Tg 150 °C",
+      "type": "RM",
+      "qty": 0.4,
+      "uom": "g",
+      "mat": "CM-EP-TH150",
+      "remark": "Fan-out box potting"
+    },
+    {
+      "lvl": 1,
+      "item": "30",
+      "pn": "PP-MPO12-APC-F",
+      "desc": "MPO-12 APC female connector kit, standard grade",
+      "type": "BUY",
+      "qty": 3,
+      "uom": "pcs",
+      "mat": "PP-MPO12-APC-F",
+      "remark": "Op 30, MPO-1 / -2 / -3"
+    },
+    {
+      "lvl": 1,
+      "item": "35",
+      "pn": "CM-EP-TH150",
+      "desc": "Thermal-cure epoxy for MT ferrules, Tg 150 °C",
+      "type": "RM",
+      "qty": 0.09,
+      "uom": "g",
+      "mat": "CM-EP-TH150",
+      "remark": "MT ferrule epoxy"
+    },
+    {
+      "lvl": 1,
+      "item": "40",
+      "pn": "PP-LC-APC-DU",
+      "desc": "LC/APC uniboot duplex connector kit, 3.0 mm round cable, grade B ferrules",
+      "type": "BUY",
+      "qty": 18,
+      "uom": "pcs",
+      "mat": "PP-LC-APC-DU",
+      "remark": "Op 40, 18 LC/APC uniboot duplex"
+    },
+    {
+      "lvl": 1,
+      "item": "45",
+      "pn": "CM-EP-TH150",
+      "desc": "Thermal-cure epoxy for MT ferrules, Tg 150 °C",
+      "type": "RM",
+      "qty": 0.36,
+      "uom": "g",
+      "mat": "CM-EP-TH150",
+      "remark": "LC ferrule epoxy"
+    },
+    {
+      "lvl": 1,
+      "item": "50",
+      "pn": "PP-LBL-FLAG",
+      "desc": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+      "type": "BUY",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": "PP-LBL-FLAG",
+      "remark": "Trunk flag label 150 mm from the fan-out box"
+    },
+    {
+      "lvl": 1,
+      "item": "55",
+      "pn": "PP-LBL-LEG",
+      "desc": "Leg identification wrap label 12 x 6 mm, thermal-transfer printable",
+      "type": "BUY",
+      "qty": 18,
+      "uom": "pcs",
+      "mat": "PP-LBL-LEG",
+      "remark": "Leg labels P01-P18"
+    },
+    {
+      "lvl": 1,
+      "item": "60",
+      "pn": "LPC-FO36-CON",
+      "desc": "Process consumables per assembly",
+      "type": "CON",
+      "qty": 1,
+      "uom": "set",
+      "mat": null,
+      "remark": ""
+    },
+    {
+      "lvl": 2,
+      "item": "60.10",
+      "pn": "CM-POL-SET",
+      "desc": "Polishing film set (diamond 3 / 1 / 0.5 µm + silica final), one fixture cycle",
+      "type": "CON",
+      "qty": 0.125,
+      "uom": "set",
+      "mat": "CM-POL-SET",
+      "remark": "MPO polish, 24 per fixture"
+    },
+    {
+      "lvl": 2,
+      "item": "60.20",
+      "pn": "CM-POL-LC",
+      "desc": "LC / SC APC polishing film set, one 24-connector fixture cycle",
+      "type": "CON",
+      "qty": 1.5,
+      "uom": "set",
+      "mat": "CM-POL-LC",
+      "remark": "LC ferrule polish, 24 per fixture"
+    },
+    {
+      "lvl": 2,
+      "item": "60.30",
+      "pn": "CM-IPA",
+      "desc": "Isopropyl alcohol 99.9 %, electronic grade",
+      "type": "CON",
+      "qty": 0.006,
+      "uom": "L",
+      "mat": "CM-IPA",
+      "remark": ""
+    },
+    {
+      "lvl": 2,
+      "item": "60.40",
+      "pn": "CM-WIPE",
+      "desc": "Lint-free clean-room wipes",
+      "type": "CON",
+      "qty": 10,
+      "uom": "pcs",
+      "mat": "CM-WIPE",
+      "remark": ""
+    },
+    {
+      "lvl": 1,
+      "item": "70",
+      "pn": "LPC-FO36-PKG",
+      "desc": "Packing per assembly",
+      "type": "PKG",
+      "qty": 1,
+      "uom": "set",
+      "mat": null,
+      "remark": ""
+    },
+    {
+      "lvl": 2,
+      "item": "70.10",
+      "pn": "PP-CAP-MPOF",
+      "desc": "MPO dust cap, female (unpinned) connector",
+      "type": "PKG",
+      "qty": 3,
+      "uom": "pcs",
+      "mat": "PP-CAP-MPOF",
+      "remark": "MPO dust caps"
+    },
+    {
+      "lvl": 2,
+      "item": "70.20",
+      "pn": "PP-CAP-LC",
+      "desc": "LC ferrule dust cap (1.25 mm)",
+      "type": "PKG",
+      "qty": 36,
+      "uom": "pcs",
+      "mat": "PP-CAP-LC",
+      "remark": "LC ferrule dust caps"
+    },
+    {
+      "lvl": 2,
+      "item": "70.30",
+      "pn": "PK-REEL-300",
+      "desc": "Shipping reel 300 mm flange for trunk cables > 5 m",
+      "type": "PKG",
+      "qty": 1,
+      "uom": "pcs",
+      "mat": "PK-REEL-300",
+      "remark": "Trunk > 5 m on reel"
+    },
+    {
+      "lvl": 2,
+      "item": "70.40",
+      "pn": "PK-BOX-10",
+      "desc": "Corrugated carton for 10 coiled fan-out assemblies (or up to 8 reels)",
+      "type": "PKG",
+      "qty": 0.125,
+      "uom": "pcs",
+      "mat": "PK-BOX-10",
+      "remark": "8 per carton"
+    }
+  ],
+  "unit_cost_usd": {
+    "material_total": 88.069,
+    "service_total": 0,
+    "conversion_total": 38.978,
+    "handling": 2.642,
+    "overhead": 8.575,
+    "scrap": 6.913,
+    "mfg_cost": 145.177,
+    "sga": 11.614,
+    "total": 156.791
+  },
+  "minutes_per_pc": 84.78,
+  "quote_price_usd": 224.0,
+  "nre_total_usd": 12000.0,
+  "nre_ecr_total_usd": 9055.0,
+  "material_plan": {
+    "po_qty": 5000,
+    "build_qty": 5250,
+    "lots": [
+      {
+        "lot": "Samples",
+        "qty": 50,
+        "rev": "A0",
+        "po_line": "1.1",
+        "start": "2026-09-07",
+        "exw": "2026-09-14",
+        "due": "2026-09-18"
+      },
+      {
+        "lot": "Lot 1",
+        "qty": 950,
+        "rev": "A0",
+        "po_line": "1.2",
+        "start": "2026-09-14",
+        "exw": "2026-09-25",
+        "due": "2026-09-29"
+      },
+      {
+        "lot": "Lot 2",
+        "qty": 1500,
+        "rev": "B0",
+        "po_line": "1.3",
+        "start": "2026-10-05",
+        "exw": "2026-10-16",
+        "due": "2026-10-20"
+      },
+      {
+        "lot": "Lot 3",
+        "qty": 1500,
+        "rev": "B0",
+        "po_line": "1.4",
+        "start": "2026-10-19",
+        "exw": "2026-10-30",
+        "due": "2026-11-03"
+      },
+      {
+        "lot": "Lot 4",
+        "qty": 1000,
+        "rev": "B0",
+        "po_line": "1.5",
+        "start": "2026-11-02",
+        "exw": "2026-11-13",
+        "due": "2026-11-17"
+      }
+    ]
+  },
+  "material_requirements": [
+    {
+      "code": "RM-FB-RB12-657",
+      "desc": "12-fibre flat ribbon G.657.A2",
+      "uom": "km",
+      "gross": 159.075,
+      "lot_need": [
+        0.646,
+        12.269,
+        54.81,
+        54.81,
+        36.54
+      ],
+      "on_hand": 14.0,
+      "allocated": 6.0,
+      "available": 40.0,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 32.0,
+      "received_pos": "PO-L26-0812",
+      "safety": 4.0,
+      "order_qty": 120.0,
+      "moq": 2.0,
+      "lt_days": 21,
+      "supplier": "Pacific Lightguide Fiber Corp.",
+      "unit_price": 210.0,
+      "order_value": 25200.0,
+      "need_date": "2026-10-05",
+      "eta": "2026-10-06",
+      "projected_after": 0.925,
+      "status": "Stock covers Samples, Lot 1; supply for Lot 2 LATE by 1 days",
+      "action": "New PO 120 km",
+      "storage": ""
+    },
+    {
+      "code": "PP-JKT-45",
+      "desc": "Round LSZH trunk jacket tubing 4.5 mm with aramid yarn, for up to 4 x 12-fibre ribbons",
+      "uom": "m",
+      "gross": 44625.0,
+      "lot_need": [
+        152.25,
+        2892.75,
+        15592.5,
+        15592.5,
+        10395.0
+      ],
+      "on_hand": 8000,
+      "allocated": 2000,
+      "available": 9500,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 3500,
+      "received_pos": "PO-L26-0813 / 1",
+      "safety": 1000,
+      "order_qty": 35500,
+      "moq": 500,
+      "lt_days": 21,
+      "supplier": "FurcaTech Cable Components Co.",
+      "unit_price": 0.49,
+      "order_value": 17395.0,
+      "need_date": "2026-10-05",
+      "eta": "2026-10-06",
+      "projected_after": 375.0,
+      "status": "Stock covers Samples, Lot 1; supply for Lot 2 LATE by 1 days",
+      "action": "New PO 35500 m",
+      "storage": ""
+    },
+    {
+      "code": "PP-FOB-36S",
+      "desc": "Fan-out box 3 x 12 ribbons in / 36 x 2.0 mm simplex legs out, 62 x 20 x 10 mm, potted",
+      "uom": "pcs",
+      "gross": 1050,
+      "lot_need": [
+        53,
+        998,
+        0,
+        0,
+        0
+      ],
+      "on_hand": 0,
+      "allocated": 0,
+      "available": 3500,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 3500,
+      "received_pos": "PO-L26-0813 / 2",
+      "safety": 0,
+      "order_qty": 0,
+      "moq": 500,
+      "lt_days": 28,
+      "supplier": "FurcaTech Cable Components Co.",
+      "unit_price": 2.1,
+      "order_value": 0.0,
+      "need_date": "2026-09-07",
+      "eta": "-",
+      "projected_after": 2450,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "PP-FURC-20",
+      "desc": "Furcation tubing 2.0 mm, aramid strength member, LSZH, for one 250 µm fibre",
+      "uom": "m",
+      "gross": 20034.0,
+      "lot_need": [
+        1001.7,
+        19032.3,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "on_hand": 42000,
+      "allocated": 12000,
+      "available": 61000,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 31000,
+      "received_pos": "PO-L26-0813 / 3",
+      "safety": 5000,
+      "order_qty": 0,
+      "moq": 1000,
+      "lt_days": 21,
+      "supplier": "FurcaTech Cable Components Co.",
+      "unit_price": 0.16,
+      "order_value": 0.0,
+      "need_date": "2026-09-07",
+      "eta": "-",
+      "projected_after": 40966.0,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "CM-EP-TH150",
+      "desc": "Thermal-cure epoxy for MT ferrules, Tg 150 °C",
+      "uom": "g",
+      "gross": 4462.5,
+      "lot_need": [
+        44.625,
+        847.875,
+        1338.75,
+        1338.75,
+        892.5
+      ],
+      "on_hand": 260.0,
+      "allocated": 50.0,
+      "available": 2710.0,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 2500,
+      "received_pos": "PO-L26-0814",
+      "safety": 60.0,
+      "order_qty": 1800,
+      "moq": 50,
+      "lt_days": 21,
+      "supplier": "OptiBond Adhesives Inc.",
+      "unit_price": 3.9,
+      "order_value": 7020.0,
+      "need_date": "2026-10-19",
+      "eta": "2026-10-06",
+      "projected_after": 47.5,
+      "status": "Stock covers Samples, Lot 1, Lot 2; supply for Lot 3 on time",
+      "action": "New PO 1800 g",
+      "storage": ""
+    },
+    {
+      "code": "PP-MPO12-APC-F",
+      "desc": "MPO-12 APC female connector kit, standard grade",
+      "uom": "pcs",
+      "gross": 15750,
+      "lot_need": [
+        158,
+        2993,
+        4725,
+        4725,
+        3150
+      ],
+      "on_hand": 2400,
+      "allocated": 1100,
+      "available": 9800,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 8500,
+      "received_pos": "PO-L26-0815",
+      "safety": 400,
+      "order_qty": 6000,
+      "moq": 500,
+      "lt_days": 21,
+      "supplier": "MT Interconnect Technologies Ltd.",
+      "unit_price": 5.2,
+      "order_value": 31200.0,
+      "need_date": "2026-10-19",
+      "eta": "2026-10-06",
+      "projected_after": 50,
+      "status": "Stock covers Samples, Lot 1, Lot 2; supply for Lot 3 on time",
+      "action": "New PO 6000 pcs",
+      "storage": ""
+    },
+    {
+      "code": "PP-LC-APC-S",
+      "desc": "LC/APC simplex connector kit, 2.0 mm, zirconia ferrule grade B (IL ≤ 0.25 dB)",
+      "uom": "pcs",
+      "gross": 37800,
+      "lot_need": [
+        1890,
+        35910,
+        0,
+        0,
+        0
+      ],
+      "on_hand": 18000,
+      "allocated": 4000,
+      "available": 114000,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 100000,
+      "received_pos": "PO-L26-0816",
+      "safety": 3000,
+      "order_qty": 0,
+      "moq": 1000,
+      "lt_days": 14,
+      "supplier": "Zhenhua Precision Connector Co., Ltd.",
+      "unit_price": 0.78,
+      "order_value": 0.0,
+      "need_date": "2026-09-07",
+      "eta": "-",
+      "projected_after": 76200,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "PP-LBL-FLAG",
+      "desc": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+      "uom": "pcs",
+      "gross": 5250,
+      "lot_need": [
+        53,
+        998,
+        1575,
+        1575,
+        1050
+      ],
+      "on_hand": 18000,
+      "allocated": 0,
+      "available": 18000,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 4000,
+      "order_qty": 0,
+      "moq": 2000,
+      "lt_days": 14,
+      "supplier": "LabelTek Hsinchu Co., Ltd.",
+      "unit_price": 0.05,
+      "order_value": 0.0,
+      "need_date": "2026-09-07",
+      "eta": "-",
+      "projected_after": 12750,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "PP-LBL-LEG",
+      "desc": "Leg identification wrap label 12 x 6 mm, thermal-transfer printable",
+      "uom": "pcs",
+      "gross": 113400,
+      "lot_need": [
+        1890,
+        35910,
+        28350,
+        28350,
+        18900
+      ],
+      "on_hand": 70000,
+      "allocated": 0,
+      "available": 115000,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 45000,
+      "received_pos": "PO-L26-0817",
+      "safety": 10000,
+      "order_qty": 0,
+      "moq": 5000,
+      "lt_days": 14,
+      "supplier": "LabelTek Hsinchu Co., Ltd.",
+      "unit_price": 0.012,
+      "order_value": 0.0,
+      "need_date": "2026-09-07",
+      "eta": "-",
+      "projected_after": 1600,
+      "status": "From stock - below safety stock after issue, replenish",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "CM-POL-SET",
+      "desc": "Polishing film set (diamond 3 / 1 / 0.5 µm + silica final), one fixture cycle",
+      "uom": "set",
+      "gross": 657,
+      "lot_need": [
+        7,
+        125,
+        197,
+        197,
+        132
+      ],
+      "on_hand": 340,
+      "allocated": 0,
+      "available": 440,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 100,
+      "received_pos": "PO-L26-0818 / 1",
+      "safety": 100,
+      "order_qty": 250,
+      "moq": 50,
+      "lt_days": 21,
+      "supplier": "FilmLap Abrasives Co., Ltd.",
+      "unit_price": 7.8,
+      "order_value": 1950.0,
+      "need_date": "2026-10-19",
+      "eta": "2026-10-06",
+      "projected_after": 33,
+      "status": "Stock covers Samples, Lot 1, Lot 2; supply for Lot 3 on time",
+      "action": "New PO 250 set",
+      "storage": ""
+    },
+    {
+      "code": "CM-POL-LC",
+      "desc": "LC / SC APC polishing film set, one 24-connector fixture cycle",
+      "uom": "set",
+      "gross": 7875,
+      "lot_need": [
+        79,
+        1497,
+        2363,
+        2363,
+        1575
+      ],
+      "on_hand": 900,
+      "allocated": 0,
+      "available": 4750,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 3850,
+      "received_pos": "PO-L26-0818 / 2",
+      "safety": 200,
+      "order_qty": 3150,
+      "moq": 50,
+      "lt_days": 21,
+      "supplier": "FilmLap Abrasives Co., Ltd.",
+      "unit_price": 4.3,
+      "order_value": 13545.0,
+      "need_date": "2026-10-19",
+      "eta": "2026-10-06",
+      "projected_after": 25,
+      "status": "Stock covers Samples, Lot 1, Lot 2; supply for Lot 3 on time",
+      "action": "New PO 3150 set",
+      "storage": ""
+    },
+    {
+      "code": "CM-IPA",
+      "desc": "Isopropyl alcohol 99.9 %, electronic grade",
+      "uom": "L",
+      "gross": 31.5,
+      "lot_need": [
+        0.315,
+        5.985,
+        9.45,
+        9.45,
+        6.3
+      ],
+      "on_hand": 120.0,
+      "allocated": 0.0,
+      "available": 120.0,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 40.0,
+      "order_qty": 0,
+      "moq": 16,
+      "lt_days": 7,
+      "supplier": "CleanChem Taiwan Co.",
+      "unit_price": 4.5,
+      "order_value": 0.0,
+      "need_date": "2026-09-07",
+      "eta": "-",
+      "projected_after": 88.5,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "CM-WIPE",
+      "desc": "Lint-free clean-room wipes",
+      "uom": "pcs",
+      "gross": 52500,
+      "lot_need": [
+        525,
+        9975,
+        15750,
+        15750,
+        10500
+      ],
+      "on_hand": 24000,
+      "allocated": 0,
+      "available": 33000,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 9000,
+      "received_pos": "PO-L26-0819",
+      "safety": 6000,
+      "order_qty": 21000,
+      "moq": 3000,
+      "lt_days": 7,
+      "supplier": "CleanChem Taiwan Co.",
+      "unit_price": 0.03,
+      "order_value": 630.0,
+      "need_date": "2026-10-19",
+      "eta": "2026-09-22",
+      "projected_after": 1500,
+      "status": "Stock covers Samples, Lot 1, Lot 2; supply for Lot 3 on time",
+      "action": "New PO 21000 pcs",
+      "storage": ""
+    },
+    {
+      "code": "PP-CAP-MPOF",
+      "desc": "MPO dust cap, female (unpinned) connector",
+      "uom": "pcs",
+      "gross": 15000,
+      "lot_need": [
+        150,
+        2850,
+        4500,
+        4500,
+        3000
+      ],
+      "on_hand": 5200,
+      "allocated": 800,
+      "available": 10400,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 6000,
+      "received_pos": "PO-L26-0820 / 1",
+      "safety": 1000,
+      "order_qty": 6000,
+      "moq": 2000,
+      "lt_days": 14,
+      "supplier": "Silicone Precision Parts Co.",
+      "unit_price": 0.06,
+      "order_value": 360.0,
+      "need_date": "2026-10-19",
+      "eta": "2026-09-29",
+      "projected_after": 1400,
+      "status": "Stock covers Samples, Lot 1, Lot 2; supply for Lot 3 on time",
+      "action": "New PO 6000 pcs",
+      "storage": ""
+    },
+    {
+      "code": "PP-CAP-LC",
+      "desc": "LC ferrule dust cap (1.25 mm)",
+      "uom": "pcs",
+      "gross": 180000,
+      "lot_need": [
+        1800,
+        34200,
+        54000,
+        54000,
+        36000
+      ],
+      "on_hand": 60000,
+      "allocated": 10000,
+      "available": 110000,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 60000,
+      "received_pos": "PO-L26-0820 / 2",
+      "safety": 10000,
+      "order_qty": 70000,
+      "moq": 10000,
+      "lt_days": 14,
+      "supplier": "Silicone Precision Parts Co.",
+      "unit_price": 0.02,
+      "order_value": 1400.0,
+      "need_date": "2026-10-19",
+      "eta": "2026-09-29",
+      "projected_after": 0,
+      "status": "Stock covers Samples, Lot 1, Lot 2; supply for Lot 3 on time",
+      "action": "New PO 70000 pcs",
+      "storage": ""
+    },
+    {
+      "code": "PK-BAG-FO",
+      "desc": "Coil bag 300 x 250 mm with zip and label field, for one fan-out assembly",
+      "uom": "pcs",
+      "gross": 1000,
+      "lot_need": [
+        50,
+        950,
+        0,
+        0,
+        0
+      ],
+      "on_hand": 6000,
+      "allocated": 0,
+      "available": 6000,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 1000,
+      "order_qty": 0,
+      "moq": 1000,
+      "lt_days": 14,
+      "supplier": "StaticSafe Packaging Co.",
+      "unit_price": 0.09,
+      "order_value": 0.0,
+      "need_date": "2026-09-07",
+      "eta": "-",
+      "projected_after": 5000,
+      "status": "From stock",
+      "action": "Issue from stock",
+      "storage": ""
+    },
+    {
+      "code": "PK-BOX-10",
+      "desc": "Corrugated carton for 10 coiled fan-out assemblies (or up to 8 reels)",
+      "uom": "pcs",
+      "gross": 600,
+      "lot_need": [
+        5,
+        95,
+        188,
+        188,
+        125
+      ],
+      "on_hand": 500,
+      "allocated": 100,
+      "available": 400,
+      "on_order": 0,
+      "open_po": "",
+      "new_po_qty": 0,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 100,
+      "order_qty": 200,
+      "moq": 100,
+      "lt_days": 10,
+      "supplier": "Hsinchu Corrugated Box Co.",
+      "unit_price": 1.2,
+      "order_value": 240.0,
+      "need_date": "2026-10-19",
+      "eta": "2026-09-25",
+      "projected_after": 0,
+      "status": "Stock covers Samples, Lot 1, Lot 2; supply for Lot 3 on time",
+      "action": "New PO 200 pcs",
+      "storage": ""
+    },
+    {
+      "code": "PP-PULL-M12x3",
+      "desc": "Pulling grip with eye for 3 x MPO-12 connectors, mesh sleeve 300 mm, rated 300 N",
+      "uom": "pcs",
+      "gross": 4200,
+      "lot_need": [
+        0,
+        0,
+        1575,
+        1575,
+        1050
+      ],
+      "on_hand": 400,
+      "allocated": 0,
+      "available": 400,
+      "on_order": 3800,
+      "open_po": "PO-L26-0902 / 3",
+      "new_po_qty": 3800,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 100,
+      "order_qty": 0,
+      "moq": 200,
+      "lt_days": 21,
+      "supplier": "FurcaTech Cable Components Co.",
+      "unit_price": 1.45,
+      "order_value": 0.0,
+      "need_date": "2026-10-05",
+      "eta": "2026-09-22",
+      "projected_after": 0,
+      "status": "Stock covers Samples, Lot 1; supply for Lot 2 on time",
+      "action": "Keep PO-L26-0902 / 3 (3800) - covers requirement",
+      "storage": ""
+    },
+    {
+      "code": "PP-FOB-18D",
+      "desc": "Fan-out box 3 x 12 ribbons in / 18 x 3.0 mm duplex legs out, 80 x 26 x 12 mm, potted",
+      "uom": "pcs",
+      "gross": 4200,
+      "lot_need": [
+        0,
+        0,
+        1575,
+        1575,
+        1050
+      ],
+      "on_hand": 0,
+      "allocated": 0,
+      "available": 0,
+      "on_order": 4500,
+      "open_po": "PO-L26-0902 / 1",
+      "new_po_qty": 4500,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 0,
+      "order_qty": 0,
+      "moq": 500,
+      "lt_days": 28,
+      "supplier": "FurcaTech Cable Components Co.",
+      "unit_price": 2.35,
+      "order_value": 0.0,
+      "need_date": "2026-10-05",
+      "eta": "2026-09-29",
+      "projected_after": 300,
+      "status": "Stock covers Samples, Lot 1; supply for Lot 2 on time",
+      "action": "Keep PO-L26-0902 / 1 (4500) - covers requirement",
+      "storage": ""
+    },
+    {
+      "code": "PP-FURC-30D",
+      "desc": "Round duplex leg cable 3.0 mm, 2 x 250 µm fibre, aramid, LSZH (for uniboot LC)",
+      "uom": "m",
+      "gross": 77868.0,
+      "lot_need": [
+        0.0,
+        0.0,
+        29200.5,
+        29200.5,
+        19467.0
+      ],
+      "on_hand": 6000,
+      "allocated": 2000,
+      "available": 4000,
+      "on_order": 74000,
+      "open_po": "PO-L26-0902 / 2",
+      "new_po_qty": 74000,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 1000,
+      "order_qty": 0,
+      "moq": 1000,
+      "lt_days": 21,
+      "supplier": "FurcaTech Cable Components Co.",
+      "unit_price": 0.23,
+      "order_value": 0.0,
+      "need_date": "2026-10-05",
+      "eta": "2026-09-22",
+      "projected_after": 132.0,
+      "status": "Stock covers Samples, Lot 1; supply for Lot 2 on time",
+      "action": "Keep PO-L26-0902 / 2 (74000) - covers requirement",
+      "storage": ""
+    },
+    {
+      "code": "PP-LC-APC-DU",
+      "desc": "LC/APC uniboot duplex connector kit, 3.0 mm round cable, grade B ferrules",
+      "uom": "pcs",
+      "gross": 75600,
+      "lot_need": [
+        0,
+        0,
+        28350,
+        28350,
+        18900
+      ],
+      "on_hand": 3600,
+      "allocated": 2600,
+      "available": 1000,
+      "on_order": 75000,
+      "open_po": "PO-L26-0903",
+      "new_po_qty": 75000,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 500,
+      "order_qty": 0,
+      "moq": 500,
+      "lt_days": 21,
+      "supplier": "Zhenhua Precision Connector Co., Ltd.",
+      "unit_price": 2.15,
+      "order_value": 0.0,
+      "need_date": "2026-10-05",
+      "eta": "2026-09-22",
+      "projected_after": 400,
+      "status": "Stock covers Samples, Lot 1; supply for Lot 2 on time",
+      "action": "Keep PO-L26-0903 (75000) - covers requirement",
+      "storage": ""
+    },
+    {
+      "code": "PK-REEL-300",
+      "desc": "Shipping reel 300 mm flange for trunk cables > 5 m",
+      "uom": "pcs",
+      "gross": 4000,
+      "lot_need": [
+        0,
+        0,
+        1500,
+        1500,
+        1000
+      ],
+      "on_hand": 900,
+      "allocated": 600,
+      "available": 300,
+      "on_order": 3800,
+      "open_po": "PO-L26-0904",
+      "new_po_qty": 3800,
+      "received_po": 0,
+      "received_pos": "",
+      "safety": 200,
+      "order_qty": 0,
+      "moq": 200,
+      "lt_days": 21,
+      "supplier": "Hsinchu Corrugated Box Co.",
+      "unit_price": 1.25,
+      "order_value": 0.0,
+      "need_date": "2026-10-05",
+      "eta": "2026-09-22",
+      "projected_after": 100,
+      "status": "Stock covers Samples, Lot 1; supply for Lot 2 on time",
+      "action": "Keep PO-L26-0904 (3800) - covers requirement",
+      "storage": ""
+    }
+  ],
+  "unit_cost_materials": [
+    {
+      "item": "10.10",
+      "code": "RM-FB-RB12-657",
+      "desc": "12-fibre flat ribbon G.657.A2",
+      "qty": 0.0348,
+      "uom": "km",
+      "unit_price": 210.0,
+      "ext": 7.308,
+      "group": "Raw material"
+    },
+    {
+      "item": "10.20",
+      "code": "PP-JKT-45",
+      "desc": "Round LSZH trunk jacket tubing 4.5 mm with aramid yarn, for up to 4 x 12-fibre ribbons",
+      "qty": 9.9,
+      "uom": "m",
+      "unit_price": 0.49,
+      "ext": 4.851,
+      "group": "Raw material"
+    },
+    {
+      "item": "10.30",
+      "code": "PP-PULL-M12x3",
+      "desc": "Pulling grip with eye for 3 x MPO-12 connectors, mesh sleeve 300 mm, rated 300 N",
+      "qty": 1,
+      "uom": "pcs",
+      "unit_price": 1.45,
+      "ext": 1.45,
+      "group": "Purchased parts"
+    },
+    {
+      "item": "20.10",
+      "code": "PP-FOB-18D",
+      "desc": "Fan-out box 3 x 12 ribbons in / 18 x 3.0 mm duplex legs out, 80 x 26 x 12 mm, potted",
+      "qty": 1,
+      "uom": "pcs",
+      "unit_price": 2.35,
+      "ext": 2.35,
+      "group": "Purchased parts"
+    },
+    {
+      "item": "20.20",
+      "code": "PP-FURC-30D",
+      "desc": "Round duplex leg cable 3.0 mm, 2 x 250 µm fibre, aramid, LSZH (for uniboot LC)",
+      "qty": 18.54,
+      "uom": "m",
+      "unit_price": 0.23,
+      "ext": 4.2642,
+      "group": "Raw material"
+    },
+    {
+      "item": "20.30",
+      "code": "CM-EP-TH150",
+      "desc": "Thermal-cure epoxy for MT ferrules, Tg 150 °C",
+      "qty": 0.4,
+      "uom": "g",
+      "unit_price": 3.9,
+      "ext": 1.56,
+      "group": "Raw material"
+    },
+    {
+      "item": "30",
+      "code": "PP-MPO12-APC-F",
+      "desc": "MPO-12 APC female connector kit, standard grade",
+      "qty": 3,
+      "uom": "pcs",
+      "unit_price": 5.2,
+      "ext": 15.6,
+      "group": "Purchased parts"
+    },
+    {
+      "item": "35",
+      "code": "CM-EP-TH150",
+      "desc": "Thermal-cure epoxy for MT ferrules, Tg 150 °C",
+      "qty": 0.09,
+      "uom": "g",
+      "unit_price": 3.9,
+      "ext": 0.351,
+      "group": "Raw material"
+    },
+    {
+      "item": "40",
+      "code": "PP-LC-APC-DU",
+      "desc": "LC/APC uniboot duplex connector kit, 3.0 mm round cable, grade B ferrules",
+      "qty": 18,
+      "uom": "pcs",
+      "unit_price": 2.15,
+      "ext": 38.7,
+      "group": "Purchased parts"
+    },
+    {
+      "item": "45",
+      "code": "CM-EP-TH150",
+      "desc": "Thermal-cure epoxy for MT ferrules, Tg 150 °C",
+      "qty": 0.36,
+      "uom": "g",
+      "unit_price": 3.9,
+      "ext": 1.404,
+      "group": "Raw material"
+    },
+    {
+      "item": "50",
+      "code": "PP-LBL-FLAG",
+      "desc": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+      "qty": 1,
+      "uom": "pcs",
+      "unit_price": 0.05,
+      "ext": 0.05,
+      "group": "Purchased parts"
+    },
+    {
+      "item": "55",
+      "code": "PP-LBL-LEG",
+      "desc": "Leg identification wrap label 12 x 6 mm, thermal-transfer printable",
+      "qty": 18,
+      "uom": "pcs",
+      "unit_price": 0.012,
+      "ext": 0.216,
+      "group": "Purchased parts"
+    },
+    {
+      "item": "60.10",
+      "code": "CM-POL-SET",
+      "desc": "Polishing film set (diamond 3 / 1 / 0.5 µm + silica final), one fixture cycle",
+      "qty": 0.125,
+      "uom": "set",
+      "unit_price": 7.1,
+      "ext": 0.8875,
+      "group": "Process consumables"
+    },
+    {
+      "item": "60.20",
+      "code": "CM-POL-LC",
+      "desc": "LC / SC APC polishing film set, one 24-connector fixture cycle",
+      "qty": 1.5,
+      "uom": "set",
+      "unit_price": 4.3,
+      "ext": 6.45,
+      "group": "Process consumables"
+    },
+    {
+      "item": "60.30",
+      "code": "CM-IPA",
+      "desc": "Isopropyl alcohol 99.9 %, electronic grade",
+      "qty": 0.006,
+      "uom": "L",
+      "unit_price": 4.5,
+      "ext": 0.027,
+      "group": "Process consumables"
+    },
+    {
+      "item": "60.40",
+      "code": "CM-WIPE",
+      "desc": "Lint-free clean-room wipes",
+      "qty": 10,
+      "uom": "pcs",
+      "unit_price": 0.03,
+      "ext": 0.3,
+      "group": "Process consumables"
+    },
+    {
+      "item": "70.10",
+      "code": "PP-CAP-MPOF",
+      "desc": "MPO dust cap, female (unpinned) connector",
+      "qty": 3,
+      "uom": "pcs",
+      "unit_price": 0.06,
+      "ext": 0.18,
+      "group": "Packaging"
+    },
+    {
+      "item": "70.20",
+      "code": "PP-CAP-LC",
+      "desc": "LC ferrule dust cap (1.25 mm)",
+      "qty": 36,
+      "uom": "pcs",
+      "unit_price": 0.02,
+      "ext": 0.72,
+      "group": "Packaging"
+    },
+    {
+      "item": "70.30",
+      "code": "PK-REEL-300",
+      "desc": "Shipping reel 300 mm flange for trunk cables > 5 m",
+      "qty": 1,
+      "uom": "pcs",
+      "unit_price": 1.25,
+      "ext": 1.25,
+      "group": "Packaging"
+    },
+    {
+      "item": "70.40",
+      "code": "PK-BOX-10",
+      "desc": "Corrugated carton for 10 coiled fan-out assemblies (or up to 8 reels)",
+      "qty": 0.125,
+      "uom": "pcs",
+      "unit_price": 1.2,
+      "ext": 0.15,
+      "group": "Packaging"
+    }
+  ],
+  "unit_cost_services": [],
+  "open_pos": {
+    "RM-FB-RB12-657": {
+      "po": "PO-L26-0812",
+      "date": "2026-08-08",
+      "qty": 32.0,
+      "eta": "2026-08-29",
+      "project": "NPI-26-104",
+      "received": "2026-08-28"
+    },
+    "PP-JKT-45": {
+      "po": "PO-L26-0813 / 1",
+      "date": "2026-08-08",
+      "qty": 3500,
+      "eta": "2026-08-29",
+      "project": "NPI-26-104",
+      "received": "2026-08-28"
+    },
+    "PP-FOB-36S": {
+      "po": "PO-L26-0813 / 2",
+      "date": "2026-08-08",
+      "qty": 3500,
+      "eta": "2026-09-05",
+      "project": "NPI-26-104",
+      "received": "2026-09-04"
+    },
+    "PP-FURC-20": {
+      "po": "PO-L26-0813 / 3",
+      "date": "2026-08-08",
+      "qty": 31000,
+      "eta": "2026-08-29",
+      "project": "NPI-26-104",
+      "received": "2026-08-28"
+    },
+    "CM-EP-TH150": {
+      "po": "PO-L26-0814",
+      "date": "2026-08-08",
+      "qty": 2500,
+      "eta": "2026-08-29",
+      "project": "NPI-26-104",
+      "received": "2026-08-28"
+    },
+    "PP-MPO12-APC-F": {
+      "po": "PO-L26-0815",
+      "date": "2026-08-08",
+      "qty": 8500,
+      "eta": "2026-08-29",
+      "project": "NPI-26-104",
+      "received": "2026-08-28"
+    },
+    "PP-LC-APC-S": {
+      "po": "PO-L26-0816",
+      "date": "2026-08-08",
+      "qty": 100000,
+      "eta": "2026-08-22",
+      "project": "NPI-26-104",
+      "received": "2026-08-21"
+    },
+    "PP-LBL-LEG": {
+      "po": "PO-L26-0817",
+      "date": "2026-08-08",
+      "qty": 45000,
+      "eta": "2026-08-22",
+      "project": "NPI-26-104",
+      "received": "2026-08-21"
+    },
+    "CM-POL-SET": {
+      "po": "PO-L26-0818 / 1",
+      "date": "2026-08-08",
+      "qty": 100,
+      "eta": "2026-08-29",
+      "project": "NPI-26-104",
+      "received": "2026-08-28"
+    },
+    "CM-POL-LC": {
+      "po": "PO-L26-0818 / 2",
+      "date": "2026-08-08",
+      "qty": 3850,
+      "eta": "2026-08-29",
+      "project": "NPI-26-104",
+      "received": "2026-08-28"
+    },
+    "CM-WIPE": {
+      "po": "PO-L26-0819",
+      "date": "2026-08-08",
+      "qty": 9000,
+      "eta": "2026-08-15",
+      "project": "NPI-26-104",
+      "received": "2026-08-14"
+    },
+    "PP-CAP-MPOF": {
+      "po": "PO-L26-0820 / 1",
+      "date": "2026-08-08",
+      "qty": 6000,
+      "eta": "2026-08-22",
+      "project": "NPI-26-104",
+      "received": "2026-08-21"
+    },
+    "PP-CAP-LC": {
+      "po": "PO-L26-0820 / 2",
+      "date": "2026-08-08",
+      "qty": 60000,
+      "eta": "2026-08-22",
+      "project": "NPI-26-104",
+      "received": "2026-08-21"
+    },
+    "PP-FOB-18D": {
+      "po": "PO-L26-0902 / 1",
+      "date": "2026-09-01",
+      "qty": 4500,
+      "eta": "2026-09-29",
+      "project": "NPI-26-104",
+      "risk_buy": true
+    },
+    "PP-FURC-30D": {
+      "po": "PO-L26-0902 / 2",
+      "date": "2026-09-01",
+      "qty": 74000,
+      "eta": "2026-09-22",
+      "project": "NPI-26-104",
+      "risk_buy": true
+    },
+    "PP-PULL-M12x3": {
+      "po": "PO-L26-0902 / 3",
+      "date": "2026-09-01",
+      "qty": 3800,
+      "eta": "2026-09-22",
+      "project": "NPI-26-104",
+      "risk_buy": true
+    },
+    "PP-LC-APC-DU": {
+      "po": "PO-L26-0903",
+      "date": "2026-09-01",
+      "qty": 75000,
+      "eta": "2026-09-22",
+      "project": "NPI-26-104",
+      "risk_buy": true
+    },
+    "PK-REEL-300": {
+      "po": "PO-L26-0904",
+      "date": "2026-09-01",
+      "qty": 3800,
+      "eta": "2026-09-22",
+      "project": "NPI-26-104",
+      "risk_buy": true
+    }
+  },
+  "quote_rev": "B0",
+  "po": {
+    "no": "CVN-PO-55-30418",
+    "rev": 1,
+    "qty": 5000,
+    "lines": [
+      {
+        "line": "1.1",
+        "qty": 50,
+        "rev": "A0",
+        "unit_price": 179.5
+      },
+      {
+        "line": "1.2",
+        "qty": 950,
+        "rev": "A0",
+        "unit_price": 179.5
+      },
+      {
+        "line": "1.3",
+        "qty": 1500,
+        "rev": "B0",
+        "unit_price": 224.0
+      },
+      {
+        "line": "1.4",
+        "qty": 1500,
+        "rev": "B0",
+        "unit_price": 224.0
+      },
+      {
+        "line": "1.5",
+        "qty": 1000,
+        "rev": "B0",
+        "unit_price": 224.0
+      }
+    ],
+    "parts_value": 1075500.0,
+    "nre_value": 21055.0,
+    "total_value": 1096555.0,
+    "schedule": [
+      {
+        "line": "1.1",
+        "qty": 50,
+        "date": "2026-09-18",
+        "rev": "A",
+        "note": "Samples - customer Rev A (LPC A0)",
+        "was": "50 / 2026-09-18"
+      },
+      {
+        "line": "1.2",
+        "qty": 950,
+        "date": "2026-09-29",
+        "rev": "A",
+        "note": "Lot 1 - customer Rev A (LPC A0)",
+        "was": "950 / 2026-09-29"
+      },
+      {
+        "line": "1.3",
+        "qty": 1500,
+        "date": "2026-10-20",
+        "rev": "B",
+        "note": "Lot 2 - customer Rev B (LPC B0), incl. delta FAI",
+        "was": "1,000 Rev A / 2026-10-13"
+      },
+      {
+        "line": "1.4",
+        "qty": 1500,
+        "date": "2026-11-03",
+        "rev": "B",
+        "note": "Lot 3 - customer Rev B (LPC B0)",
+        "was": "1,000 Rev A / 2026-10-27"
+      },
+      {
+        "line": "1.5",
+        "qty": 1000,
+        "date": "2026-11-17",
+        "rev": "B",
+        "note": "Lot 4 - customer Rev B (LPC B0) - NEW",
+        "was": "NEW"
+      }
+    ]
+  }
+}

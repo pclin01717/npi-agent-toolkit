@@ -1,0 +1,139 @@
+{
+  "items": [
+    {
+      "ref": "R-01",
+      "title": "Fibre type: G.657.A2 ribbon instead of G.652.D",
+      "risk": "Low",
+      "requirement": "Single-mode G.652.D fibre, three 12-fibre ribbons.",
+      "capability": "LPC's approved 12-fibre ribbon is G.657.A2; G.652.D is approved only as single 250 µm fibre. The UL-listed OFNP trunk cable available to LPC (see R-08) contains 3 x 12-fibre ribbon G.657.A2. LPC recommends bend-insensitive G.657.A2 fibre for pigtails and legs (minimum bend radius 7.5 mm).",
+      "capability_sources": ["QM-021 §8.1", "QM-021 §11.7"],
+      "proposal": "Accept G.657.A2 fibre (3 x 12-fibre ribbon) in place of G.652.D. G.657.A2 is compatible with G.652.D fibre in the link and gives better bend performance for the legs in the patch-panel enclosure.",
+      "impact": "No additional cost or lead time beyond the plenum trunk cable in R-08.",
+      "sources": ["MM-002 RM-FB-RB12-657", "MM-002 RM-CB-P36", "MM-002 RM-FB-G652D", "R-08"]
+    },
+    {
+      "ref": "R-02",
+      "title": "Elite-grade MPO-12 APC female: new supplier part",
+      "risk": "Medium",
+      "requirement": "3 x MPO-12 APC female (unpinned), elite grade, on the trunk end.",
+      "capability": "MPO APC random-mate IL ≤ 0.25 dB is LPC Best capability and requires elite-grade ferrules (Standard ≤ 0.35 dB). LPC's approved MPO-12 APC female kit is standard grade. Elite-grade MPO-12 kits are a new supplier part from our approved MT / MPO supplier; lead time including qualification 8 weeks.",
+      "capability_sources": ["QM-021 §4.3", "QM-021 §9", "QM-021 §10"],
+      "proposal": "Source elite-grade MPO-12 APC female kits and qualify them with a first article before samples. Alternatively, accept the stocked standard-grade MPO-12 APC female with MPO IL ≤ 0.35 dB (see R-04 Option B).",
+      "impact": "Elite MPO-12 kit approx. + USD 待工程師填寫 per connector over the standard-grade kit (USD 5.6, USD 5.2 at ≥ 2000 pcs), 3 connectors per assembly; adds 8 weeks to the material lead time (see R-15).",
+      "sources": ["MM-002 PP-MPO12-APC-F", "PL PP-MPO12-APC-F", "R-04", "R-15"]
+    },
+    {
+      "ref": "R-03",
+      "title": "Polarity Method B not possible with APC connectors",
+      "risk": "High",
+      "requirement": "TIA-568 Method B (fibre 1 of each MPO to the last leg of its group) to match Corvane Type B cassettes.",
+      "capability": "LPC builds Method A (key-up / key-down) and Method C with APC connectors; Method B only with UPC. Method B (key-up / key-up) with APC cannot be built, because the 8° angle orientation reverses.",
+      "capability_sources": ["QM-021 §4.6", "QM-021 §11.10"],
+      "proposal": "Change the fan-out to TIA-568 Method A or Method C with APC connectors and adapt the port map and cassettes on the Corvane side. Method B would only be possible with UPC connectors on both ends, which would not meet the APC return loss in R-05. Polarity is checked per fibre in the 100 % IL / RL test (R-13).",
+      "impact": "No LPC cost adder for Method A or C (Standard capability); Corvane to assess the impact on its Type B cassettes.",
+      "sources": ["R-05", "R-13"]
+    },
+    {
+      "ref": "R-04",
+      "title": "IL budget needs Best capability on both connectors",
+      "risk": "Medium",
+      "requirement": "IL ≤ 0.25 dB per MPO-12 random mate and ≤ 0.15 dB per LC/APC random mate; end to end ≤ 0.40 dB per fibre at 1310 and 1550 nm.",
+      "capability": "MPO APC random mate: ≤ 0.35 dB Standard, ≤ 0.25 dB Best (elite-grade ferrule). LC/APC random mate: ≤ 0.25 dB Standard (grade B ferrule), ≤ 0.15 dB Best (grade A low-loss ferrule, 100 % end-face geometry). An end-to-end value must be at least the sum of both connectors; ≤ 0.40 dB equals the sum of the two Best values, so every connector must be at Best. LPC's approved LC/APC simplex kit is grade B. IL is tested at 1310 / 1550 nm.",
+      "capability_sources": ["QM-021 §4.3", "QM-021 §4.6", "QM-021 §11.10", "LL-003 LL-09", "LL-003 DR-06"],
+      "proposal": "Option A: build to the Best values with elite-grade MPO-12 (R-02), grade A low-loss LC/APC simplex ferrules and 100 % end-face geometry (R-06), measured by random mate against elite reference jumpers. Option B: specify Standard values (MPO ≤ 0.35 dB, LC/APC ≤ 0.25 dB) with an end-to-end limit of at least their sum. In both cases please state the reference jumpers and the mate type (random or reference mate).",
+      "impact": "Option A: grade A LC/APC simplex kit approx. + USD 待工程師填寫 per connector over the grade B kit (USD 0.95, USD 0.78 at ≥ 20000 pcs), 36 connectors per assembly; grade A simplex kit lead time 待工程師填寫 weeks; elite MPO-12 as in R-02. Option B: no adder.",
+      "sources": ["R-02", "R-06", "MM-002 PP-LC-APC-S", "PL PP-LC-APC-S"]
+    },
+    {
+      "ref": "R-05",
+      "title": "RL ≥ 65 dB at both ends needs Best process control",
+      "risk": "Medium",
+      "requirement": "Return loss ≥ 65 dB at both ends (APC).",
+      "capability": "MPO APC RL: ≥ 60 dB Standard, ≥ 65 dB Best. LC/APC RL: ≥ 60 dB Standard, ≥ 65 dB Best. RL is measured to 75 dB on the automated test bench.",
+      "capability_sources": ["QM-021 §4.3", "QM-021 §4.6"],
+      "proposal": "Build to ≥ 65 dB with Best process control and screen in the 100 % RL test per fibre (already required by R-13), or accept the Standard value ≥ 60 dB.",
+      "impact": "Best process control and RL screening approx. + USD 待工程師填寫 per pc; expected yield loss 待工程師填寫 %.",
+      "sources": ["R-13"]
+    },
+    {
+      "ref": "R-06",
+      "title": "100 % LC end-face geometry measurement",
+      "risk": "Medium",
+      "requirement": "End-face geometry (radius, apex offset, fibre height) measured on 100 % of the LC connectors to IEC 61755-3-2, data per serial number.",
+      "capability": "Standard: end-face geometry to IEC 61755-3-2 on 1 connector per polishing fixture (24 connectors per fixture). 100 % measurement is Best capability, on the end-face geometry interferometer in WC-SCT.",
+      "capability_sources": ["QM-021 §4.6", "QM-021 §3"],
+      "proposal": "Measure all 36 LC/APC connectors per assembly and deliver the data per serial number. This measurement is also required for the grade A ferrules in R-04 Option A.",
+      "impact": "Measurement cost approx. + USD 待工程師填寫 per pc; effect on capacity and lead time 待工程師填寫 weeks.",
+      "sources": ["R-02", "R-04"]
+    },
+    {
+      "ref": "R-07",
+      "title": "Leg length ± 10 mm needs 100 % length measurement",
+      "risk": "Medium",
+      "requirement": "Trunk 3.0 m + 50 / 0 mm (MPO end face to fan-out box); legs 500 ± 10 mm.",
+      "capability": "Trunk + 50 / 0 mm is Standard capability (trunks ≤ 30 m) and is met. Leg length (legs ≤ 1.5 m): ± 20 mm Standard; ± 10 mm Best with 100 % length measurement.",
+      "capability_sources": ["QM-021 §4.6", "QM-021 §11.10"],
+      "proposal": "Accept leg length 500 ± 20 mm (Standard), or keep ± 10 mm with 100 % leg-length measurement at extra cost.",
+      "impact": "± 10 mm: 100 % leg-length measurement approx. + USD 待工程師填寫 per pc. ± 20 mm: no adder.",
+      "sources": []
+    },
+    {
+      "ref": "R-08",
+      "title": "OFNP trunk only with UL-listed purchased cable (4.8 mm)",
+      "risk": "Medium",
+      "requirement": "Trunk OFNP plenum rated (UL 1651), 4.5 mm round; legs 2.0 mm.",
+      "capability": "LPC jackets in LSZH (IEC 60332-1-2) in-house. A plenum jacket applied in-house is not qualified, because the UL listing covers the complete cable; OFNP plenum is only possible with UL-listed purchased cable from our approved source Cascadia Cable Systems, lead time 8 weeks.",
+      "capability_sources": ["QM-021 §4.6", "QM-021 §8.2", "QM-021 §9", "QM-021 §10"],
+      "proposal": "Use the UL-listed OFNP 36-fibre trunk cable (3 x 12-fibre ribbon G.657.A2, UL 1651 OFNP). Its diameter is 4.8 mm instead of 4.5 mm round; please confirm that 4.8 mm fits your installation. The 2.0 mm legs are LPC furcation tubing in LSZH (IEC 60332-1-2), not plenum rated; please confirm this is acceptable.",
+      "impact": "Plenum trunk cable USD 2.9 per m (USD 2.65 per m at ≥ 10000 m), MOQ 1000 m drum; cost delta versus an LSZH trunk approx. + USD 待工程師填寫 per pc; 8 weeks lead time (see R-15).",
+      "sources": ["MM-002 RM-CB-P36", "PL RM-CB-P36", "MM-002 PP-FURC-20", "R-01", "R-15"]
+    },
+    {
+      "ref": "R-09",
+      "title": "100 N trunk pull needs a pulling grip",
+      "risk": "Medium",
+      "requirement": "Trunk tensile load 100 N during installation without damage; leg retention in the fan-out box ≥ 10 N.",
+      "capability": "Trunk tensile load ≤ 50 N with the aramid jacket alone; ≤ 300 N with a pulling grip on the MPO end. Pull loads above 50 N need a pulling grip. Tensile rating of the purchased plenum trunk cable (R-08): 待工程師填寫 N. Leg retention in the fan-out box: LPC capability 待工程師填寫 N.",
+      "capability_sources": ["QM-021 §4.6", "QM-021 §11.10"],
+      "proposal": "Fit a pulling grip with eye for 3 x MPO-12 connectors (mesh sleeve 300 mm, rated 300 N) on the trunk end for installation. Leg retention will be tested on the FAI samples; test method and sample size 待工程師填寫.",
+      "impact": "Pulling grip USD 1.6 per pc (USD 1.45 at ≥ 2000 pcs).",
+      "sources": ["MM-002 PP-PULL-M12x3", "PL PP-PULL-M12x3", "R-08"]
+    },
+    {
+      "ref": "R-10",
+      "title": "Leg marking by printed wrap label instead of ink-jet",
+      "risk": "Medium",
+      "requirement": "Port number ink-jet printed on every leg; trunk label with P/N, serial number and rev.",
+      "capability": "LPC identifies parts with printed labels; ink-jet printing on the legs is not an LPC process. Trunk label: polyimide flag label with part number, serial number and revision (optional 2D DataMatrix, module ≥ 0.25 mm), placed outside bend zones; serial numbers are never re-used.",
+      "capability_sources": ["QM-021 §5", "QM-021 §11.8"],
+      "proposal": "Mark the port number on every leg with a thermal-transfer printed wrap label 12 x 6 mm (UL 969). Trunk: polyimide flag label 30 x 10 mm (UL 969) with P/N, serial number and rev.",
+      "impact": "Leg wrap label USD 0.012 per label, 36 labels per assembly; trunk flag label USD 0.05 per pc.",
+      "sources": ["MM-002 PP-LBL-LEG", "PL PP-LBL-LEG", "MM-002 PP-LBL-FLAG", "PL PP-LBL-FLAG", "R-02"]
+    },
+    {
+      "ref": "R-15",
+      "title": "Sample and delivery dates cannot be met",
+      "risk": "High",
+      "requirement": "50 samples within 3 weeks of PO; 3,000 pcs complete by 2026-10-16.",
+      "capability": "Standard lead times from PO: UL-listed plenum (OFNP) trunk cable 8 weeks; elite-grade MPO-12 kits including qualification 8 weeks. These materials set the critical path, so samples cannot be built within 3 weeks of PO.",
+      "capability_sources": ["QM-021 §10"],
+      "proposal": "Samples 待工程師填寫 weeks after PO, once the plenum cable and the elite MPO-12 kits are received; 3,000 pcs complete by 待工程師填寫. Using the stocked standard-grade MPO-12 (R-02, R-04 Option B) takes the connector off the critical path; the plenum cable stays at 8 weeks.",
+      "impact": "Samples at the earliest 8 weeks after PO; production delivery plan 待工程師填寫.",
+      "sources": ["R-02", "R-04", "MM-002 RM-CB-P36"]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Target price USD 150.00 per pc FCA Taiwan and annual demand of approx. 30,000 pcs are noted. The cost adders in R-02, R-04, R-05, R-06, R-07, R-08, R-09 and R-10 will be included in the quotation: unit price USD 待工程師填寫 per pc; tooling / NRE USD 待工程師填寫.",
+      "sources": ["R-14"]
+    },
+    {
+      "text": "Fan-out box (R-11): LPC fan-out box design LPC-DWG-FOB-3612 for 3 x 12 ribbons in / 36 x 2.0 mm simplex legs out, 62 x 20 x 10 mm, fits within the 65 x 22 x 12 mm envelope. A new moulded fan-out box takes 4 weeks from drawing approval; box tooling USD 待工程師填寫.",
+      "sources": ["R-11", "MM-002 PP-FOB-36S", "PL PP-FOB-36S", "QM-021 §10"]
+    },
+    {
+      "text": "R-12 and R-13 can be met as specified: each assembly coiled in a 300 x 250 mm coil bag with dust caps on all connectors, 10 pcs per carton; LPC is ISO 9001:2015 certified and supplies FAI data, 100 % IL / RL per fibre with a test report per serial number, and a CoC with every shipment.",
+      "sources": ["R-12", "R-13", "MM-002 PK-BAG-FO", "MM-002 PK-BOX-10", "QM-021 §2"]
+    }
+  ]
+}

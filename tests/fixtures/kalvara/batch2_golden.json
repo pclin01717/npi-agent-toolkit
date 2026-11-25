@@ -1,0 +1,2399 @@
+{
+ "A0/cost/reviewed.json": {
+  "complete": false,
+  "costing_qty": 2000,
+  "elements": {
+   "Conversion": null,
+   "Direct material": 27.56,
+   "Manufacturing overhead": null,
+   "Material handling": null,
+   "SG&A": null,
+   "Scrap": null,
+   "Services": null
+  },
+  "file": "LPC-UC-26097_RevA0_Unit_Cost.xlsx",
+  "lines": [
+   {
+    "item": "10.10",
+    "line_cost": 12.9,
+    "part_no": "RM-VG-Q24-127",
+    "price_source": "LPC-PL-2026H2 RM-VG-Q24-127 Break 1",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 12.9,
+    "uom": "pcs"
+   },
+   {
+    "item": "10.20",
+    "line_cost": 2.85,
+    "part_no": "RM-LD-Q24",
+    "price_source": "LPC-PL-2026H2 RM-LD-Q24 Break 1",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 2.85,
+    "uom": "pcs"
+   },
+   {
+    "item": "10.30",
+    "line_cost": null,
+    "part_no": "CM-EP-UV365",
+    "price_source": "",
+    "price_text": "待工程師填寫",
+    "qty_per": null,
+    "remark": "Qty per FAU pending",
+    "unit_price": null,
+    "uom": "g"
+   },
+   {
+    "item": "20.10",
+    "line_cost": null,
+    "part_no": "RM-FB-RB12-657",
+    "price_source": "",
+    "price_text": "待工程師填寫",
+    "qty_per": null,
+    "remark": "Qty per FAU pending",
+    "unit_price": null,
+    "uom": "km"
+   },
+   {
+    "item": "30",
+    "line_cost": 10.4,
+    "part_no": "PP-MPO12-APC-F",
+    "price_source": "LPC-PL-2026H2 PP-MPO12-APC-F Break 1",
+    "price_text": null,
+    "qty_per": 2,
+    "remark": "",
+    "unit_price": 5.2,
+    "uom": "pcs"
+   },
+   {
+    "item": "35",
+    "line_cost": null,
+    "part_no": "CM-EP-TH150",
+    "price_source": "",
+    "price_text": "待工程師填寫",
+    "qty_per": null,
+    "remark": "Qty per FAU pending",
+    "unit_price": null,
+    "uom": "g"
+   },
+   {
+    "item": "40",
+    "line_cost": 0.48,
+    "part_no": "PP-BOOT-FA24",
+    "price_source": "LPC-PL-2026H2 PP-BOOT-FA24 Base",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 0.48,
+    "uom": "pcs"
+   },
+   {
+    "item": "45",
+    "line_cost": 0.05,
+    "part_no": "PP-LBL-FLAG",
+    "price_source": "LPC-PL-2026H2 PP-LBL-FLAG Base",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 0.05,
+    "uom": "pcs"
+   },
+   {
+    "item": "60.10",
+    "line_cost": 0.14,
+    "part_no": "PP-CAP-FA24",
+    "price_source": "LPC-PL-2026H2 PP-CAP-FA24 Base",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 0.14,
+    "uom": "pcs"
+   },
+   {
+    "item": "60.15",
+    "line_cost": 0.12,
+    "part_no": "PP-CAP-MPOF",
+    "price_source": "LPC-PL-2026H2 PP-CAP-MPOF Base",
+    "price_text": null,
+    "qty_per": 2,
+    "remark": "",
+    "unit_price": 0.06,
+    "uom": "pcs"
+   },
+   {
+    "item": "60.20",
+    "line_cost": 0.62,
+    "part_no": "PK-TRAY-FA",
+    "price_source": "LPC-PL-2026H2 PK-TRAY-FA Base",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 0.62,
+    "uom": "pcs"
+   },
+   {
+    "item": "60.40",
+    "line_cost": null,
+    "part_no": "PK-BOX-50",
+    "price_source": "",
+    "price_text": "待工程師填寫",
+    "qty_per": null,
+    "remark": "Qty per FAU pending",
+    "unit_price": null,
+    "uom": "pcs"
+   }
+  ],
+  "lpc_pn": "LPC-FA24-127-8A",
+  "material_total": 27.56,
+  "rev": "A0",
+  "total": null,
+  "total_note": "不完整：4 個材料待工程師填寫（直接材料只含查得到的）；其他 6 個成本項目待工程師填寫"
+ },
+ "A0/dfm/reviewed.json": {
+  "email": {
+   "body": "Dear Dr. Priya Raman,\n\nThank you for KVP-RFQ-26-0311 and KVP-SPC-2408 Rev X1. Our DFM review against LPC-QM-021 and LPC-LL-003 is complete; 4 items need your decision:\n\n 1. [R-03] Core pitch ± 0.3 µm on 24 channels (risk: Medium)\n    Your requirement: 127.0 ± 0.3 µm adjacent pitch, 24 ch\n    LPC capability  : Standard substrates ± 0.5 µm; ± 0.3 µm needs grade A substrates. (QM-021 §4.1; QM-021 §11.1)\n    LPC proposal    : 127.0 ± 0.5 µm with a new 24-groove grade STD substrate.\n    Impact          : 待工程師填寫\n\n 2. [R-04] Cumulative pitch ≤ 0.6 µm over 24 ch (risk: Medium)\n    Your requirement: Cumulative error ≤ 0.6 µm; absolute ± 0.8 µm\n    LPC capability  : Cumulative pitch ≤ 1.0 µm standard, ≤ 0.8 µm best. Absolute core position ± 0.8 µm standard. (QM-021 §4.1)\n    LPC proposal    : Cumulative ≤ 0.8 µm with incoming groove measurement of each substrate lot; absolute ± 0.8 µm.\n    Impact          : 待工程師填寫\n\n 3. [R-02] Borosilicate lid on fused-silica substrate (risk: Medium)\n    Your requirement: Borosilicate lid (lowest cost)\n    LPC capability  : Lid and substrate of different glass fail extended thermal cycling (CTE mismatch); R-09 asks for 1000 cycles. (LL-003 LL-01; LL-003 DR-01)\n    LPC proposal    : Fused-silica lid (same glass as the substrate).\n    Impact          : 待工程師填寫\n\n 4. [R-15] Samples in 4 weeks / 2,000 pcs by 2026-10-16 (risk: High)\n    Your requirement: 100 samples in 4 weeks; 2,000 pcs by 2026-10-16\n    LPC capability  : New substrate design 5 weeks; first samples 3-4 weeks. (QM-021 §10)\n    LPC proposal    : 待工程師填寫\n    Impact          : 待工程師填寫\n\nTarget price USD 105.00 per pc noted; NRE quoted separately.\n\nBest regards,\n--\nAlex Lin\nSenior NPI Engineer\nLumora Photonics Co., Ltd.\nNo. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinchu City 300, Taiwan\nTel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photonics.com.tw\n",
+   "cc": [
+    "tom.becker@kalvara-photonics.com",
+    "ana.morales@kalvara-photonics.com"
+   ],
+   "file": "2026-11-01_DFM_Feedback_KVP-SPC-2408.eml",
+   "subject": "RE: KVP-RFQ-26-0311 - DFM feedback on KVP-SPC-2408 Rev X1 Fiber Array Unit 24ch 127um 8deg, 2x MPO-12 APC pigtail (LPC NPI-26-097)",
+   "to": [
+    "priya.raman@kalvara-photonics.com"
+   ]
+  },
+  "items": [
+   {
+    "capability": "Standard substrates ± 0.5 µm; ± 0.3 µm needs grade A substrates.",
+    "capability_sources": [
+     "QM-021 §4.1",
+     "QM-021 §11.1"
+    ],
+    "impact": "待工程師填寫",
+    "proposal": "127.0 ± 0.5 µm with a new 24-groove grade STD substrate.",
+    "ref": "R-03",
+    "requirement": "127.0 ± 0.3 µm adjacent pitch, 24 ch",
+    "risk": "Medium",
+    "sources": [],
+    "title": "Core pitch ± 0.3 µm on 24 channels"
+   },
+   {
+    "capability": "Cumulative pitch ≤ 1.0 µm standard, ≤ 0.8 µm best. Absolute core position ± 0.8 µm standard.",
+    "capability_sources": [
+     "QM-021 §4.1"
+    ],
+    "impact": "待工程師填寫",
+    "proposal": "Cumulative ≤ 0.8 µm with incoming groove measurement of each substrate lot; absolute ± 0.8 µm.",
+    "ref": "R-04",
+    "requirement": "Cumulative error ≤ 0.6 µm; absolute ± 0.8 µm",
+    "risk": "Medium",
+    "sources": [],
+    "title": "Cumulative pitch ≤ 0.6 µm over 24 ch"
+   },
+   {
+    "capability": "Lid and substrate of different glass fail extended thermal cycling (CTE mismatch); R-09 asks for 1000 cycles.",
+    "capability_sources": [
+     "LL-003 LL-01",
+     "LL-003 DR-01"
+    ],
+    "impact": "待工程師填寫",
+    "proposal": "Fused-silica lid (same glass as the substrate).",
+    "ref": "R-02",
+    "requirement": "Borosilicate lid (lowest cost)",
+    "risk": "Medium",
+    "sources": [
+     "R-09"
+    ],
+    "title": "Borosilicate lid on fused-silica substrate"
+   },
+   {
+    "capability": "New substrate design 5 weeks; first samples 3-4 weeks.",
+    "capability_sources": [
+     "QM-021 §10"
+    ],
+    "impact": "待工程師填寫",
+    "proposal": "待工程師填寫",
+    "ref": "R-15",
+    "requirement": "100 samples in 4 weeks; 2,000 pcs by 2026-10-16",
+    "risk": "High",
+    "sources": [],
+    "title": "Samples in 4 weeks / 2,000 pcs by 2026-10-16"
+   }
+  ],
+  "kind": "dfm",
+  "notes": [
+   {
+    "sources": [
+     "R-14"
+    ],
+    "text": "Target price USD 105.00 per pc noted; NRE quoted separately."
+   }
+  ],
+  "po_change": ""
+ },
+ "A0/po/reviewed.json": {
+  "file": "PO_Check_KVP-PO-7700-2614_Rev0.md",
+  "findings": [
+   "PO 第 1.1 行：單位成本不完整，無法比較單價",
+   "PO 第 1.2 行：單位成本不完整，無法比較單價",
+   "PO 第 1.3 行：單位成本不完整，無法比較單價",
+   "PO 第 1.4 行：單位成本不完整，無法比較單價"
+  ],
+  "po": {
+   "date": "2026-07-28",
+   "file": "KVP-PO-7700-2614_Rev0.pdf",
+   "po_no": "KVP-PO-7700-2614",
+   "rev": 0,
+   "schedule": [
+    {
+     "cust_rev": "A",
+     "extended": 11200.0,
+     "line": "1.1",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-09-18",
+     "qty": 100,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "A",
+     "extended": 44800.0,
+     "line": "1.2",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-10-02",
+     "qty": 400,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "A",
+     "extended": 84000.0,
+     "line": "1.3",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-10-16",
+     "qty": 750,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "A",
+     "extended": 84000.0,
+     "line": "1.4",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-10-30",
+     "qty": 750,
+     "unit_price": 112.0
+    }
+   ],
+   "total_qty": 2000
+  },
+  "report": "# PO 核對結果：KVP-PO-7700-2614 Rev 0\n\n- 案子：NPI-26-097，我方版次 A0，核對日期 2026-11-01\n- PO 日期：2026-07-28；第 1 行成品總數 2,000 EA\n- 對照的正式 spec：LPC-PS-26097 Rev A0（LPC P/N LPC-FA24-127-8A，客戶版次 A）\n- 單位成本（A0）：不完整，無法比較\n\n## 交貨行\n| 行 | 客戶版次 | LPC P/N | 數量 | 單價 (USD) | 金額 (USD) | 交期 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 1.1 | A | LPC-FA24-127-8A | 100 | 112.00 | 11,200.00 | 2026-09-18 |\n| 1.2 | A | LPC-FA24-127-8A | 400 | 112.00 | 44,800.00 | 2026-10-02 |\n| 1.3 | A | LPC-FA24-127-8A | 750 | 112.00 | 84,000.00 | 2026-10-16 |\n| 1.4 | A | LPC-FA24-127-8A | 750 | 112.00 | 84,000.00 | 2026-10-30 |\n\n## 發現\n- PO 第 1.1 行：單位成本不完整，無法比較單價\n- PO 第 1.2 行：單位成本不完整，無法比較單價\n- PO 第 1.3 行：單位成本不完整，無法比較單價\n- PO 第 1.4 行：單位成本不完整，無法比較單價\n",
+  "rev": "A0"
+ },
+ "A0/release/LPC-DWG-26097_RevA0_Fiber_Array_Drawing.pdf": "FRONT VIEW (TOP)\nCHANNEL MAP (POSITION FROM ARRAY CENTRE, mm)\nPIGTAIL 800 ± 20 mm TO CONNECTORS\nCH 1 -1.4605\nCH 2 -1.3335\nCH 3 -1.2065\nCH 4 -1.0795\nCH 5 -0.9525\nBOOT\nCH 6 -0.8255\nCH 7 -0.6985\nCH 8 -0.5715\nCH 9 -0.4445\nCH 10 -0.3175\nCH 11 -0.1905\nSUBSTRATE 8\nCH 12 -0.0635\nLID\nCH 13 +0.0635\nCH 14 +0.1905\n5\nCH 15 +0.3175\nCH 16 +0.4445\nCH 17 +0.5715\nSIDE VIEW\nCH 18 +0.6985\nCH 19 +0.8255\nCH 20 +0.9525\nLID\nCH 21 +1.0795\n1 + 0.7\nCH 22 +1.2065\nSUBSTRATE\nCH 23 +1.3335\nCH 24 +1.4605\nEND FACE 8°\nLPC-DWG-26097 REV A0 DATE 2026-11-01\nLPC-FA24-127-8A - Fibre array unit 24 ch, 127 µm pitch, 8° end face, 2 x MPO-12 APC female (unpinned), pigtail 800 ± 20 mm\nLumora Photonics Co., Ltd. - simplified outline, dimensions in mm",
+ "A0/release/reviewed.json": {
+  "block_pn": "LPC-FA24-110",
+  "bom": [
+   {
+    "description": "Fibre array unit 24 ch, 127 µm pitch, 8° end face, 2 x MPO-12 APC female (unpinned), pigtail 800 ± 20 mm",
+    "item": "0",
+    "lead_time_days": null,
+    "make_buy": "Make",
+    "part_no": "LPC-FA24-127-8A",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Fibre array block, assembled & polished",
+    "item": "10",
+    "lead_time_days": null,
+    "make_buy": "Make",
+    "part_no": "LPC-FA24-110",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Fused-silica V-groove substrate 24 ch, 127 µm pitch, 5.0 x 8.0 x 1.0 mm, step 3.0 mm, grade STD (± 0.5 µm)",
+    "item": "10.10",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-VG-Q24-127",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Fused-silica lid 5.0 x 5.0 x 0.7 mm, polished, chamfered",
+    "item": "10.20",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-LD-Q24",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "UV / thermal dual-cure optical epoxy, low shrinkage, Tg 125 °C",
+    "item": "10.30",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "CM-EP-UV365",
+    "qty_per": null,
+    "remark": null,
+    "supplier": null,
+    "uom": "g"
+   },
+   {
+    "description": "24-fibre pigtail, 2 ribbons",
+    "item": "20",
+    "lead_time_days": null,
+    "make_buy": "Make",
+    "part_no": "LPC-FA24-120",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "12-fibre flat ribbon G.657.A2",
+    "item": "20.10",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-FB-RB12-657",
+    "qty_per": null,
+    "remark": null,
+    "supplier": null,
+    "uom": "km"
+   },
+   {
+    "description": "MPO-12 APC female connector kit, standard grade",
+    "item": "30",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-MPO12-APC-F",
+    "qty_per": 2,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Thermal-cure epoxy for MT ferrules, Tg 150 °C",
+    "item": "35",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "CM-EP-TH150",
+    "qty_per": null,
+    "remark": null,
+    "supplier": null,
+    "uom": "g"
+   },
+   {
+    "description": "Silicone strain-relief boot for 24-ch fibre array, two stacked ribbons, 8.0 x 4.0 x 14 mm",
+    "item": "40",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-BOOT-FA24",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+    "item": "45",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-LBL-FLAG",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "End-face protection cap for 24-ch fibre array block (5.0 mm)",
+    "item": "60.10",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-CAP-FA24",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "MPO dust cap, female (unpinned) connector",
+    "item": "60.15",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-CAP-MPOF",
+    "qty_per": 2,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "ESD clamshell with fibre coil holder, 1 fibre array + pigtail",
+    "item": "60.20",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PK-TRAY-FA",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Corrugated carton for 50 clamshells, with ESD liner",
+    "item": "60.40",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PK-BOX-50",
+    "qty_per": null,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   }
+  ],
+  "cust_pn": "KVP-FAU-2408",
+  "cust_rev": "A",
+  "description": "Fibre array unit 24 ch, 127 µm pitch, 8° end face, 2 x MPO-12 APC female (unpinned), pigtail 800 ± 20 mm",
+  "files": {
+   "block_step": "LPC-FA24-110_RevA0.step",
+   "bom": "LPC-BOM-26097_RevA0_BOM.xlsx",
+   "drawing": "LPC-DWG-26097_RevA0_Fiber_Array_Drawing.pdf",
+   "spec": "LPC-PS-26097_RevA0_Product_Specification.docx",
+   "step": "LPC-FA24-127-8A_RevA0.step"
+  },
+  "lpc_pn": "LPC-FA24-127-8A",
+  "params": {
+   "boot_h_mm": 4,
+   "boot_l_mm": 14,
+   "boot_w_mm": 8,
+   "channels": 24,
+   "connector": "2 x MPO-12 APC female (unpinned)",
+   "end_face_angle_deg": 8,
+   "lid_l_mm": 5,
+   "lid_t_mm": 0.7,
+   "lid_w_mm": 5,
+   "pigtail_mm": 800,
+   "pigtail_tol_mm": 20,
+   "pitch_um": 127,
+   "substrate_l_mm": 8,
+   "substrate_t_mm": 1,
+   "substrate_w_mm": 5
+  },
+  "product_type": "Fiber_Array",
+  "rev": "A0",
+  "sections": [
+   {
+    "text": "Fibre array unit per customer draft spec KVP-SPC-2408 and the agreed DFM items.",
+    "title": "Scope"
+   },
+   {
+    "text": "Bend-insensitive SMF G.657.A2, two 12-fibre ribbons.",
+    "title": "Fibre"
+   },
+   {
+    "text": "Fused-silica lid, same glass as the substrate (DFM item R-02).",
+    "title": "Lid"
+   },
+   {
+    "text": "待工程師填寫",
+    "title": "Delivery"
+   }
+  ]
+ },
+ "A0/supply/reviewed.json": {
+  "changes": null,
+  "email": {
+   "body": "Hi Nina,\n\nPO KVP-PO-7700-2614 Rev 0 received for 2,000 x LPC-FA24-127-8A. Please prepare material per the released BOM (A0) and confirm ETAs.\n\nGross requirement (qty per FAU x 2,000 pcs), without scrap allowance; stock not deducted:\n- RM-VG-Q24-127      1 pcs/FAU -> 2,000 pcs; lead time 35 days\n- RM-LD-Q24          1 pcs/FAU -> 2,000 pcs; lead time 28 days\n- CM-EP-UV365        待工程師填寫 g/FAU -> 待工程師填寫 g; lead time 28 days\n- RM-FB-RB12-657     待工程師填寫 km/FAU -> 待工程師填寫 km; lead time 21 days\n- PP-MPO12-APC-F     2 pcs/FAU -> 4,000 pcs; lead time 21 days\n- CM-EP-TH150        待工程師填寫 g/FAU -> 待工程師填寫 g; lead time 21 days\n- PP-BOOT-FA24       1 pcs/FAU -> 2,000 pcs; lead time 28 days\n- PP-LBL-FLAG        1 pcs/FAU -> 2,000 pcs; lead time 14 days\n- PP-CAP-FA24        1 pcs/FAU -> 2,000 pcs; lead time 14 days\n- PP-CAP-MPOF        2 pcs/FAU -> 4,000 pcs; lead time 14 days\n- PK-TRAY-FA         1 pcs/FAU -> 2,000 pcs; lead time 21 days\n- PK-BOX-50          待工程師填寫 pcs/FAU -> 待工程師填寫 pcs; lead time 10 days\n\nThanks,\nAlex Lin\nSenior NPI Engineer\n",
+   "cc": [
+    ""
+   ],
+   "file": "2026-11-01_Material_Preparation_NPI-26-097.eml",
+   "subject": "[NPI-26-097] Material preparation request - KVP-PO-7700-2614 Rev 0",
+   "to": [
+    "nina.ho@lumora-photonics.com.tw"
+   ]
+  },
+  "po": {
+   "date": "2026-07-28",
+   "file": "KVP-PO-7700-2614_Rev0.pdf",
+   "po_no": "KVP-PO-7700-2614",
+   "rev": 0,
+   "schedule": [
+    {
+     "cust_rev": "A",
+     "extended": 11200.0,
+     "line": "1.1",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-09-18",
+     "qty": 100,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "A",
+     "extended": 44800.0,
+     "line": "1.2",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-10-02",
+     "qty": 400,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "A",
+     "extended": 84000.0,
+     "line": "1.3",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-10-16",
+     "qty": 750,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "A",
+     "extended": 84000.0,
+     "line": "1.4",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-10-30",
+     "qty": 750,
+     "unit_price": 112.0
+    }
+   ],
+   "total_qty": 2000
+  },
+  "requirements": [
+   {
+    "available": null,
+    "description": "Fused-silica V-groove substrate 24 ch, 127 µm pitch, 5.0 x 8.0 x 1.0 mm, step 3.0 mm, grade STD (± 0.5 µm)",
+    "gross_qty": 2000,
+    "in_mm002": true,
+    "lead_time_days": 35,
+    "part_no": "RM-VG-Q24-127",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "Fused-silica lid 5.0 x 5.0 x 0.7 mm, polished, chamfered",
+    "gross_qty": 2000,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "RM-LD-Q24",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "UV / thermal dual-cure optical epoxy, low shrinkage, Tg 125 °C",
+    "gross_qty": null,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "CM-EP-UV365",
+    "qty_per": null,
+    "uom": "g"
+   },
+   {
+    "available": null,
+    "description": "12-fibre flat ribbon G.657.A2",
+    "gross_qty": null,
+    "in_mm002": true,
+    "lead_time_days": 21,
+    "part_no": "RM-FB-RB12-657",
+    "qty_per": null,
+    "uom": "km"
+   },
+   {
+    "available": null,
+    "description": "MPO-12 APC female connector kit, standard grade",
+    "gross_qty": 4000,
+    "in_mm002": true,
+    "lead_time_days": 21,
+    "part_no": "PP-MPO12-APC-F",
+    "qty_per": 2,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "Thermal-cure epoxy for MT ferrules, Tg 150 °C",
+    "gross_qty": null,
+    "in_mm002": true,
+    "lead_time_days": 21,
+    "part_no": "CM-EP-TH150",
+    "qty_per": null,
+    "uom": "g"
+   },
+   {
+    "available": null,
+    "description": "Silicone strain-relief boot for 24-ch fibre array, two stacked ribbons, 8.0 x 4.0 x 14 mm",
+    "gross_qty": 2000,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "PP-BOOT-FA24",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+    "gross_qty": 2000,
+    "in_mm002": true,
+    "lead_time_days": 14,
+    "part_no": "PP-LBL-FLAG",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "End-face protection cap for 24-ch fibre array block (5.0 mm)",
+    "gross_qty": 2000,
+    "in_mm002": true,
+    "lead_time_days": 14,
+    "part_no": "PP-CAP-FA24",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "MPO dust cap, female (unpinned) connector",
+    "gross_qty": 4000,
+    "in_mm002": true,
+    "lead_time_days": 14,
+    "part_no": "PP-CAP-MPOF",
+    "qty_per": 2,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "ESD clamshell with fibre coil holder, 1 fibre array + pigtail",
+    "gross_qty": 2000,
+    "in_mm002": true,
+    "lead_time_days": 21,
+    "part_no": "PK-TRAY-FA",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "Corrugated carton for 50 clamshells, with ESD liner",
+    "gross_qty": null,
+    "in_mm002": true,
+    "lead_time_days": 10,
+    "part_no": "PK-BOX-50",
+    "qty_per": null,
+    "uom": "pcs"
+   }
+  ],
+  "rev": "A0"
+ },
+ "B0/cost/reviewed.json": {
+  "complete": false,
+  "costing_qty": 5000,
+  "elements": {
+   "Conversion": null,
+   "Direct material": 37.09,
+   "Manufacturing overhead": null,
+   "Material handling": null,
+   "SG&A": null,
+   "Scrap": null,
+   "Services": null
+  },
+  "file": "LPC-UC-26097_RevB0_Unit_Cost.xlsx",
+  "lines": [
+   {
+    "item": "10.10",
+    "line_cost": 15.5,
+    "part_no": "RM-VG-Q32-127",
+    "price_source": "LPC-PL-2026H2 RM-VG-Q32-127 Break 2",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 15.5,
+    "uom": "pcs"
+   },
+   {
+    "item": "10.20",
+    "line_cost": 3.3,
+    "part_no": "RM-LD-Q32",
+    "price_source": "LPC-PL-2026H2 RM-LD-Q32 Break 1",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 3.3,
+    "uom": "pcs"
+   },
+   {
+    "item": "10.30",
+    "line_cost": null,
+    "part_no": "CM-EP-UV365",
+    "price_source": "",
+    "price_text": "待工程師填寫",
+    "qty_per": null,
+    "remark": "Qty per FAU pending",
+    "unit_price": null,
+    "uom": "g"
+   },
+   {
+    "item": "20.10",
+    "line_cost": null,
+    "part_no": "RM-FB-G657A2",
+    "price_source": "",
+    "price_text": "待工程師填寫",
+    "qty_per": null,
+    "remark": "Qty per FAU pending",
+    "unit_price": null,
+    "uom": "km"
+   },
+   {
+    "item": "20.20",
+    "line_cost": null,
+    "part_no": "RM-FB-PM1310",
+    "price_source": "",
+    "price_text": "待工程師填寫",
+    "qty_per": null,
+    "remark": "Qty per FAU pending",
+    "unit_price": null,
+    "uom": "km"
+   },
+   {
+    "item": "30",
+    "line_cost": 17.2,
+    "part_no": "PP-MPO16-APC-M",
+    "price_source": "LPC-PL-2026H2 PP-MPO16-APC-M Break 2",
+    "price_text": null,
+    "qty_per": 2,
+    "remark": "",
+    "unit_price": 8.6,
+    "uom": "pcs"
+   },
+   {
+    "item": "40",
+    "line_cost": 0.49,
+    "part_no": "PP-BOOT-FA32",
+    "price_source": "LPC-PL-2026H2 PP-BOOT-FA32 Break 1",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 0.49,
+    "uom": "pcs"
+   },
+   {
+    "item": "45",
+    "line_cost": 0.05,
+    "part_no": "PP-LBL-FLAG",
+    "price_source": "LPC-PL-2026H2 PP-LBL-FLAG Base",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 0.05,
+    "uom": "pcs"
+   },
+   {
+    "item": "60.20",
+    "line_cost": 0.55,
+    "part_no": "PK-TRAY-FA",
+    "price_source": "LPC-PL-2026H2 PK-TRAY-FA Break 1",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 0.55,
+    "uom": "pcs"
+   }
+  ],
+  "lpc_pn": "LPC-FA32-127-8B",
+  "material_total": 37.09,
+  "rev": "B0",
+  "total": null,
+  "total_note": "不完整：3 個材料待工程師填寫（直接材料只含查得到的）；其他 6 個成本項目待工程師填寫"
+ },
+ "B0/dfm/reviewed.json": {
+  "email": {
+   "body": "Dear Dr. Priya Raman,\n\nThank you for ECR KVP-ECR-2408-01. Our assessment of the 4 changes:\n\nCH1 Channel count 24 -> 32: Feasible - New 32-groove substrate design (5 weeks). Cost: 待工程師填寫\nCH2 4 PM fibres (ch 1, 16, 17, 32): Feasible - PM fibre (PANDA) 6 weeks; slow axis ± 1.5°. Cost: 待工程師填寫\nCH3 2 x MPO-16 APC male, elite grade: Feasible - MPO-16 connector kits 4 weeks. Cost: 待工程師填寫\nCH4 Quantity +3,000 pcs: Feasible - PO total 2,000 -> 5,000 pcs. Cost: 待工程師填寫\n\nPO: Change order for quantity 5,000 pcs expected per CH4.\nProposed effectivity: 待工程師填寫\n\nBest regards,\n--\nAlex Lin\nSenior NPI Engineer\nLumora Photonics Co., Ltd.\nNo. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinchu City 300, Taiwan\nTel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photonics.com.tw\n",
+   "cc": [
+    "henrik.sand@kalvara-photonics.com",
+    "tom.becker@kalvara-photonics.com",
+    "ana.morales@kalvara-photonics.com"
+   ],
+   "file": "2026-11-01_ECR-01_Impact_Assessment_NPI-26-097.eml",
+   "subject": "RE: KVP-ECR-2408-01 - LPC change impact assessment, KVP-FAU-2408 Rev A -> Rev B (LPC NPI-26-097)",
+   "to": [
+    "priya.raman@kalvara-photonics.com"
+   ]
+  },
+  "items": [
+   {
+    "assessment": "New 32-groove substrate design (5 weeks).",
+    "cost": "待工程師填寫",
+    "feasibility": "Feasible",
+    "ref": "CH1",
+    "sources": [
+     "QM-021 §10"
+    ],
+    "title": "Channel count 24 -> 32"
+   },
+   {
+    "assessment": "PM fibre (PANDA) 6 weeks; slow axis ± 1.5°.",
+    "cost": "待工程師填寫",
+    "feasibility": "Feasible",
+    "ref": "CH2",
+    "sources": [
+     "QM-021 §10"
+    ],
+    "title": "4 PM fibres (ch 1, 16, 17, 32)"
+   },
+   {
+    "assessment": "MPO-16 connector kits 4 weeks.",
+    "cost": "待工程師填寫",
+    "feasibility": "Feasible",
+    "ref": "CH3",
+    "sources": [
+     "QM-021 §10"
+    ],
+    "title": "2 x MPO-16 APC male, elite grade"
+   },
+   {
+    "assessment": "PO total 2,000 -> 5,000 pcs.",
+    "cost": "待工程師填寫",
+    "feasibility": "Feasible",
+    "ref": "CH4",
+    "sources": [],
+    "title": "Quantity +3,000 pcs"
+   }
+  ],
+  "kind": "impact",
+  "notes": [
+   {
+    "sources": [],
+    "text": "Proposed effectivity: 待工程師填寫"
+   }
+  ],
+  "po_change": "Change order for quantity 5,000 pcs expected per CH4."
+ },
+ "B0/po/reviewed.json": {
+  "file": "PO_Check_KVP-PO-7700-2614_Rev1.md",
+  "findings": [
+   "PO 第 1.3 行：單位成本不完整，無法比較單價",
+   "PO 第 1.4 行：單位成本不完整，無法比較單價",
+   "PO 第 1.5 行：單位成本不完整，無法比較單價"
+  ],
+  "po": {
+   "date": "2026-09-04",
+   "file": "KVP-PO-7700-2614_Rev1.pdf",
+   "po_no": "KVP-PO-7700-2614",
+   "rev": 1,
+   "schedule": [
+    {
+     "cust_rev": "A",
+     "extended": 11200.0,
+     "line": "1.1",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-09-18",
+     "qty": 100,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "A",
+     "extended": 44800.0,
+     "line": "1.2",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-10-02",
+     "qty": 400,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "B",
+     "extended": 175000.0,
+     "line": "1.3",
+     "lpc_pn": "LPC-FA32-127-8B",
+     "need_date": "2026-10-30",
+     "qty": 1000,
+     "unit_price": 175.0
+    },
+    {
+     "cust_rev": "B",
+     "extended": 262500.0,
+     "line": "1.4",
+     "lpc_pn": "LPC-FA32-127-8B",
+     "need_date": "2026-11-13",
+     "qty": 1500,
+     "unit_price": 175.0
+    },
+    {
+     "cust_rev": "B",
+     "extended": 350000.0,
+     "line": "1.5",
+     "lpc_pn": "LPC-FA32-127-8B",
+     "need_date": "2026-11-27",
+     "qty": 2000,
+     "unit_price": 175.0
+    }
+   ],
+   "total_qty": 5000
+  },
+  "report": "# PO 核對結果：KVP-PO-7700-2614 Rev 1\n\n- 案子：NPI-26-097，我方版次 B0，核對日期 2026-11-01\n- PO 日期：2026-09-04；第 1 行成品總數 5,000 EA\n- 對照的正式 spec：LPC-PS-26097 Rev B0（LPC P/N LPC-FA32-127-8B，客戶版次 B）\n- 單位成本（B0）：不完整，無法比較\n\n## 交貨行\n| 行 | 客戶版次 | LPC P/N | 數量 | 單價 (USD) | 金額 (USD) | 交期 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 1.1 | A | LPC-FA24-127-8A | 100 | 112.00 | 11,200.00 | 2026-09-18 |\n| 1.2 | A | LPC-FA24-127-8A | 400 | 112.00 | 44,800.00 | 2026-10-02 |\n| 1.3 | B | LPC-FA32-127-8B | 1,000 | 175.00 | 175,000.00 | 2026-10-30 |\n| 1.4 | B | LPC-FA32-127-8B | 1,500 | 175.00 | 262,500.00 | 2026-11-13 |\n| 1.5 | B | LPC-FA32-127-8B | 2,000 | 175.00 | 350,000.00 | 2026-11-27 |\n\n## 發現\n- PO 第 1.3 行：單位成本不完整，無法比較單價\n- PO 第 1.4 行：單位成本不完整，無法比較單價\n- PO 第 1.5 行：單位成本不完整，無法比較單價\n",
+  "rev": "B0"
+ },
+ "B0/release/LPC-DWG-26097_RevB0_Fiber_Array_Drawing.pdf": "FRONT VIEW (TOP)\nCHANNEL MAP (POSITION FROM ARRAY CENTRE, mm)\nPIGTAIL 800 ± 20 mm TO CONNECTORS\nCH 1 -1.9685\nCH 2 -1.8415\nCH 3 -1.7145\nCH 4 -1.5875\nCH 5 -1.4605\nCH 6 -1.3335\nBOOT CH 7 -1.2065\nCH 8 -1.0795\nCH 9 -0.9525\nCH 10 -0.8255\nCH 11 -0.6985\nCH 12 -0.5715\nCH 13 -0.4445\nCH 14 -0.3175\nCH 15 -0.1905\nSUBSTRATE 8\nCH 16 -0.0635\nLID\nCH 17 +0.0635\nCH 18 +0.1905\nCH 19 +0.3175\n6\nCH 20 +0.4445\nCH 21 +0.5715\nCH 22 +0.6985\nSIDE VIEW CH 23 +0.8255\nCH 24 +0.9525\nCH 25 +1.0795\nCH 26 +1.2065\nCH 27 +1.3335\nLID\nCH 28 +1.4605\n1 + 0.7\nCH 29 +1.5875\nSUBSTRATE\nCH 30 +1.7145\nCH 31 +1.8415\nCH 32 +1.9685\nEND FACE 8°\nLPC-DWG-26097 REV B0 DATE 2026-11-01\nLPC-FA32-127-8B - Fibre array unit 32 ch, 127 µm pitch, 8° end face, 2 x MPO-16 APC male (pinned), elite grade, pigtail 800 ± 20 mm\nLumora Photonics Co., Ltd. - simplified outline, dimensions in mm",
+ "B0/release/reviewed.json": {
+  "block_pn": "LPC-FA32-110",
+  "bom": [
+   {
+    "description": "Fibre array unit 32 ch, 127 µm pitch, 8° end face, 2 x MPO-16 APC male (pinned), elite grade, pigtail 800 ± 20 mm",
+    "item": "0",
+    "lead_time_days": null,
+    "make_buy": "Make",
+    "part_no": "LPC-FA32-127-8B",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Fibre array block, assembled & polished",
+    "item": "10",
+    "lead_time_days": null,
+    "make_buy": "Make",
+    "part_no": "LPC-FA32-110",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Fused-silica V-groove substrate 32 ch, 127 µm pitch, 6.0 x 8.0 x 1.0 mm, step 3.0 mm, grade STD (± 0.5 µm)",
+    "item": "10.10",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-VG-Q32-127",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Fused-silica lid 6.0 x 5.0 x 0.7 mm, polished, chamfered",
+    "item": "10.20",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-LD-Q32",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "UV / thermal dual-cure optical epoxy, low shrinkage, Tg 125 °C",
+    "item": "10.30",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "CM-EP-UV365",
+    "qty_per": null,
+    "remark": null,
+    "supplier": null,
+    "uom": "g"
+   },
+   {
+    "description": "Bend-insensitive single-mode fibre G.657.A2, 250 µm coating",
+    "item": "20.10",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-FB-G657A2",
+    "qty_per": null,
+    "remark": null,
+    "supplier": null,
+    "uom": "km"
+   },
+   {
+    "description": "PM fibre PANDA 1310 nm, 125 µm cladding, 250 µm coating",
+    "item": "20.20",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-FB-PM1310",
+    "qty_per": null,
+    "remark": null,
+    "supplier": null,
+    "uom": "km"
+   },
+   {
+    "description": "MPO-16 APC male (pinned) connector kit: MT-16 ferrule elite grade, housing, pins, 3.0 mm boot",
+    "item": "30",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-MPO16-APC-M",
+    "qty_per": 2,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Silicone strain-relief boot for 32-ch fibre array, two stacked ribbons, 9.0 x 4.5 x 16 mm",
+    "item": "40",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-BOOT-FA32",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+    "item": "45",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-LBL-FLAG",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "ESD clamshell with fibre coil holder, 1 fibre array + pigtail",
+    "item": "60.20",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PK-TRAY-FA",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   }
+  ],
+  "cust_pn": "KVP-FAU-2408",
+  "cust_rev": "B",
+  "description": "Fibre array unit 32 ch, 127 µm pitch, 8° end face, 2 x MPO-16 APC male (pinned), elite grade, pigtail 800 ± 20 mm",
+  "files": {
+   "block_step": "LPC-FA32-110_RevB0.step",
+   "bom": "LPC-BOM-26097_RevB0_BOM.xlsx",
+   "drawing": "LPC-DWG-26097_RevB0_Fiber_Array_Drawing.pdf",
+   "spec": "LPC-PS-26097_RevB0_Product_Specification.docx",
+   "step": "LPC-FA32-127-8B_RevB0.step"
+  },
+  "lpc_pn": "LPC-FA32-127-8B",
+  "params": {
+   "boot_h_mm": 4,
+   "boot_l_mm": 14,
+   "boot_w_mm": 8,
+   "channels": 32,
+   "connector": "2 x MPO-16 APC male (pinned), elite grade",
+   "end_face_angle_deg": 8,
+   "lid_l_mm": 5,
+   "lid_t_mm": 0.7,
+   "lid_w_mm": 6,
+   "pigtail_mm": 800,
+   "pigtail_tol_mm": 20,
+   "pitch_um": 127,
+   "substrate_l_mm": 8,
+   "substrate_t_mm": 1,
+   "substrate_w_mm": 6
+  },
+  "product_type": "Fiber_Array",
+  "rev": "B0",
+  "sections": [
+   {
+    "text": "Revision per customer ECR KVP-ECR-2408-01.",
+    "title": "Scope"
+   },
+   {
+    "text": "G.657.A2 fibre plus 4 PM PANDA fibres for the external laser source.",
+    "title": "Fibre"
+   },
+   {
+    "text": "待工程師填寫",
+    "title": "Delivery"
+   }
+  ]
+ },
+ "B0/supply/reviewed.json": {
+  "changes": {
+   "added": [
+    "RM-VG-Q32-127",
+    "RM-LD-Q32",
+    "RM-FB-G657A2",
+    "RM-FB-PM1310",
+    "PP-MPO16-APC-M",
+    "PP-BOOT-FA32"
+   ],
+   "changed": [],
+   "removed": [
+    "RM-VG-Q24-127",
+    "RM-LD-Q24",
+    "RM-FB-RB12-657",
+    "PP-MPO12-APC-F",
+    "CM-EP-TH150",
+    "PP-BOOT-FA24",
+    "PP-CAP-FA24",
+    "PP-CAP-MPOF",
+    "PK-BOX-50"
+   ]
+  },
+  "email": {
+   "body": "Hi Nina,\n\nKVP-ECR-2408-01: BOM released as B0 for LPC-FA32-127-8B. Quantities based on PO KVP-PO-7700-2614 Rev 1 (5,000 pcs).\n\nAdded:\n- RM-VG-Q32-127\n- RM-LD-Q32\n- RM-FB-G657A2\n- RM-FB-PM1310\n- PP-MPO16-APC-M\n- PP-BOOT-FA32\nRemoved:\n- RM-VG-Q24-127\n- RM-LD-Q24\n- RM-FB-RB12-657\n- PP-MPO12-APC-F\n- CM-EP-TH150\n- PP-BOOT-FA24\n- PP-CAP-FA24\n- PP-CAP-MPOF\n- PK-BOX-50\nChanged qty per FAU:\n- none\n\nGross requirement (qty per FAU x 5,000 pcs), without scrap allowance; stock not deducted:\n- RM-VG-Q32-127      1 pcs/FAU -> 5,000 pcs; lead time 35 days\n- RM-LD-Q32          1 pcs/FAU -> 5,000 pcs; lead time 28 days\n- CM-EP-UV365        待工程師填寫 g/FAU -> 待工程師填寫 g; lead time 28 days\n- RM-FB-G657A2       待工程師填寫 km/FAU -> 待工程師填寫 km; lead time 14 days\n- RM-FB-PM1310       待工程師填寫 km/FAU -> 待工程師填寫 km; lead time 42 days\n- PP-MPO16-APC-M     2 pcs/FAU -> 10,000 pcs; lead time 28 days\n- PP-BOOT-FA32       1 pcs/FAU -> 5,000 pcs; lead time 28 days\n- PP-LBL-FLAG        1 pcs/FAU -> 5,000 pcs; lead time 14 days\n- PK-TRAY-FA         1 pcs/FAU -> 5,000 pcs; lead time 21 days\n\nThanks,\nAlex Lin\nSenior NPI Engineer\n",
+   "cc": [
+    ""
+   ],
+   "file": "2026-11-01_Material_Change_Notice_NPI-26-097.eml",
+   "subject": "[NPI-26-097] Material change notice - KVP-ECR-2408-01 / KVP-PO-7700-2614 Rev 1",
+   "to": [
+    "nina.ho@lumora-photonics.com.tw"
+   ]
+  },
+  "po": {
+   "date": "2026-09-04",
+   "file": "KVP-PO-7700-2614_Rev1.pdf",
+   "po_no": "KVP-PO-7700-2614",
+   "rev": 1,
+   "schedule": [
+    {
+     "cust_rev": "A",
+     "extended": 11200.0,
+     "line": "1.1",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-09-18",
+     "qty": 100,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "A",
+     "extended": 44800.0,
+     "line": "1.2",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-10-02",
+     "qty": 400,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "B",
+     "extended": 175000.0,
+     "line": "1.3",
+     "lpc_pn": "LPC-FA32-127-8B",
+     "need_date": "2026-10-30",
+     "qty": 1000,
+     "unit_price": 175.0
+    },
+    {
+     "cust_rev": "B",
+     "extended": 262500.0,
+     "line": "1.4",
+     "lpc_pn": "LPC-FA32-127-8B",
+     "need_date": "2026-11-13",
+     "qty": 1500,
+     "unit_price": 175.0
+    },
+    {
+     "cust_rev": "B",
+     "extended": 350000.0,
+     "line": "1.5",
+     "lpc_pn": "LPC-FA32-127-8B",
+     "need_date": "2026-11-27",
+     "qty": 2000,
+     "unit_price": 175.0
+    }
+   ],
+   "total_qty": 5000
+  },
+  "requirements": [
+   {
+    "available": null,
+    "description": "Fused-silica V-groove substrate 32 ch, 127 µm pitch, 6.0 x 8.0 x 1.0 mm, step 3.0 mm, grade STD (± 0.5 µm)",
+    "gross_qty": 5000,
+    "in_mm002": true,
+    "lead_time_days": 35,
+    "part_no": "RM-VG-Q32-127",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "Fused-silica lid 6.0 x 5.0 x 0.7 mm, polished, chamfered",
+    "gross_qty": 5000,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "RM-LD-Q32",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "UV / thermal dual-cure optical epoxy, low shrinkage, Tg 125 °C",
+    "gross_qty": null,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "CM-EP-UV365",
+    "qty_per": null,
+    "uom": "g"
+   },
+   {
+    "available": null,
+    "description": "Bend-insensitive single-mode fibre G.657.A2, 250 µm coating",
+    "gross_qty": null,
+    "in_mm002": true,
+    "lead_time_days": 14,
+    "part_no": "RM-FB-G657A2",
+    "qty_per": null,
+    "uom": "km"
+   },
+   {
+    "available": null,
+    "description": "PM fibre PANDA 1310 nm, 125 µm cladding, 250 µm coating",
+    "gross_qty": null,
+    "in_mm002": true,
+    "lead_time_days": 42,
+    "part_no": "RM-FB-PM1310",
+    "qty_per": null,
+    "uom": "km"
+   },
+   {
+    "available": null,
+    "description": "MPO-16 APC male (pinned) connector kit: MT-16 ferrule elite grade, housing, pins, 3.0 mm boot",
+    "gross_qty": 10000,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "PP-MPO16-APC-M",
+    "qty_per": 2,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "Silicone strain-relief boot for 32-ch fibre array, two stacked ribbons, 9.0 x 4.5 x 16 mm",
+    "gross_qty": 5000,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "PP-BOOT-FA32",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+    "gross_qty": 5000,
+    "in_mm002": true,
+    "lead_time_days": 14,
+    "part_no": "PP-LBL-FLAG",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "ESD clamshell with fibre coil holder, 1 fibre array + pigtail",
+    "gross_qty": 5000,
+    "in_mm002": true,
+    "lead_time_days": 21,
+    "part_no": "PK-TRAY-FA",
+    "qty_per": 1,
+    "uom": "pcs"
+   }
+  ],
+  "rev": "B0"
+ },
+ "C0/cost/reviewed.json": {
+  "complete": false,
+  "costing_qty": 6000,
+  "elements": {
+   "Conversion": null,
+   "Direct material": 37.09,
+   "Manufacturing overhead": null,
+   "Material handling": null,
+   "SG&A": null,
+   "Scrap": null,
+   "Services": null
+  },
+  "file": "LPC-UC-26097_RevC0_Unit_Cost.xlsx",
+  "lines": [
+   {
+    "item": "10.10",
+    "line_cost": 15.5,
+    "part_no": "RM-VG-Q32-127",
+    "price_source": "LPC-PL-2026H2 RM-VG-Q32-127 Break 2",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 15.5,
+    "uom": "pcs"
+   },
+   {
+    "item": "10.20",
+    "line_cost": 3.3,
+    "part_no": "RM-LD-Q32",
+    "price_source": "LPC-PL-2026H2 RM-LD-Q32 Break 1",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 3.3,
+    "uom": "pcs"
+   },
+   {
+    "item": "10.30",
+    "line_cost": null,
+    "part_no": "CM-EP-UV365",
+    "price_source": "",
+    "price_text": "待工程師填寫",
+    "qty_per": null,
+    "remark": "Qty per FAU pending",
+    "unit_price": null,
+    "uom": "g"
+   },
+   {
+    "item": "20.10",
+    "line_cost": null,
+    "part_no": "RM-FB-G657A2",
+    "price_source": "",
+    "price_text": "待工程師填寫",
+    "qty_per": null,
+    "remark": "Qty per FAU pending",
+    "unit_price": null,
+    "uom": "km"
+   },
+   {
+    "item": "20.20",
+    "line_cost": null,
+    "part_no": "RM-FB-PM1310",
+    "price_source": "",
+    "price_text": "待工程師填寫",
+    "qty_per": null,
+    "remark": "Qty per FAU pending",
+    "unit_price": null,
+    "uom": "km"
+   },
+   {
+    "item": "30",
+    "line_cost": 17.2,
+    "part_no": "PP-MPO16-APC-M",
+    "price_source": "LPC-PL-2026H2 PP-MPO16-APC-M Break 2",
+    "price_text": null,
+    "qty_per": 2,
+    "remark": "",
+    "unit_price": 8.6,
+    "uom": "pcs"
+   },
+   {
+    "item": "40",
+    "line_cost": 0.49,
+    "part_no": "PP-BOOT-FA32",
+    "price_source": "LPC-PL-2026H2 PP-BOOT-FA32 Break 1",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 0.49,
+    "uom": "pcs"
+   },
+   {
+    "item": "45",
+    "line_cost": 0.05,
+    "part_no": "PP-LBL-FLAG",
+    "price_source": "LPC-PL-2026H2 PP-LBL-FLAG Base",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 0.05,
+    "uom": "pcs"
+   },
+   {
+    "item": "60.20",
+    "line_cost": 0.55,
+    "part_no": "PK-TRAY-FA",
+    "price_source": "LPC-PL-2026H2 PK-TRAY-FA Break 1",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 0.55,
+    "uom": "pcs"
+   }
+  ],
+  "lpc_pn": "LPC-FA32-127-0C",
+  "material_total": 37.09,
+  "rev": "C0",
+  "total": null,
+  "total_note": "不完整：3 個材料待工程師填寫（直接材料只含查得到的）；其他 6 個成本項目待工程師填寫"
+ },
+ "C0/dfm/reviewed.json": {
+  "email": {
+   "body": "Dear Dr. Priya Raman,\n\nThank you for ECR KVP-ECR-2408-02. Our assessment of the 4 changes:\n\nCH1 End face 8° APC -> 0° flat, AR coated: Feasible - Anti-reflection coating is subcontracted (2 weeks). Cost: 待工程師填寫\nCH2 Absolute core position ± 0.5 µm: Feasible - Best capability ± 0.5 µm needs high core-concentricity fibre. Cost: 待工程師填寫\nCH3 Pigtail 800 -> 500 mm: Feasible - Cutting length only. Cost: 待工程師填寫\nCH4 Quantity +1,000 pcs: Feasible - PO total 5,000 -> 6,000 pcs. Cost: 待工程師填寫\n\nPO: Change order for quantity 6,000 pcs expected per CH4.\n\nBest regards,\n--\nAlex Lin\nSenior NPI Engineer\nLumora Photonics Co., Ltd.\nNo. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinchu City 300, Taiwan\nTel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photonics.com.tw\n",
+   "cc": [
+    "henrik.sand@kalvara-photonics.com",
+    "tom.becker@kalvara-photonics.com",
+    "ana.morales@kalvara-photonics.com"
+   ],
+   "file": "2026-11-01_ECR-02_Impact_Assessment_NPI-26-097.eml",
+   "subject": "RE: KVP-ECR-2408-02 - LPC change impact assessment, KVP-FAU-2408 Rev B -> Rev C (LPC NPI-26-097)",
+   "to": [
+    "priya.raman@kalvara-photonics.com"
+   ]
+  },
+  "items": [
+   {
+    "assessment": "Anti-reflection coating is subcontracted (2 weeks).",
+    "cost": "待工程師填寫",
+    "feasibility": "Feasible",
+    "ref": "CH1",
+    "sources": [
+     "QM-021 §10"
+    ],
+    "title": "End face 8° APC -> 0° flat, AR coated"
+   },
+   {
+    "assessment": "Best capability ± 0.5 µm needs high core-concentricity fibre.",
+    "cost": "待工程師填寫",
+    "feasibility": "Feasible",
+    "ref": "CH2",
+    "sources": [
+     "QM-021 §4.1"
+    ],
+    "title": "Absolute core position ± 0.5 µm"
+   },
+   {
+    "assessment": "Cutting length only.",
+    "cost": "待工程師填寫",
+    "feasibility": "Feasible",
+    "ref": "CH3",
+    "sources": [],
+    "title": "Pigtail 800 -> 500 mm"
+   },
+   {
+    "assessment": "PO total 5,000 -> 6,000 pcs.",
+    "cost": "待工程師填寫",
+    "feasibility": "Feasible",
+    "ref": "CH4",
+    "sources": [],
+    "title": "Quantity +1,000 pcs"
+   }
+  ],
+  "kind": "impact",
+  "notes": [],
+  "po_change": "Change order for quantity 6,000 pcs expected per CH4."
+ },
+ "C0/po/reviewed.json": {
+  "file": "PO_Check_KVP-PO-7700-2614_Rev2.md",
+  "findings": [
+   "PO 第 1.4 行：單位成本不完整，無法比較單價",
+   "PO 第 1.5 行：單位成本不完整，無法比較單價",
+   "PO 第 1.6 行：單位成本不完整，無法比較單價"
+  ],
+  "po": {
+   "date": "2026-10-05",
+   "file": "KVP-PO-7700-2614_Rev2.pdf",
+   "po_no": "KVP-PO-7700-2614",
+   "rev": 2,
+   "schedule": [
+    {
+     "cust_rev": "A",
+     "extended": 11200.0,
+     "line": "1.1",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-09-18",
+     "qty": 100,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "A",
+     "extended": 44800.0,
+     "line": "1.2",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-10-02",
+     "qty": 400,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "B",
+     "extended": 175000.0,
+     "line": "1.3",
+     "lpc_pn": "LPC-FA32-127-8B",
+     "need_date": "2026-10-30",
+     "qty": 1000,
+     "unit_price": 175.0
+    },
+    {
+     "cust_rev": "C",
+     "extended": 270750.0,
+     "line": "1.4",
+     "lpc_pn": "LPC-FA32-127-0C",
+     "need_date": "2026-11-27",
+     "qty": 1500,
+     "unit_price": 180.5
+    },
+    {
+     "cust_rev": "C",
+     "extended": 361000.0,
+     "line": "1.5",
+     "lpc_pn": "LPC-FA32-127-0C",
+     "need_date": "2026-12-11",
+     "qty": 2000,
+     "unit_price": 180.5
+    },
+    {
+     "cust_rev": "C",
+     "extended": 180500.0,
+     "line": "1.6",
+     "lpc_pn": "LPC-FA32-127-0C",
+     "need_date": "2027-01-08",
+     "qty": 1000,
+     "unit_price": 180.5
+    }
+   ],
+   "total_qty": 6000
+  },
+  "report": "# PO 核對結果：KVP-PO-7700-2614 Rev 2\n\n- 案子：NPI-26-097，我方版次 C0，核對日期 2026-11-01\n- PO 日期：2026-10-05；第 1 行成品總數 6,000 EA\n- 對照的正式 spec：LPC-PS-26097 Rev C0（LPC P/N LPC-FA32-127-0C，客戶版次 C）\n- 單位成本（C0）：不完整，無法比較\n\n## 交貨行\n| 行 | 客戶版次 | LPC P/N | 數量 | 單價 (USD) | 金額 (USD) | 交期 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 1.1 | A | LPC-FA24-127-8A | 100 | 112.00 | 11,200.00 | 2026-09-18 |\n| 1.2 | A | LPC-FA24-127-8A | 400 | 112.00 | 44,800.00 | 2026-10-02 |\n| 1.3 | B | LPC-FA32-127-8B | 1,000 | 175.00 | 175,000.00 | 2026-10-30 |\n| 1.4 | C | LPC-FA32-127-0C | 1,500 | 180.50 | 270,750.00 | 2026-11-27 |\n| 1.5 | C | LPC-FA32-127-0C | 2,000 | 180.50 | 361,000.00 | 2026-12-11 |\n| 1.6 | C | LPC-FA32-127-0C | 1,000 | 180.50 | 180,500.00 | 2027-01-08 |\n\n## 發現\n- PO 第 1.4 行：單位成本不完整，無法比較單價\n- PO 第 1.5 行：單位成本不完整，無法比較單價\n- PO 第 1.6 行：單位成本不完整，無法比較單價\n",
+  "rev": "C0"
+ },
+ "C0/release/LPC-DWG-26097_RevC0_Fiber_Array_Drawing.pdf": "FRONT VIEW (TOP)\nCHANNEL MAP (POSITION FROM ARRAY CENTRE, mm)\nPIGTAIL 500 ± 20 mm TO CONNECTORS\nCH 1 -1.9685\nCH 2 -1.8415\nCH 3 -1.7145\nCH 4 -1.5875\nCH 5 -1.4605\nCH 6 -1.3335\nBOOT CH 7 -1.2065\nCH 8 -1.0795\nCH 9 -0.9525\nCH 10 -0.8255\nCH 11 -0.6985\nCH 12 -0.5715\nCH 13 -0.4445\nCH 14 -0.3175\nCH 15 -0.1905\nSUBSTRATE 8\nCH 16 -0.0635\nLID\nCH 17 +0.0635\nCH 18 +0.1905\nCH 19 +0.3175\n6\nCH 20 +0.4445\nCH 21 +0.5715\nCH 22 +0.6985\nSIDE VIEW CH 23 +0.8255\nCH 24 +0.9525\nCH 25 +1.0795\nCH 26 +1.2065\nCH 27 +1.3335\nLID\nCH 28 +1.4605\n1 + 0.7\nCH 29 +1.5875\nSUBSTRATE\nCH 30 +1.7145\nCH 31 +1.8415\nCH 32 +1.9685\nEND FACE 0°\nLPC-DWG-26097 REV C0 DATE 2026-11-01\nLPC-FA32-127-0C - Fibre array unit 32 ch, 127 µm pitch, 0° end face, 2 x MPO-16 APC male (pinned), elite grade, pigtail 500 ± 20 mm\nLumora Photonics Co., Ltd. - simplified outline, dimensions in mm",
+ "C0/release/reviewed.json": {
+  "block_pn": "LPC-FA32-110",
+  "bom": [
+   {
+    "description": "Fibre array unit 32 ch, 127 µm pitch, 0° end face, 2 x MPO-16 APC male (pinned), elite grade, pigtail 500 ± 20 mm",
+    "item": "0",
+    "lead_time_days": null,
+    "make_buy": "Make",
+    "part_no": "LPC-FA32-127-0C",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Fibre array block, assembled & polished",
+    "item": "10",
+    "lead_time_days": null,
+    "make_buy": "Make",
+    "part_no": "LPC-FA32-110",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Fused-silica V-groove substrate 32 ch, 127 µm pitch, 6.0 x 8.0 x 1.0 mm, step 3.0 mm, grade STD (± 0.5 µm)",
+    "item": "10.10",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-VG-Q32-127",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Fused-silica lid 6.0 x 5.0 x 0.7 mm, polished, chamfered",
+    "item": "10.20",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-LD-Q32",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "UV / thermal dual-cure optical epoxy, low shrinkage, Tg 125 °C",
+    "item": "10.30",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "CM-EP-UV365",
+    "qty_per": null,
+    "remark": null,
+    "supplier": null,
+    "uom": "g"
+   },
+   {
+    "description": "Bend-insensitive single-mode fibre G.657.A2, 250 µm coating",
+    "item": "20.10",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-FB-G657A2",
+    "qty_per": null,
+    "remark": null,
+    "supplier": null,
+    "uom": "km"
+   },
+   {
+    "description": "PM fibre PANDA 1310 nm, 125 µm cladding, 250 µm coating",
+    "item": "20.20",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-FB-PM1310",
+    "qty_per": null,
+    "remark": null,
+    "supplier": null,
+    "uom": "km"
+   },
+   {
+    "description": "MPO-16 APC male (pinned) connector kit: MT-16 ferrule elite grade, housing, pins, 3.0 mm boot",
+    "item": "30",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-MPO16-APC-M",
+    "qty_per": 2,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Silicone strain-relief boot for 32-ch fibre array, two stacked ribbons, 9.0 x 4.5 x 16 mm",
+    "item": "40",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-BOOT-FA32",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+    "item": "45",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-LBL-FLAG",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "ESD clamshell with fibre coil holder, 1 fibre array + pigtail",
+    "item": "60.20",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PK-TRAY-FA",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   }
+  ],
+  "cust_pn": "KVP-FAU-2408",
+  "cust_rev": "C",
+  "description": "Fibre array unit 32 ch, 127 µm pitch, 0° end face, 2 x MPO-16 APC male (pinned), elite grade, pigtail 500 ± 20 mm",
+  "files": {
+   "block_step": "LPC-FA32-110_RevC0.step",
+   "bom": "LPC-BOM-26097_RevC0_BOM.xlsx",
+   "drawing": "LPC-DWG-26097_RevC0_Fiber_Array_Drawing.pdf",
+   "spec": "LPC-PS-26097_RevC0_Product_Specification.docx",
+   "step": "LPC-FA32-127-0C_RevC0.step"
+  },
+  "lpc_pn": "LPC-FA32-127-0C",
+  "params": {
+   "boot_h_mm": 4,
+   "boot_l_mm": 14,
+   "boot_w_mm": 8,
+   "channels": 32,
+   "connector": "2 x MPO-16 APC male (pinned), elite grade",
+   "end_face_angle_deg": 0,
+   "lid_l_mm": 5,
+   "lid_t_mm": 0.7,
+   "lid_w_mm": 6,
+   "pigtail_mm": 500,
+   "pigtail_tol_mm": 20,
+   "pitch_um": 127,
+   "substrate_l_mm": 8,
+   "substrate_t_mm": 1,
+   "substrate_w_mm": 6
+  },
+  "product_type": "Fiber_Array",
+  "rev": "C0",
+  "sections": [
+   {
+    "text": "Revision per customer ECR KVP-ECR-2408-02.",
+    "title": "Scope"
+   },
+   {
+    "text": "Flat end face, AR coated, used in air.",
+    "title": "End face"
+   },
+   {
+    "text": "待工程師填寫",
+    "title": "Delivery"
+   }
+  ]
+ },
+ "C0/supply/reviewed.json": {
+  "changes": {
+   "added": [],
+   "changed": [],
+   "removed": []
+  },
+  "email": {
+   "body": "Hi Nina,\n\nKVP-ECR-2408-02: BOM released as C0 for LPC-FA32-127-0C. Quantities based on PO KVP-PO-7700-2614 Rev 2 (6,000 pcs).\n\nAdded:\n- none\nRemoved:\n- none\nChanged qty per FAU:\n- none\n\nGross requirement (qty per FAU x 6,000 pcs), without scrap allowance; stock not deducted:\n- RM-VG-Q32-127      1 pcs/FAU -> 6,000 pcs; lead time 35 days\n- RM-LD-Q32          1 pcs/FAU -> 6,000 pcs; lead time 28 days\n- CM-EP-UV365        待工程師填寫 g/FAU -> 待工程師填寫 g; lead time 28 days\n- RM-FB-G657A2       待工程師填寫 km/FAU -> 待工程師填寫 km; lead time 14 days\n- RM-FB-PM1310       待工程師填寫 km/FAU -> 待工程師填寫 km; lead time 42 days\n- PP-MPO16-APC-M     2 pcs/FAU -> 12,000 pcs; lead time 28 days\n- PP-BOOT-FA32       1 pcs/FAU -> 6,000 pcs; lead time 28 days\n- PP-LBL-FLAG        1 pcs/FAU -> 6,000 pcs; lead time 14 days\n- PK-TRAY-FA         1 pcs/FAU -> 6,000 pcs; lead time 21 days\n\nThanks,\nAlex Lin\nSenior NPI Engineer\n",
+   "cc": [
+    ""
+   ],
+   "file": "2026-11-01_Material_Change_Notice_NPI-26-097.eml",
+   "subject": "[NPI-26-097] Material change notice - KVP-ECR-2408-02 / KVP-PO-7700-2614 Rev 2",
+   "to": [
+    "nina.ho@lumora-photonics.com.tw"
+   ]
+  },
+  "po": {
+   "date": "2026-10-05",
+   "file": "KVP-PO-7700-2614_Rev2.pdf",
+   "po_no": "KVP-PO-7700-2614",
+   "rev": 2,
+   "schedule": [
+    {
+     "cust_rev": "A",
+     "extended": 11200.0,
+     "line": "1.1",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-09-18",
+     "qty": 100,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "A",
+     "extended": 44800.0,
+     "line": "1.2",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-10-02",
+     "qty": 400,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "B",
+     "extended": 175000.0,
+     "line": "1.3",
+     "lpc_pn": "LPC-FA32-127-8B",
+     "need_date": "2026-10-30",
+     "qty": 1000,
+     "unit_price": 175.0
+    },
+    {
+     "cust_rev": "C",
+     "extended": 270750.0,
+     "line": "1.4",
+     "lpc_pn": "LPC-FA32-127-0C",
+     "need_date": "2026-11-27",
+     "qty": 1500,
+     "unit_price": 180.5
+    },
+    {
+     "cust_rev": "C",
+     "extended": 361000.0,
+     "line": "1.5",
+     "lpc_pn": "LPC-FA32-127-0C",
+     "need_date": "2026-12-11",
+     "qty": 2000,
+     "unit_price": 180.5
+    },
+    {
+     "cust_rev": "C",
+     "extended": 180500.0,
+     "line": "1.6",
+     "lpc_pn": "LPC-FA32-127-0C",
+     "need_date": "2027-01-08",
+     "qty": 1000,
+     "unit_price": 180.5
+    }
+   ],
+   "total_qty": 6000
+  },
+  "requirements": [
+   {
+    "available": null,
+    "description": "Fused-silica V-groove substrate 32 ch, 127 µm pitch, 6.0 x 8.0 x 1.0 mm, step 3.0 mm, grade STD (± 0.5 µm)",
+    "gross_qty": 6000,
+    "in_mm002": true,
+    "lead_time_days": 35,
+    "part_no": "RM-VG-Q32-127",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "Fused-silica lid 6.0 x 5.0 x 0.7 mm, polished, chamfered",
+    "gross_qty": 6000,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "RM-LD-Q32",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "UV / thermal dual-cure optical epoxy, low shrinkage, Tg 125 °C",
+    "gross_qty": null,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "CM-EP-UV365",
+    "qty_per": null,
+    "uom": "g"
+   },
+   {
+    "available": null,
+    "description": "Bend-insensitive single-mode fibre G.657.A2, 250 µm coating",
+    "gross_qty": null,
+    "in_mm002": true,
+    "lead_time_days": 14,
+    "part_no": "RM-FB-G657A2",
+    "qty_per": null,
+    "uom": "km"
+   },
+   {
+    "available": null,
+    "description": "PM fibre PANDA 1310 nm, 125 µm cladding, 250 µm coating",
+    "gross_qty": null,
+    "in_mm002": true,
+    "lead_time_days": 42,
+    "part_no": "RM-FB-PM1310",
+    "qty_per": null,
+    "uom": "km"
+   },
+   {
+    "available": null,
+    "description": "MPO-16 APC male (pinned) connector kit: MT-16 ferrule elite grade, housing, pins, 3.0 mm boot",
+    "gross_qty": 12000,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "PP-MPO16-APC-M",
+    "qty_per": 2,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "Silicone strain-relief boot for 32-ch fibre array, two stacked ribbons, 9.0 x 4.5 x 16 mm",
+    "gross_qty": 6000,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "PP-BOOT-FA32",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+    "gross_qty": 6000,
+    "in_mm002": true,
+    "lead_time_days": 14,
+    "part_no": "PP-LBL-FLAG",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "ESD clamshell with fibre coil holder, 1 fibre array + pigtail",
+    "gross_qty": 6000,
+    "in_mm002": true,
+    "lead_time_days": 21,
+    "part_no": "PK-TRAY-FA",
+    "qty_per": 1,
+    "uom": "pcs"
+   }
+  ],
+  "rev": "C0"
+ },
+ "C1/cost/reviewed.json": {
+  "complete": false,
+  "costing_qty": 6000,
+  "elements": {
+   "Conversion": null,
+   "Direct material": 37.09,
+   "Manufacturing overhead": null,
+   "Material handling": null,
+   "SG&A": null,
+   "Scrap": null,
+   "Services": null
+  },
+  "file": "LPC-UC-26097_RevC1_Unit_Cost.xlsx",
+  "lines": [
+   {
+    "item": "10.10",
+    "line_cost": 15.5,
+    "part_no": "RM-VG-Q32-127",
+    "price_source": "LPC-PL-2026H2 RM-VG-Q32-127 Break 2",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 15.5,
+    "uom": "pcs"
+   },
+   {
+    "item": "10.20",
+    "line_cost": 3.3,
+    "part_no": "RM-LD-Q32",
+    "price_source": "LPC-PL-2026H2 RM-LD-Q32 Break 1",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 3.3,
+    "uom": "pcs"
+   },
+   {
+    "item": "10.30",
+    "line_cost": null,
+    "part_no": "CM-EP-UV365",
+    "price_source": "",
+    "price_text": "待工程師填寫",
+    "qty_per": null,
+    "remark": "Qty per FAU pending",
+    "unit_price": null,
+    "uom": "g"
+   },
+   {
+    "item": "20.10",
+    "line_cost": null,
+    "part_no": "RM-FB-G657A2",
+    "price_source": "",
+    "price_text": "待工程師填寫",
+    "qty_per": null,
+    "remark": "Qty per FAU pending",
+    "unit_price": null,
+    "uom": "km"
+   },
+   {
+    "item": "20.20",
+    "line_cost": null,
+    "part_no": "RM-FB-PM1310",
+    "price_source": "",
+    "price_text": "待工程師填寫",
+    "qty_per": null,
+    "remark": "Qty per FAU pending",
+    "unit_price": null,
+    "uom": "km"
+   },
+   {
+    "item": "30",
+    "line_cost": 17.2,
+    "part_no": "PP-MPO16-APC-M",
+    "price_source": "LPC-PL-2026H2 PP-MPO16-APC-M Break 2",
+    "price_text": null,
+    "qty_per": 2,
+    "remark": "",
+    "unit_price": 8.6,
+    "uom": "pcs"
+   },
+   {
+    "item": "40",
+    "line_cost": 0.49,
+    "part_no": "PP-BOOT-FA32",
+    "price_source": "LPC-PL-2026H2 PP-BOOT-FA32 Break 1",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 0.49,
+    "uom": "pcs"
+   },
+   {
+    "item": "45",
+    "line_cost": 0.05,
+    "part_no": "PP-LBL-FLAG",
+    "price_source": "LPC-PL-2026H2 PP-LBL-FLAG Base",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 0.05,
+    "uom": "pcs"
+   },
+   {
+    "item": "60.20",
+    "line_cost": 0.55,
+    "part_no": "PK-TRAY-FA",
+    "price_source": "LPC-PL-2026H2 PK-TRAY-FA Break 1",
+    "price_text": null,
+    "qty_per": 1,
+    "remark": "",
+    "unit_price": 0.55,
+    "uom": "pcs"
+   }
+  ],
+  "lpc_pn": "LPC-FA32-127-0D",
+  "material_total": 37.09,
+  "rev": "C1",
+  "total": null,
+  "total_note": "不完整：3 個材料待工程師填寫（直接材料只含查得到的）；其他 6 個成本項目待工程師填寫"
+ },
+ "C1/dfm/reviewed.json": {
+  "email": {
+   "body": "Dear Dr. Priya Raman,\n\nThank you for ECR KVP-ECR-2408-03. Our assessment of the 3 changes:\n\nCH1 Pigtail length 500 -> 520 mm: Feasible - Cutting length only. Cost: 待工程師填寫\nCH2 Flag label with 2D DataMatrix: Feasible - Label template change. Cost: 待工程師填寫\nCH3 Packing 50 -> 40 FAU per carton: Feasible - Packing instruction change; 40 FAU per carton (≤ 12 kg). Cost: 待工程師填寫\n\n\nBest regards,\n--\nAlex Lin\nSenior NPI Engineer\nLumora Photonics Co., Ltd.\nNo. 12, Lixing 6th Rd., East Dist., Hsinchu Science Park, Hsinchu City 300, Taiwan\nTel +886-3-578-6600 ext. 3216 | alex.lin@lumora-photonics.com.tw\n",
+   "cc": [
+    "henrik.sand@kalvara-photonics.com",
+    "tom.becker@kalvara-photonics.com",
+    "ana.morales@kalvara-photonics.com"
+   ],
+   "file": "2026-11-01_ECR-03_Impact_Assessment_NPI-26-097.eml",
+   "subject": "RE: KVP-ECR-2408-03 - LPC change impact assessment, KVP-FAU-2408 Rev C -> Rev D (LPC NPI-26-097)",
+   "to": [
+    "priya.raman@kalvara-photonics.com"
+   ]
+  },
+  "items": [
+   {
+    "assessment": "Cutting length only.",
+    "cost": "待工程師填寫",
+    "feasibility": "Feasible",
+    "ref": "CH1",
+    "sources": [],
+    "title": "Pigtail length 500 -> 520 mm"
+   },
+   {
+    "assessment": "Label template change.",
+    "cost": "待工程師填寫",
+    "feasibility": "Feasible",
+    "ref": "CH2",
+    "sources": [
+     "QM-021 §5"
+    ],
+    "title": "Flag label with 2D DataMatrix"
+   },
+   {
+    "assessment": "Packing instruction change; 40 FAU per carton (≤ 12 kg).",
+    "cost": "待工程師填寫",
+    "feasibility": "Feasible",
+    "ref": "CH3",
+    "sources": [],
+    "title": "Packing 50 -> 40 FAU per carton"
+   }
+  ],
+  "kind": "impact",
+  "notes": [],
+  "po_change": ""
+ },
+ "C1/release/LPC-DWG-26097_RevC1_Fiber_Array_Drawing.pdf": "FRONT VIEW (TOP)\nCHANNEL MAP (POSITION FROM ARRAY CENTRE, mm)\nPIGTAIL 520 ± 20 mm TO CONNECTORS\nCH 1 -1.9685\nCH 2 -1.8415\nCH 3 -1.7145\nCH 4 -1.5875\nCH 5 -1.4605\nCH 6 -1.3335\nBOOT CH 7 -1.2065\nCH 8 -1.0795\nCH 9 -0.9525\nCH 10 -0.8255\nCH 11 -0.6985\nCH 12 -0.5715\nCH 13 -0.4445\nCH 14 -0.3175\nCH 15 -0.1905\nSUBSTRATE 8\nCH 16 -0.0635\nLID\nCH 17 +0.0635\nCH 18 +0.1905\nCH 19 +0.3175\n6\nCH 20 +0.4445\nCH 21 +0.5715\nCH 22 +0.6985\nSIDE VIEW CH 23 +0.8255\nCH 24 +0.9525\nCH 25 +1.0795\nCH 26 +1.2065\nCH 27 +1.3335\nLID\nCH 28 +1.4605\n1 + 0.7\nCH 29 +1.5875\nSUBSTRATE\nCH 30 +1.7145\nCH 31 +1.8415\nCH 32 +1.9685\nEND FACE 0°\nLPC-DWG-26097 REV C1 DATE 2026-11-01\nLPC-FA32-127-0D - Fibre array unit 32 ch, 127 µm pitch, 0° end face, 2 x MPO-16 APC male (pinned), elite grade, pigtail 520 ± 20 mm\nLumora Photonics Co., Ltd. - simplified outline, dimensions in mm",
+ "C1/release/reviewed.json": {
+  "block_pn": "LPC-FA32-110",
+  "bom": [
+   {
+    "description": "Fibre array unit 32 ch, 127 µm pitch, 0° end face, 2 x MPO-16 APC male (pinned), elite grade, pigtail 520 ± 20 mm",
+    "item": "0",
+    "lead_time_days": null,
+    "make_buy": "Make",
+    "part_no": "LPC-FA32-127-0D",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Fibre array block, assembled & polished",
+    "item": "10",
+    "lead_time_days": null,
+    "make_buy": "Make",
+    "part_no": "LPC-FA32-110",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Fused-silica V-groove substrate 32 ch, 127 µm pitch, 6.0 x 8.0 x 1.0 mm, step 3.0 mm, grade STD (± 0.5 µm)",
+    "item": "10.10",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-VG-Q32-127",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Fused-silica lid 6.0 x 5.0 x 0.7 mm, polished, chamfered",
+    "item": "10.20",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-LD-Q32",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "UV / thermal dual-cure optical epoxy, low shrinkage, Tg 125 °C",
+    "item": "10.30",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "CM-EP-UV365",
+    "qty_per": null,
+    "remark": null,
+    "supplier": null,
+    "uom": "g"
+   },
+   {
+    "description": "Bend-insensitive single-mode fibre G.657.A2, 250 µm coating",
+    "item": "20.10",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-FB-G657A2",
+    "qty_per": null,
+    "remark": null,
+    "supplier": null,
+    "uom": "km"
+   },
+   {
+    "description": "PM fibre PANDA 1310 nm, 125 µm cladding, 250 µm coating",
+    "item": "20.20",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "RM-FB-PM1310",
+    "qty_per": null,
+    "remark": null,
+    "supplier": null,
+    "uom": "km"
+   },
+   {
+    "description": "MPO-16 APC male (pinned) connector kit: MT-16 ferrule elite grade, housing, pins, 3.0 mm boot",
+    "item": "30",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-MPO16-APC-M",
+    "qty_per": 2,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Silicone strain-relief boot for 32-ch fibre array, two stacked ribbons, 9.0 x 4.5 x 16 mm",
+    "item": "40",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-BOOT-FA32",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+    "item": "45",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PP-LBL-FLAG",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   },
+   {
+    "description": "ESD clamshell with fibre coil holder, 1 fibre array + pigtail",
+    "item": "60.20",
+    "lead_time_days": null,
+    "make_buy": "Buy",
+    "part_no": "PK-TRAY-FA",
+    "qty_per": 1,
+    "remark": null,
+    "supplier": null,
+    "uom": "pcs"
+   }
+  ],
+  "cust_pn": "KVP-FAU-2408",
+  "cust_rev": "D",
+  "description": "Fibre array unit 32 ch, 127 µm pitch, 0° end face, 2 x MPO-16 APC male (pinned), elite grade, pigtail 520 ± 20 mm",
+  "files": {
+   "block_step": "LPC-FA32-110_RevC1.step",
+   "bom": "LPC-BOM-26097_RevC1_BOM.xlsx",
+   "drawing": "LPC-DWG-26097_RevC1_Fiber_Array_Drawing.pdf",
+   "spec": "LPC-PS-26097_RevC1_Product_Specification.docx",
+   "step": "LPC-FA32-127-0D_RevC1.step"
+  },
+  "lpc_pn": "LPC-FA32-127-0D",
+  "params": {
+   "boot_h_mm": 4,
+   "boot_l_mm": 14,
+   "boot_w_mm": 8,
+   "channels": 32,
+   "connector": "2 x MPO-16 APC male (pinned), elite grade",
+   "end_face_angle_deg": 0,
+   "lid_l_mm": 5,
+   "lid_t_mm": 0.7,
+   "lid_w_mm": 6,
+   "pigtail_mm": 520,
+   "pigtail_tol_mm": 20,
+   "pitch_um": 127,
+   "substrate_l_mm": 8,
+   "substrate_t_mm": 1,
+   "substrate_w_mm": 6
+  },
+  "product_type": "Fiber_Array",
+  "rev": "C1",
+  "sections": [
+   {
+    "text": "Revision per customer ECR KVP-ECR-2408-03.",
+    "title": "Scope"
+   },
+   {
+    "text": "Flag label with 2D DataMatrix.",
+    "title": "Label"
+   },
+   {
+    "text": "40 FAU per carton.",
+    "title": "Packing"
+   }
+  ]
+ },
+ "C1/supply/reviewed.json": {
+  "changes": {
+   "added": [],
+   "changed": [],
+   "removed": []
+  },
+  "email": {
+   "body": "Hi Nina,\n\nKVP-ECR-2408-03: BOM released as C1 for LPC-FA32-127-0D. Quantities based on PO KVP-PO-7700-2614 Rev 2 (6,000 pcs), carried over from C0 (no new PO for C1).\n\nAdded:\n- none\nRemoved:\n- none\nChanged qty per FAU:\n- none\n\nGross requirement (qty per FAU x 6,000 pcs), without scrap allowance; stock not deducted:\n- RM-VG-Q32-127      1 pcs/FAU -> 6,000 pcs; lead time 35 days\n- RM-LD-Q32          1 pcs/FAU -> 6,000 pcs; lead time 28 days\n- CM-EP-UV365        待工程師填寫 g/FAU -> 待工程師填寫 g; lead time 28 days\n- RM-FB-G657A2       待工程師填寫 km/FAU -> 待工程師填寫 km; lead time 14 days\n- RM-FB-PM1310       待工程師填寫 km/FAU -> 待工程師填寫 km; lead time 42 days\n- PP-MPO16-APC-M     2 pcs/FAU -> 12,000 pcs; lead time 28 days\n- PP-BOOT-FA32       1 pcs/FAU -> 6,000 pcs; lead time 28 days\n- PP-LBL-FLAG        1 pcs/FAU -> 6,000 pcs; lead time 14 days\n- PK-TRAY-FA         1 pcs/FAU -> 6,000 pcs; lead time 21 days\n\nThanks,\nAlex Lin\nSenior NPI Engineer\n",
+   "cc": [
+    ""
+   ],
+   "file": "2026-11-01_Material_Change_Notice_NPI-26-097.eml",
+   "subject": "[NPI-26-097] Material change notice - KVP-ECR-2408-03 / KVP-PO-7700-2614 Rev 2",
+   "to": [
+    "nina.ho@lumora-photonics.com.tw"
+   ]
+  },
+  "po": {
+   "date": "2026-10-05",
+   "file": "KVP-PO-7700-2614_Rev2.pdf",
+   "po_no": "KVP-PO-7700-2614",
+   "rev": 2,
+   "schedule": [
+    {
+     "cust_rev": "A",
+     "extended": 11200.0,
+     "line": "1.1",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-09-18",
+     "qty": 100,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "A",
+     "extended": 44800.0,
+     "line": "1.2",
+     "lpc_pn": "LPC-FA24-127-8A",
+     "need_date": "2026-10-02",
+     "qty": 400,
+     "unit_price": 112.0
+    },
+    {
+     "cust_rev": "B",
+     "extended": 175000.0,
+     "line": "1.3",
+     "lpc_pn": "LPC-FA32-127-8B",
+     "need_date": "2026-10-30",
+     "qty": 1000,
+     "unit_price": 175.0
+    },
+    {
+     "cust_rev": "C",
+     "extended": 270750.0,
+     "line": "1.4",
+     "lpc_pn": "LPC-FA32-127-0C",
+     "need_date": "2026-11-27",
+     "qty": 1500,
+     "unit_price": 180.5
+    },
+    {
+     "cust_rev": "C",
+     "extended": 361000.0,
+     "line": "1.5",
+     "lpc_pn": "LPC-FA32-127-0C",
+     "need_date": "2026-12-11",
+     "qty": 2000,
+     "unit_price": 180.5
+    },
+    {
+     "cust_rev": "C",
+     "extended": 180500.0,
+     "line": "1.6",
+     "lpc_pn": "LPC-FA32-127-0C",
+     "need_date": "2027-01-08",
+     "qty": 1000,
+     "unit_price": 180.5
+    }
+   ],
+   "total_qty": 6000
+  },
+  "requirements": [
+   {
+    "available": null,
+    "description": "Fused-silica V-groove substrate 32 ch, 127 µm pitch, 6.0 x 8.0 x 1.0 mm, step 3.0 mm, grade STD (± 0.5 µm)",
+    "gross_qty": 6000,
+    "in_mm002": true,
+    "lead_time_days": 35,
+    "part_no": "RM-VG-Q32-127",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "Fused-silica lid 6.0 x 5.0 x 0.7 mm, polished, chamfered",
+    "gross_qty": 6000,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "RM-LD-Q32",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "UV / thermal dual-cure optical epoxy, low shrinkage, Tg 125 °C",
+    "gross_qty": null,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "CM-EP-UV365",
+    "qty_per": null,
+    "uom": "g"
+   },
+   {
+    "available": null,
+    "description": "Bend-insensitive single-mode fibre G.657.A2, 250 µm coating",
+    "gross_qty": null,
+    "in_mm002": true,
+    "lead_time_days": 14,
+    "part_no": "RM-FB-G657A2",
+    "qty_per": null,
+    "uom": "km"
+   },
+   {
+    "available": null,
+    "description": "PM fibre PANDA 1310 nm, 125 µm cladding, 250 µm coating",
+    "gross_qty": null,
+    "in_mm002": true,
+    "lead_time_days": 42,
+    "part_no": "RM-FB-PM1310",
+    "qty_per": null,
+    "uom": "km"
+   },
+   {
+    "available": null,
+    "description": "MPO-16 APC male (pinned) connector kit: MT-16 ferrule elite grade, housing, pins, 3.0 mm boot",
+    "gross_qty": 12000,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "PP-MPO16-APC-M",
+    "qty_per": 2,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "Silicone strain-relief boot for 32-ch fibre array, two stacked ribbons, 9.0 x 4.5 x 16 mm",
+    "gross_qty": 6000,
+    "in_mm002": true,
+    "lead_time_days": 28,
+    "part_no": "PP-BOOT-FA32",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "Polyimide flag label 30 x 10 mm, thermal-transfer printable",
+    "gross_qty": 6000,
+    "in_mm002": true,
+    "lead_time_days": 14,
+    "part_no": "PP-LBL-FLAG",
+    "qty_per": 1,
+    "uom": "pcs"
+   },
+   {
+    "available": null,
+    "description": "ESD clamshell with fibre coil holder, 1 fibre array + pigtail",
+    "gross_qty": 6000,
+    "in_mm002": true,
+    "lead_time_days": 21,
+    "part_no": "PK-TRAY-FA",
+    "qty_per": 1,
+    "uom": "pcs"
+   }
+  ],
+  "rev": "C1"
+ }
+}

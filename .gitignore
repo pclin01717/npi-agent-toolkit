@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.env.*
+output/
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Real-use test case (v1, 2026-11-24): contains answers, never pushed to the public repo
+input/NPI-26-124_FA24T_MPO24/
